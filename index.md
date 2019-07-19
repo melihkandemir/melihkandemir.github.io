@@ -1,11 +1,9 @@
 # Melih Kandemir
 
-Research scientist at Bosch Center for Artificial Intelligence.
+Research scientist at Bosch Center for Artificial Intelligence since June 2018 since June 2018...
+
 
 ---
-layout: default
----
-
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
