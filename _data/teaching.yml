@@ -3,27 +3,40 @@ lectures:
     type: Main Lecturer
     institution: University of Southern Denmark
     department: IMADA
-    year: 2021
-    term: Spring
+    year: 2022
+    term: Fall
     link: "www.google.com"
     schedule:
       - week: 1
-        topic: "Reinforcement Learning: What and Why?"
+        topic: "Learning Theory Recap"
         slides: "assets/teaching/rl_2021/rl-lecture1.pdf"
-        additional_reading: "assets/teaching/rl_2021/Lecture 1 - introduction.pdf"
       - week: 2
-        topic: "Markov Decision Processes"
+        topic: "Reinforcement Learning Intro"
         slides: "assets/teaching/rl_2021/rl-lecture2.pdf"
-        additional_reading: Sutton Ch 3        
       - week: 3
-        topic: "The Bellman Equations"
+        topic: "Markov Decision Processes"
         slides: "assets/teaching/rl_2021/rl-lecture3.pdf"
-        additional_reading: Sutton Ch 4
-        application: "assets/teaching/rl_2021/app1-cart-pole.ipynb"
-  
-  - title: Reinforcement Learning
-    type: Main Lecturer
-    institution: University of Southern Denmark
-    department: IMADA
-    year: 2022
-    term: Spring
+        #additional_reading: Sutton Ch 4
+        #application: "assets/teaching/rl_2021/app1-cart-pole.ipynb"
+      - week: 4
+        topic: "Dynamic Programming"
+        slides: "assets/teaching/rl_2021/rl-lecture4.pdf"
+      - week: 5
+        topic: "Value-Based Simulation"
+        slides: "assets/teaching/rl_2021/rl-lecture5.pdf"
+      - week: 6
+        topic: "Value-Based Simulation"
+        slides: "assets/teaching/rl_2021/rl-lecture6.pdf"
+      - week: 7
+        topic: "Policy Gradient Methods"
+        slides: "assets/teaching/rl_2021/rl-lecture7.pdf"
+      - week: 8
+        topic: "Modern Bayesian Inference"
+        slides: "assets/teaching/rl_2021/rl-lecture8.pdf"
+      - week: 9
+        topic: "Dynamics Modeling with Neural Nets"
+        slides: "assets/teaching/rl_2021/rl-lecture9.pdf"
+      - week: 10
+        topic: "Model-Based Reinforcement Learning"
+        slides: "assets/teaching/rl_2021/rl-lecture10.pdf"
+       
