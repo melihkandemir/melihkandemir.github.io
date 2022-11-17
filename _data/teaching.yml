@@ -25,7 +25,7 @@ lectures:
         topic: "Value-Based Simulation"
         slides: "assets/teaching/rl_2021/rl-lecture5.pdf"
       - week: 6
-        topic: "Value-Based Simulation"
+        topic: "Approximate TD Methods"
         slides: "assets/teaching/rl_2021/rl-lecture6.pdf"
       - week: 7
         topic: "Policy Gradient Methods"
