@@ -1,0 +1,29 @@
+lectures:
+  - title: Reinforcement Learning
+    type: Main Lecturer
+    institution: University of Southern Denmark
+    department: IMADA
+    year: 2021
+    term: Spring
+    link: "www.google.com"
+    schedule:
+      - week: 1
+        topic: "Reinforcement Learning: What and Why?"
+        slides: "assets/teaching/rl_2021/rl-lecture1.pdf"
+        additional_reading: "assets/teaching/rl_2021/Lecture 1 - introduction.pdf"
+      - week: 2
+        topic: "Markov Decision Processes"
+        slides: "assets/teaching/rl_2021/rl-lecture2.pdf"
+        additional_reading: Sutton Ch 3        
+      - week: 3
+        topic: "The Bellman Equations"
+        slides: "assets/teaching/rl_2021/rl-lecture3.pdf"
+        additional_reading: Sutton Ch 4
+        application: "assets/teaching/rl_2021/app1-cart-pole.ipynb"
+  
+  - title: Reinforcement Learning
+    type: Main Lecturer
+    institution: University of Southern Denmark
+    department: IMADA
+    year: 2022
+    term: Spring

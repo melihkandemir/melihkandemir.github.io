@@ -2,24 +2,27 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: melih_kandemir.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>555 Ø14-603B-1</p>
+    <p>Department of Mathematics and Computer Science</p>
+    <p>Odense, Denmarl</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Melih is an Associate Professor of Machine Learning at the <a href="https://www.sdu.dk/">University of Southern Denmark</a>, <a href="https://www.sdu.dk/en/om_sdu/institutter_centre/imada_matematik_og_datalogi">Department of Mathematics and Computer Science (IMADA)</a>.
+Melih earned his PhD degree from <a href="https://www.sdu.dk/">Aalto University</a> in 2013 under the supervision of Prof. Samuel Kaski. He worked as a postdoctoral researcher at Heidelberg University with Prof. Fred Hamprecht and as an assistant professor at Ozyegin University in Istanbul, Turkey. Prior to joining SDU, Melih was leading a research group at <a href="https://bosch-ai.com">Bosch Center for Artificial Intelligence</a>.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Melih is in the process of establishing the <a href="https://adinlab.github.io/web">SDU Adaptive Intelligence (ADIN) Lab<a/>. Melih pursues basic research on Bayesian inference and stochastic process modeling with deep neural nets with application to reinforcement learning and continual learning. Melih is proud to be an <a href="https://ellis.eu/members">ELLIS Member</a>, the society of the top artificial intelligence researchers in the Europe.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Melih is fascinated by both popular and technical aspects of natural sciences, especially physics and biology. His leisure time goes to thinking wishfully about their applications to the development of environment-friendly technologies.
+
+Melih is in love with his wife Fatos and his daughter Sehnaz.

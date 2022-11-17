@@ -2,9 +2,9 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Projects for which the ADIN Lab receives direct funding from external sources.
 nav: true
-nav_order: 2
+# nav_order: 2
 display_categories: [work, fun]
 horizontal: false
 ---

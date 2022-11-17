@@ -1,83 +1,89 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{neurips = {Neural Information Processing Systems}}
+@string{iclr = {International Conference on Learning Representations}}
+@string{icml = {International Conference on Machine Learning}}
+@string{arxiv = {arXiv Preprint}}
+@string{pami = {IEEE Transactions on Pattern Analysis and Machine Intelligence}}
 
-@book{einstein1956investigations,
+@inproceedings{yildiz2022learning,
+  abbr={NeurIPS},
+  title={Learning Interacting Dynamical Systems with Latent Gaussian Process ODEs},
+  author={Yildiz, C. and Kandemir, M. and Rakitsch, B.},
+  booktitle=neurips,
+  year={2022},
+  url={https://arxiv.org/abs/2205.11894},
+  html={https://arxiv.org/abs/2205.11894},
+  selected={true},
+  abstract={We study for the first time uncertainty-aware modeling of continuous-time dynamics of interacting objects. We introduce a new model that decomposes independent dynamics of single objects accurately from their interactions. By employing latent Gaussian process ordinary differential equations, our model infers both independent dynamics and their interactions with reliable uncertainty estimates. In our formulation, each object is represented as a graph node and interactions are modeled by accumulating the messages coming from neighboring objects. We show that efficient inference of such a complex network of variables is possible with modern variational sparse Gaussian process inference techniques. We empirically demonstrate that our model improves the reliability of long-term predictions over neural network based alternatives and it successfully handles missing dynamic or static information. Furthermore, we observe that only our model can successfully encapsulate independent dynamics and interaction information in distinct functions and show the benefit from this disentanglement in extrapolation scenarios..},
+  bibtex_show={true}
+}
+
+@inproceedings{kandemir2022evidential,
+  abbr={ICLR},
+  title={Evidential Turing Processes },
+  author={Kandemir, M. and Akgül, A. and Haussmann, M. and Unal, G.},
+  booktitle=iclr,
+  year={2022},
+  url={https://openreview.net/forum?id=84NMXTHYe-},
+  html={https://openreview.net/forum?id=84NMXTHYe-},
+  selected={true},
+  abstract={A probabilistic classifier with reliable predictive uncertainties i) fits successfully to the target domain data, ii) provides calibrated class probabilities in difficult regions of the target domain (e.g. class overlap), and iii) accurately identifies queries coming out of the target domain and reject them. We introduce an original combination of Evidential Deep Learning, Neural Processes, and Neural Turing Machines capable of providing all three essential properties mentioned above for total uncertainty quantification. We observe our method on three image classification benchmarks to consistently improve the in-domain uncertainty quantification, out-of-domain detection, and robustness against input perturbations with one single model. Our unified solution delivers an implementation-friendly and computationally efficient recipe for safety clearance and provides intellectual economy to an investigation of algorithmic roots of epistemic awareness in deep neural nets.},
+  bibtex_show={true}
+}
+
+@inproceedings{akgul2022cddp,
+  abbr={arXiv},
+  title={Continual Learning of Multi-modal Dynamics with External Memory},
+  author = {Akgül, A. and Unal, G. and Kandemir, M.},
+  booktitle=arxiv,
+  year={2022},
+  url={https://arxiv.org/abs/2203.00936},
+  html={https://arxiv.org/abs/2203.00936},
+  selected={false},
+  abstract={We study the problem of fitting a model to a dynamical environment when new modes of behavior emerge sequentially. The learning model is aware when a new mode appears, but it does not have access to the true modes of individual training sequences. We devise a novel continual learning method that maintains a descriptor of the mode of an encountered sequence in a neural episodic memory. We employ a Dirichlet Process prior on the attention weights of the memory to foster efficient storage of the mode descriptors. Our method performs continual learning by transferring knowledge across tasks by retrieving the descriptors of similar modes of past tasks to the mode of a current sequence and feeding this descriptor into its transition kernel as control input. We observe the continual learning performance of our method to compare favorably to the mainstream parameter transfer approach.},
+  bibtex_show={true}
+}
+
+
+@article{look2022adeterministic,
+  abbr={T-PAMI},
+  title={A Deterministic Approximation to Neural SDEs},
+  author={Look, A. and Kandemir, M. and Rakitsch, B. and Peters, J.},
+  journal=pami,
+  year={2022},
+  url={https://arxiv.org/abs/2006.08973},
+  html={https://arxiv.org/abs/2006.08973},
+  publisher={IEEE},
+  selected={true},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+  abstract={Neural Stochastic Differential Equations (NSDEs) model the drift and diffusion functions of a stochastic process as neural networks. While NSDEs are known to make accurate predictions, their uncertainty quantification properties haven been remained unexplored so far. We report the empirical finding that obtaining well-calibrated uncertainty estimations from NSDEs is computationally prohibitive. As a remedy, we develop a computationally affordable deterministic scheme which accurately approximates the transition kernel, when dynamics is governed by a NSDE. Our method introduces a bidimensional moment matching algorithm: vertical along the neural net layers and horizontal along the time direction, which benefits from an original combination of effective approximations. Our deterministic approximation of the transition kernel is applicable  to both training and prediction. We observe in multiple experiments that the uncertainty calibration quality of our method can be matched by Monte Carlo sampling only after introducing high computation cost. Thanks to the numerical stability of deterministic training, our method also provides improvement in prediction accuracy.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@inproceedings{lungi2022gpssm,
+  abbr={L4DC},
+  title={Traversing Time with Multi-Resolution Gaussian Process State-Space Models},
+  author={Longi, K. and Lindinger, J. and Duennbier, O. and Kandemir, M. and Klami, A. and Rakitsch, B},
+  booktitle={Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  year={2022},
+  url={https://proceedings.mlr.press/v168/longi22a/longi22a.pdf},
+  html={https://proceedings.mlr.press/v168/longi22a.html},
+  selected={false},
+  abstract={Gaussian Process state-space models capture complex temporal dependencies in a principled manner by placing a Gaussian Process prior on the transition function. These models have a natural interpretation as discretized stochastic differential equations, but inference for long sequences with fast and slow transitions is difficult. Fast transitions need tight discretizations whereas slow transitions require backpropagating the gradients over long subtrajectories. We propose a novel Gaussian process state-space architecture composed of multiple components, each trained on a different resolution, to model effects on different timescales. The combined model allows traversing time on adaptive scales, providing efficient inference for arbitrarily long sequences with complex dynamics. We benchmark our novel method on semi-synthetic data and on an engine modeling task. In both experiments, our approach compares favorably against its state-of-the-art alternatives that operate on a single time-scale only.},
+  bibtex_show={true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{flynn2022pac,
+  abbr={DMKD},
+  title={PAC-Bayesian lifelong learning for multi-armed bandits},
+  author={Flynn, H. and Reeb, D. and Kandemir, M. and Peters, J.},
+  journal={Data Mining and Knowledge Discovery},
+  year={2022},
+  publisher={Springer},
+  url={https://link.springer.com/article/10.1007/s10618-022-00825-4},
+  html={https://link.springer.com/article/10.1007/s10618-022-00825-4},
+  selected={false},
+  abstract={We present a PAC-Bayesian analysis of lifelong learning. In the lifelong learning problem, a sequence of learning tasks is observed one-at-a-time, and the goal is to transfer information acquired from previous tasks to new learning tasks. We consider the case when each learning task is a multi-armed bandit problem. We derive lower bounds on the expected average reward that would be obtained if a given multi-armed bandit algorithm was run in a new task with a particular prior and for a set number of steps. We propose lifelong learning algorithms that use our new bounds as learning objectives. Our proposed algorithms are evaluated in several lifelong multi-armed bandit problems and are found to perform better than a baseline method that does not use generalisation bounds.},
+  bibtex_show={true}
 }
