@@ -7,39 +7,39 @@ lectures:
     term: Fall
     link: "www.google.com"
     schedule:
-      - week: 1
+      - week: 0
         topic: "Learning Theory Recap"
         slides: "assets/teaching/rl_2021/rl-lec1.pdf"
-      - week: 2
+      - week: 1
         topic: "Deep Learning Recap"
         slides: "assets/teaching/rl_2021/rl-lec-a1.pdf"
-      - week: 3
+      - week: 2
         topic: "Reinforcement Learning Intro"
         slides: "assets/teaching/rl_2021/rl-lec2.pdf"
-      - week: 4
+      - week: 3
         topic: "Markov Decision Processes"
         slides: "assets/teaching/rl_2021/rl-lec3.pdf"
         #additional_reading: Sutton Ch 4
         #application: "assets/teaching/rl_2021/app1-cart-pole.ipynb"
-      - week: 5
+      - week: 4
         topic: "Dynamic Programming"
         slides: "assets/teaching/rl_2021/rl-lec4.pdf"
-      - week: 6
+      - week: 5
         topic: "Value-Based Simulation"
-        slides: "assets/teaching/rl_2021/rl-lec.pdf"
-      - week: 7
+        slides: "assets/teaching/rl_2021/rl-lec5.pdf"
+      - week: 6
         topic: "Approximate TD Methods"
         slides: "assets/teaching/rl_2021/rl-lec6.pdf"
-      - week: 8
+      - week: 7
         topic: "Policy Gradient Methods"
         slides: "assets/teaching/rl_2021/rl-lec7.pdf"
-      - week: 9
+      - week: 8
         topic: "Modern Bayesian Inference"
         slides: "assets/teaching/rl_2021/rl-lec8.pdf"
-      - week: 10
+      - week: 9
         topic: "Dynamics Modeling with Neural Nets"
         slides: "assets/teaching/rl_2021/rl-lec9.pdf"
-      - week: 11
+      - week: 10
         topic: "Model-Based Reinforcement Learning"
         slides: "assets/teaching/rl_2021/rl-lec10.pdf"
        
