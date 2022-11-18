@@ -20,29 +20,9 @@
                 <div class="col-sm-1.5">
                 <a href="{{ item.slides | absolute_url  }}" target="_blank" rel="noopener noreferrer">slides</a>&nbsp;
                 </div>
-                <div class="col-sm-3">
-                {% if item.additional_reading %}
-                  {% if item.additional_reading contains '.pdf' %}
-                    <a href="{{ item.additional_reading | absolute_url }}" target="_blank" rel="noopener noreferrer">additional reading</a>&nbsp;
-                  {% else %}
-                    additional reading: {{ item.additional_reading }}&nbsp;
-                  {% endif %}
-                {% endif %}
-                </div>
-                <div class="col-sm-1.5">
-                {% if item.application %}
-                  {% if item.application contains '.ipynb' %}
-                    <a href="{{ item.application | absolute_url }}" target="_blank" rel="noopener noreferrer">application</a>&nbsp;
-                  {% else %}
-                    application: {{ item.application }}&nbsp;
-                  {% endif %}
-                {% endif %}
-                </div>
-            
             </div>
           </li>
         {% endfor %}
-        
         
         </ul>
     
