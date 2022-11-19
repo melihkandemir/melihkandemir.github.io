@@ -10,9 +10,9 @@ profile:
   image: melih_kandemir.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Ø14-603B-1</p>
-    <p>Department of Mathematics and Computer Science</p>
-    <p>Odense, Denmark</p>
+    <p>Address: Campusvej 55, 5230,</p>
+    <p>         Odense, Denmark</p>
+    <p>Office:  Ø14-603B-1</p>
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
