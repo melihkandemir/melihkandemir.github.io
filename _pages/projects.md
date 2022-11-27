@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Projects for which the ADIN Lab receives direct funding from external sources.
 nav: true
