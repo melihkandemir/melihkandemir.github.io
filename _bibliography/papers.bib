@@ -11,6 +11,32 @@
 @string{miccai = {International Conference on Medical Image Computing and Computer Assisted Interventions}}
 @string{ecml = {European Conference on Machine Learning}}
 @string{aabi = {Advances in Approximate Bayesian Inference (AABI) Symposium}}
+@string{tmlr = {Transaction on Machine Learning Research (TMLR)}}
+
+@inproceedings{bahareh2022pac4sac,
+  abbr={arXiv},
+  title={PAC-Bayesian Soft Actor-Critic Learning},
+  author = {Tasdighi, B. and Akgül, A. and Brink, K.K. and Kandemir, M.},
+  booktitle=arxiv,
+  year={2023},
+  url={https://arxiv.org/abs/2301.12776},
+  html={https://arxiv.org/abs/2301.12776},
+  abstract={Actor-critic algorithms address the dual goals of reinforcement learning, policy evaluation and improvement, via two separate function approximators. The practicality of this approach comes at the expense of training instability, caused mainly by the destructive effect of the approximation errors of the critic on the actor. We tackle this bottleneck by employing an existing Probably Approximately Correct (PAC) Bayesian bound for the first time as the critic training objective of the Soft Actor-Critic (SAC) algorithm. We further demonstrate that the online learning performance improves significantly when a stochastic actor explores multiple futures by critic-guided random search. We observe our resulting algorithm to compare favorably to the state of the art on multiple classical control and locomotion tasks in both sample efficiency and asymptotic performance.},
+  bibtex_show={true}
+}
+
+@article{look2023cheap,
+  abbr={TMLR},
+  title={Cheap and Deterministic Inference for Deep State-Space Models of Interacting Dynamical Systems},
+  author={Look, A. and Rakitsch, B. and Kandemir, M. and Peters, J.},
+  journal=pami,
+  year={2023},
+  url={https://openreview.net/forum?id=dqgdBy4Uv5&noteId=xKtcWgwdxX},
+  html={https://openreview.net/forum?id=dqgdBy4Uv5&noteId=xKtcWgwdxX},
+  selected={false},
+  bibtex_show={true},
+  abstract={Graph neural networks are often used to model interacting dynamical systems since they gracefully scale to systems with a varying and high number of agents. While there has been much progress made for deterministic interacting systems, modeling is much more challenging for stochastic systems in which one is interested in obtaining a predictive distribution over future trajectories. Existing methods are either computationally slow since they rely on Monte Carlo sampling or make simplifying assumptions such that the predictive distribution is unimodal. In this work, we present a deep state-space model which employs graph neural networks in order to model the underlying interacting dynamical system. The predictive distribution is multimodal and has the form of a Gaussian mixture model, where the moments of the Gaussian components can be computed via deterministic moment matching rules. Our moment matching scheme can be exploited for sample-free inference leading to more efficient and stable training compared to Monte Carlo alternatives. Furthermore, we propose structured approximations to the covariance matrices of the Gaussian components in order to scale up to systems with many agents. We benchmark our novel framework on two challenging autonomous driving datasets. Both confirm the benefits of our method compared to state-of-the-art methods. We further demonstrate the usefulness of our individual contributions in a carefully designed ablation study and provide a detailed empirical runtime analysis of our proposed covariance approximations.}
+}
 
 @inproceedings{flyn2022pacbayes,
   abbr={arXiv},
