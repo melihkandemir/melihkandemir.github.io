@@ -111,6 +111,8 @@
       items:
         - IEEE PAMI
         - IEEE TNNLS
+        - JMLR
+        - TMLR
         - IEEE Cybernetics
         - Nature Scientific Reports
         - Medical Image Analysis
