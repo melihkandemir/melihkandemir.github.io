@@ -12,22 +12,15 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: PhD in Computer Science
       institution: Aalto University, Espoo, Finland
       year: 2013
-      description: 
-        - Computer Science
-    - title: MSc
+    - title: MSc in Computer Science
       institution: Bilkent University, Ankara, Turkiye
       year: 2008
-      description:
-        - Computer Science
-    - title: BSc
+    - title: BSc in Computer Science
       institution: Hacettepe University, Ankara, Turkiye
       year: 2005
-      description:
-        - Computer Science
-
 
 - title: Experience
   type: time_table
