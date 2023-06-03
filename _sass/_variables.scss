@@ -28,7 +28,7 @@ $grey-color-light:    #fee1a1;
 $grey-color-dark:     #0B1340;
 $grey-900:            lighten($grey-color, 5%);
 
-$white-color: #ffffff !default;
+$white-color: lighten($grey-color-light, 5%);
 $black-color: #000000 !default;
 
 
