@@ -1,5 +1,5 @@
 ---
-title: ADIN Lab
+title: Team
 redirect:   https://adinlab.github.io
 layout:     redirect
 nav: true
