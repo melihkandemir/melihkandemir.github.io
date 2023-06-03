@@ -7,7 +7,8 @@
       value: >
         Campusvej 55, 5230,
         Odense, Denmark
-        Ø14-603B-1
+    - name: Office 
+      value: Ø14-603B-1
 
 - title: Experience
   type: time_table
@@ -85,29 +86,12 @@
 - title: Academic Service
   type: nested_list
   contents:
-    - title: <u>Editorship:</u> 
+    - title: <b>Editorship:</b>
       items: 
         - <a href="https://www.frontiersin.org/research-topics/33296/probabilistic-methods-for-off-line-robot-learning">Frontiers in Robotics and AI</a> (2022)
         - <a href="https://www.mdpi.com/journal/applsci/special_issues/Deep_Learning_with_Differential_Equations">MDPI Applied Sciences Journal</a> (2022)
-    - title: <u>Program Committee:</u>
-      items:
-        - NeurIPS
-        - ICML
-        - AISTATS
-        - ICLR
-        - CVPR
-        - ECCV
-        - MICCAI
-        - BMVC
-        - ICRA
-    - title: <u>Reviewer:</u> 
-      items:
-        - IEEE PAMI
-        - IEEE TNNLS
-        - JMLR
-        - TMLR
-        - IEEE Cybernetics
-        - Nature Scientific Reports
-        - Medical Image Analysis
-        - Neurocomputing 
+    - title: <b>Program Committee:</b>
+      items: NeurIPS, ICML, AISTATS, ICLR, CVPR, ECCV, MICCAI, BMVC, ICRA
+    - title: <b>Reviewer:</b>
+      items: IEEE PAMI, IEEE TNNLS, JMLR, TMLR, IEEE Cybernetics, Nature Scientific Reports, Medical Image Analysis, Neural Networks, Neurocomputing 
 
