@@ -9,19 +9,6 @@
         Odense, Denmark
         Ø14-603B-1
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD in Computer Science
-      institution: Aalto University, Espoo, Finland
-      year: 2013
-    - title: MSc in Computer Science
-      institution: Bilkent University, Ankara, Turkiye
-      year: 2008
-    - title: BSc in Computer Science
-      institution: Hacettepe University, Ankara, Turkiye
-      year: 2005
-
 - title: Experience
   type: time_table
   contents:
@@ -40,6 +27,19 @@
     - title: Postdoctoral Researcher
       institution: Heidelberg University, Heidelberg Collaboratory for Image Processing
       year: 2013 - 2016
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Computer Science
+      institution: Aalto University, Espoo, Finland
+      year: 2013
+    - title: MSc in Computer Science
+      institution: Bilkent University, Ankara, Turkiye
+      year: 2008
+    - title: BSc in Computer Science
+      institution: Hacettepe University, Ankara, Turkiye
+      year: 2005
 
 - title: Teaching experience as main lecturer
   type: nested_list
