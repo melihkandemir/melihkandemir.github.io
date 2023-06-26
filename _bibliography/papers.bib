@@ -12,6 +12,20 @@
 @string{ecml = {European Conference on Machine Learning}}
 @string{aabi = {Advances in Approximate Bayesian Inference Symposium}}
 @string{tmlr = {Transactions on Machine Learning Research}}
+@string{mdpi = {MDPI Applied Sciences}}
+
+@article{sahin2023alreg,
+  abbr={MDPI},
+  title={ALReg: Registration of 3D Point Clouds Using Active Learning},
+  author={Sahin, Y.H. and Karabacak, O. and Kandemir, M. and Unal, G.},
+  journal=mdpi,
+  year={2023},
+  url={https://www.mdpi.com/2076-3417/13/13/7422},
+  html={https://www.mdpi.com/2076-3417/13/13/7422},
+  selected={false},
+  bibtex_show={true},
+  abstract={After the success of deep learning in point cloud segmentation and classification tasks, it has also been adopted as common practice in point cloud registration applications. State-of-the-art point cloud registration methods generally deal with this problem as a regression task to find the underlying rotation and translation between two point clouds. However, given two point clouds, the transformation between them could be calculated using only definitive point subsets from each cloud. Furthermore, training time is still a major problem among the current registration networks, whereas using a selective approach to define the informative point subsets can lead to reduced network training times. To that end, we developed ALReg, an active learning procedure to select a limited subset of point clouds to train the network. Each of the point clouds in the training set is divided into superpoints (small pieces of each cloud) and the training process is started with a small amount of them. By actively selecting new superpoints and including them in the training process, only a prescribed amount of data is used, hence the time needed to converge drastically decreases. We used DeepBBS, FMR, and DCP methods as our baselines to prove our proposed ALReg method. We trained DeepBBS and DCP on the ModelNet40 dataset and FMR on the 7Scenes dataset. Using 25% of the training data for ModelNet and 4% for the 7Scenes, better or similar accuracy scores are obtained in less than 20% of their original training times. The trained models are also tested on the 3DMatch dataset and better results are obtained than the original FMR training procedure.},
+}
 
 @inproceedings{bahareh2022pac4sac,
   abbr={arXiv},
