@@ -52,16 +52,17 @@
   abstract={Graph neural networks are often used to model interacting dynamical systems since they gracefully scale to systems with a varying and high number of agents. While there has been much progress made for deterministic interacting systems, modeling is much more challenging for stochastic systems in which one is interested in obtaining a predictive distribution over future trajectories. Existing methods are either computationally slow since they rely on Monte Carlo sampling or make simplifying assumptions such that the predictive distribution is unimodal. In this work, we present a deep state-space model which employs graph neural networks in order to model the underlying interacting dynamical system. The predictive distribution is multimodal and has the form of a Gaussian mixture model, where the moments of the Gaussian components can be computed via deterministic moment matching rules. Our moment matching scheme can be exploited for sample-free inference leading to more efficient and stable training compared to Monte Carlo alternatives. Furthermore, we propose structured approximations to the covariance matrices of the Gaussian components in order to scale up to systems with many agents. We benchmark our novel framework on two challenging autonomous driving datasets. Both confirm the benefits of our method compared to state-of-the-art methods. We further demonstrate the usefulness of our individual contributions in a carefully designed ablation study and provide a detailed empirical runtime analysis of our proposed covariance approximations.}
 }
 
-@inproceedings{flyn2022pacbayes,
-  abbr={arXiv},
+@article{flyn2022pacbayes,
+  abbr={PAMI},
   title={PAC-Bayes Bounds for Bandit Problems: A Survey and Experimental Comparison},
   author = {Flynn, H. and Reeb, D. and Kandemir, M. and Peters, J.},
-  booktitle=arxiv,
-  year={2022},
+  journal=pami,
+  year={2023},
   url={https://arxiv.org/abs/2211.16110},
   html={https://arxiv.org/abs/2211.16110},
   abstract={PAC-Bayes has recently re-emerged as an effective theory with which one can derive principled learning algorithms with tight performance guarantees. However, applications of PAC-Bayes to bandit problems are relatively rare, which is a great misfortune. Many decision-making problems in healthcare, finance and natural sciences can be modelled as bandit problems. In many of these applications, principled algorithms with strong performance guarantees would be very much appreciated. This survey provides an overview of PAC-Bayes performance bounds for bandit problems and an experimental comparison of these bounds. Our experimental comparison has revealed that available PAC-Bayes upper bounds on the cumulative regret are loose, whereas available PAC-Bayes lower bounds on the expected reward can be surprisingly tight. We found that an offline contextual bandit algorithm that learns a policy by optimising a PAC-Bayes bound was able to learn randomised neural network polices with competitive expected reward and non-vacuous performance guarantees.},
-  bibtex_show={true}
+  bibtex_show={true},
+  selected={true}
 }
 
 
@@ -381,7 +382,7 @@
   year={2015},
   organization={PMLR},
   bibtex_show={true},
-  selected={true},
+  selected={false},
   html={http://proceedings.mlr.press/v37/kandemir15.pdf}
 }
 
