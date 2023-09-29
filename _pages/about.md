@@ -12,7 +12,7 @@ profile:
   address: >
     <p>Campusvej 55, 5230,</p>
     <p> Odense, Denmark</p>
-    <p>Ø14-603B-1</p>
+    <p>Ø13-511b-2</p>
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
