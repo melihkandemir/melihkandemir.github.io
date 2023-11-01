@@ -20,10 +20,9 @@ demo
  -->
 
 <!-- include html in a div -->
-<div id="demo" type="text/html" class="text/html" height='200'>
+<div class="text/html" height='200'>
     {% include 09.html %}
 </div>
 
- <embed type="text/html" data='{% include 09.html %}' width="500" height="200">
 
 </article>
