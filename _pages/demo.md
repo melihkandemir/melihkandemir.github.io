@@ -9,7 +9,7 @@ nav_order: 6
 <article>
 
 
-{% include '../assets/teaching/ml_2023/09 Learning and Controlling Dynamical Systems.html' %}
+{% include '09.html' %}
 
 
 </article>
