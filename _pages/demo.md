@@ -3,7 +3,7 @@ layout: page
 permalink: /demo/
 title: Demo
 description: 
-nav: true
+nav: false
 nav_order: 6
 ---
 <article>
