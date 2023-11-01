@@ -1,5 +1,5 @@
 ---
-layout: pgae
+layout: page
 permalink: /demo/
 title: Demo
 description: 
