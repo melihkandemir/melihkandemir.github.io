@@ -10,7 +10,14 @@ nav_order: 3
 
 {% assign sorted = site.data.teaching.lectures | sort: "year" | reverse %}
     {% for lecture in sorted %}
-    {% include lecture.html lecture=lecture %}
+        {% if lecture.source_type == 'pdf' %}
+            {% include teaching/lecture_pdf.html lecture=lecture %}
+        {% endif %}
+        {% if lecture.source_type == 'html' %}
+            {% include teaching/lecture_html.html lecture=lecture %}
+        {% endif %}
+
+
 {% endfor %}
 
 </article>

@@ -5,7 +5,7 @@ lectures:
     department: IMADA
     year: 2022
     term: Fall
-    link: "www.google.com"
+    source_type: pdf
     schedule:
       - week: 0
         topic: "Learning Theory Recap"
@@ -42,4 +42,17 @@ lectures:
       - week: 10
         topic: "Model-Based Reinforcement Learning"
         slides: "assets/teaching/rl_2021/rl-lec10.pdf"
-       
+  
+  - title: Introduction to Machine Learning
+    type: Main Lecturer
+    institution: University of Southern Denmark
+    department: IMADA
+    year: 2023
+    term: Fall
+    source_type: html
+    schedule:
+      - week: 1
+        topic: "Basic Concepts"
+        file: "assets/teaching/ml_2023/01_Basic_Concepts.html"
+
+        
