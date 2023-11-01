@@ -20,8 +20,13 @@ demo
  -->
 
 <!-- include html in a div -->
-<div class="text/html" height='200'>
+<!-- <div class="text/html" height='200'>
     {% include 09.html %}
+</div> -->
+
+<!-- include html in a div -->
+<div>
+<object type="text/html" data="_includes/09.html" width="500" height="200"> </object>
 </div>
 
 
