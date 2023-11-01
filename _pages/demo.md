@@ -12,11 +12,15 @@ demo
 <!-- <embed type="text/html" src="_includes/09.html" width="500" height="200"> -->
 
 
-
+<!-- 
 
  <embed type="text/html" src="_includes/09.html" width="500" height="200">
  <embed type="text/html" src="09.html" width="500" height="200">
  <embed type="text/html" src="09.html" width="500" height="200">
+ -->
+
+<!-- include html in a div -->
+<div w3-include-html="09.html"></div>
 
 
 </article>
