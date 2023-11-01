@@ -20,7 +20,9 @@ demo
  -->
 
 <!-- include html in a div -->
-<div w3-include-html="09.html"></div>
+<div id="demo" height='200'>
+    {% include 09.html %}
+</div>
 
 
 </article>
