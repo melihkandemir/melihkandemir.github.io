@@ -8,7 +8,7 @@ nav_order: 6
 ---
 <article>
 
-demo
+
 <!-- <embed type="text/html" src="_includes/09.html" width="500" height="200"> -->
 
 
@@ -25,9 +25,9 @@ demo
 </div> -->
 
 <!-- include html in a div -->
-<div>
+
 <object type="text/html" data="_includes/09.html" width="500" height="200"> </object>
-</div>
+
 
 
 </article>
