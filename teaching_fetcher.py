@@ -52,7 +52,7 @@ nav: false
 ---
 <article>
 
-    <iframe src="{base_path}{html_file}" width="100%" height="800"> </iframe>
+    <iframe src="{base_path}{html_file}" width="100%" height="600"> </iframe>
 
 </article>
 """
