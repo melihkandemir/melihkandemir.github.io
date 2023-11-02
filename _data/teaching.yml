@@ -54,5 +54,34 @@ lectures:
       - week: 1
         topic: "Basic Concepts"
         file: "assets/teaching/ml_2023/01_Basic_Concepts.html"
-
+      - week: 2
+        topic: "Linear Predictors"
+        file: "assets/teaching/ml_2023/02_Linear_Predictors.html"
+      - week: 3
+        topic: "Classification"
+        file: "assets/teaching/ml_2023/03_Classification.html"
+      - week: 4
+        topic: "Probability Theory"
+        file: "assets/teaching/ml_2023/04 Probability Theory.html"
+      - week: 5
+        topic: "Statistical Learning Theory"
+        file: "assets/teaching/ml_2023/05 Statistical Learning Theory.html"
+      - week: 6
+        topic: "Bayesian Learning"
+        file: "assets/teaching/ml_2023/06 Bayesian Learning.html"
+      - week: 7
+        topic: "Unsupervised Learning"
+        file: "assets/teaching/ml_2023/07 Unsupervised Learning.html"
+      - week: 8
+        topic: "Deep Learning"
+        file: "assets/teaching/ml_2023/08 Deep Learning.html"
+      - week: 9
+        topic: "Learning and Controlling Dynamical Systems"
+        file: "assets/teaching/ml_2023/09 Learning and Controlling Dynamical Systems.html"
+      - week: 10
+        topic: "Kernel Methods"
+        file: "assets/teaching/ml_2023/10 Kernel Methods.html"
+      - week: 11
+        topic: "Ensemble Methods"
+        file: "assets/teaching/ml_2023/11 Ensemble Methods.html"
         
