@@ -33,9 +33,11 @@ for lecture in lectures:
         topic = data['topic']
         html_file = data['file']
         url = data['url']
-        md_file = '_' + url + '.md'
-
+        md_file =  '_' + url + '.md'
         dir_name = os.path.dirname(md_file)
+
+        base_path = '../' * (len(dir_name.split('/')))
+
         os.makedirs(dir_name, exist_ok=True)
 
         with open(md_file, 'w') as f:
@@ -45,12 +47,12 @@ f"""\
 layout: page
 permalink: {url}
 title: {title} - {topic}
-description: {institution}, {term}, {year} 
+description: {institution}, {term}, {year}, Week {week}
 nav: false
 ---
 <article>
 
-    <object type="text/html" data="{webpage_url}{html_file}" width="500" height="200"> </object>
+    <iframe src="{base_path}{html_file}" width="100%" height="800"> </iframe>
 
 </article>
 """
