@@ -6,8 +6,4 @@ description: University of Southern Denmark, Fall, 2023
 nav: false
 ---
 
-<div class="row">
-    <div class="col-sm-12">
-        <object type="text/html" data="https://melihkandemir.github.io/assets/teaching/ml_2023/01_Basic_Concepts.html"> </object>
-    </div>
-</div>
+<object type="text/html" data="https://melihkandemir.github.io/assets/teaching/ml_2023/01_Basic_Concepts.html" width="100%"> </object>
