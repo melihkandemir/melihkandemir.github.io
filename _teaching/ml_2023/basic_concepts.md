@@ -7,7 +7,7 @@ nav: false
 ---
 <article>
 
-<iframe srcdoc="../../assets/teaching/ml_2023/01_Basic_Concepts.html"  height="800" width="100%"> </iframe>
+<object type="text/html" data="_teaching/ml_2023/01_Basic_Concepts.html"  height="200" width="500%"> </object>
 
 
 </article>
