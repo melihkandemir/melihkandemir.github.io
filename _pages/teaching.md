@@ -13,7 +13,7 @@ nav_order: 3
         {% if lecture.source_type == 'pdf' %}
             {% include teaching/lecture_pdf.html lecture=lecture %}
         {% endif %}
-        {% if lecture.source_type == 'html' %}
+        {% if lecture.source_type == 'notebook-html' %}
             {% include teaching/lecture_html.html lecture=lecture %}
         {% endif %}
 

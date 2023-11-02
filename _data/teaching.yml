@@ -49,39 +49,50 @@ lectures:
     department: IMADA
     year: 2023
     term: Fall
-    source_type: html
+    source_type: notebook-html
     schedule:
       - week: 1
         topic: "Basic Concepts"
         file: "assets/teaching/ml_2023/01_Basic_Concepts.html"
+        url: "teaching/ml_2023/basic_concepts"
       - week: 2
         topic: "Linear Predictors"
         file: "assets/teaching/ml_2023/02_Linear_Predictors.html"
+        url: "teaching/ml_2023/linear_predictors"
       - week: 3
         topic: "Classification"
         file: "assets/teaching/ml_2023/03_Classification.html"
+        url: "teaching/ml_2023/classification"
       - week: 4
         topic: "Probability Theory"
         file: "assets/teaching/ml_2023/04 Probability Theory.html"
+        url: "teaching/ml_2023/probability_theory"
       - week: 5
         topic: "Statistical Learning Theory"
         file: "assets/teaching/ml_2023/05 Statistical Learning Theory.html"
+        url: "teaching/ml_2023/statistical_learning_theory"
       - week: 6
         topic: "Bayesian Learning"
         file: "assets/teaching/ml_2023/06 Bayesian Learning.html"
+        url: "teaching/ml_2023/bayesian_learning"
       - week: 7
         topic: "Unsupervised Learning"
         file: "assets/teaching/ml_2023/07 Unsupervised Learning.html"
+        url: "teaching/ml_2023/unsupervised_learning"
       - week: 8
         topic: "Deep Learning"
         file: "assets/teaching/ml_2023/08 Deep Learning.html"
+        url: "teaching/ml_2023/deep_learning"
       - week: 9
         topic: "Learning and Controlling Dynamical Systems"
         file: "assets/teaching/ml_2023/09 Learning and Controlling Dynamical Systems.html"
+        url: "teaching/ml_2023/learning_and_controlling_dynamical_systems"
       - week: 10
         topic: "Kernel Methods"
         file: "assets/teaching/ml_2023/10 Kernel Methods.html"
+        url: "teaching/ml_2023/kernel_methods"
       - week: 11
         topic: "Ensemble Methods"
         file: "assets/teaching/ml_2023/11 Ensemble Methods.html"
+        url: "teaching/ml_2023/ensemble_methods"
         

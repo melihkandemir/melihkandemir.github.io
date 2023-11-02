@@ -14,13 +14,9 @@
         {% for item in sorted %}
           <li class="list-group">
             <div class="row">
-              <div class="col-sm-10">
-                 {{ item.week }}: {{ item.topic }}
-              </div>
-                <div class="col-sm-2">
-                    to be filled
-                <!-- <a href="{{ item.slides | absolute_url  }}" target="_blank" rel="noopener noreferrer">slides</a>&nbsp; -->
-                </div>
+              <a href="{{ item.url | absolute_url  }}" rel="noopener noreferrer">
+                {{ item.week }}: {{ item.topic }}
+              </a>&nbsp;
             </div>
           </li>
         {% endfor %}
