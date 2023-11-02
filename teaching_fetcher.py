@@ -1,6 +1,12 @@
 import os
 import yaml # pip install pyyaml
 
+config_path = '_config.yml'
+with open(config_path, 'r') as f:
+    config = yaml.load(f, Loader=yaml.FullLoader)
+
+webpage_url = config['url']
+
 data_path = '_data/teaching.yml'
 
 def get_teaching():
@@ -44,7 +50,7 @@ nav: false
 ---
 <article>
 
-    <object type="text/html" data="{html_file}" width="500" height="200"> </object>
+    <object type="text/html" data="{webpage_url}{html_file}" width="500" height="200"> </object>
 
 </article>
 """
