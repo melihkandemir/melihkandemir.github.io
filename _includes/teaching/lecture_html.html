@@ -14,9 +14,11 @@
         {% for item in sorted %}
           <li class="list-group">
             <div class="row">
-              <a href="{{ item.url | absolute_url  }}" rel="noopener noreferrer">
-                {{ item.week }}: {{ item.topic }}
-              </a>&nbsp;
+              <div class="col-sm-10">
+                <a href="{{ item.url | absolute_url  }}" rel="noopener noreferrer">
+                  {{ item.week }}: {{ item.topic }}
+                </a>&nbsp;
+              </div>
             </div>
           </li>
         {% endfor %}
