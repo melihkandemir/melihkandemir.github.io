@@ -9,39 +9,39 @@ lectures:
     schedule:
       - week: 0
         topic: "Learning Theory Recap"
-        file: "assets/teaching/rl_2021/rl-lec1.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec1.pdf"
       - week: 1
         topic: "Deep Learning Recap"
         slides: "assets/teaching/rl_2021/rl-lec-a1.pdf"
       - week: 2
         topic: "Reinforcement Learning Intro"
-        file: "assets/teaching/rl_2021/rl-lec2.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec2.pdf"
       - week: 3
         topic: "Markov Decision Processes"
-        file: "assets/teaching/rl_2021/rl-lec3.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec3.pdf"
         #additional_reading: Sutton Ch 4
         #application: "assets/teaching/rl_2021/app1-cart-pole.ipynb"
       - week: 4
         topic: "Dynamic Programming"
-        file: "assets/teaching/rl_2021/rl-lec4.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec4.pdf"
       - week: 5
         topic: "Value-Based Simulation"
-        file: "assets/teaching/rl_2021/rl-lec5.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec5.pdf"
       - week: 6
         topic: "Approximate TD Methods"
-        file: "assets/teaching/rl_2021/rl-lec6.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec6.pdf"
       - week: 7
         topic: "Policy Gradient Methods"
-        file: "assets/teaching/rl_2021/rl-lec7.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec7.pdf"
       - week: 8
         topic: "Modern Bayesian Inference"
-        file: "assets/teaching/rl_2021/rl-lec8.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec8.pdf"
       - week: 9
         file: "Dynamics Modeling with Neural Nets"
         slides: "assets/teaching/rl_2021/rl-lec9.pdf"
       - week: 10
         topic: "Model-Based Reinforcement Learning"
-        file: "assets/teaching/rl_2021/rl-lec10.pdf"
+        slides: "assets/teaching/rl_2021/rl-lec10.pdf"
   
   - title: Introduction to Machine Learning
     type: Main Lecturer
