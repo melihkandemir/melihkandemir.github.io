@@ -37,7 +37,7 @@ lectures:
         topic: "Modern Bayesian Inference"
         slides: "assets/teaching/rl_2021/rl-lec8.pdf"
       - week: 9
-        file: "Dynamics Modeling with Neural Nets"
+        topic: "Dynamics Modeling with Neural Nets"
         slides: "assets/teaching/rl_2021/rl-lec9.pdf"
       - week: 10
         topic: "Model-Based Reinforcement Learning"
