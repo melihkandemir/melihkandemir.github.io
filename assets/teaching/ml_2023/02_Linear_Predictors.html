@@ -7657,7 +7657,7 @@ Z=\begin{bmatrix}
 <p>As $p \rightarrow \infty$, we tend to get the <strong>Maximum norm</strong> ($L_\infty$), i.e. $||u||_\infty := \max \{|u_1|, \ldots, |u_d|\}$.</p>
 <p>We can use this norm to derive many nice metric spaces</p>
 <p>$dist(a,b) = ||a-b||_p$.</p>
-<p>Let us plot the behavior of these distances as a function of $P$. The red lines below are iso-contours of $||(a_1; a_2)||_p=1$ for different choices of $p$. As $p \rightarrow 0$, the norms get more conservative.</p>
+<p>Let us plot the behavior of these distances as a function of $P$. The red lines below are iso-contours of $||a_1 - a_2||_p=1$ for different choices of $p$. As $p \rightarrow 0$, the norms get more conservative.</p>
 </div>
 </div>
 </div>
@@ -7731,7 +7731,7 @@ Z=\begin{bmatrix}
 L_S(w) &amp;= w^\top Z^\top Zw - 2 w^\top Z\top y + \lambda w^\top w\\
   &amp;= w^\top (Z^\top Z + \lambda I )w - 2 w^\top Z\top y\\
   \Rightarrow &amp; \nabla_w L_S(w) = (Z^\top Z + \lambda I )w - Z^\top y := 0\\
-  \Rightarrow &amp; w_S = (Z^\top Z \textcolor{red}{+ \lambda I} )^{-1} Z^\top y.
+  \Rightarrow &amp; w_S = (Z^\top Z + \lambda I )^{-1} Z^\top y.
 \end{align*}</p>
 <p>The result, known as <strong>ridge regression</strong> differs from the least-squares solution by only the term in red. Such methods that induce sparse solutions by eliminating parameters that do not contribute to the prediction of the target quantity are known in statistics as <strong>parameter shrinkage</strong> methods. The regularizer of ridge regression is referred to as <strong>weight decay</strong>. The name is still in active use by some recent deep learning libraries.</p>
 <p>Let us next see ridge regression in action.</p>

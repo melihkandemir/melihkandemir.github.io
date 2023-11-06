@@ -7717,7 +7717,7 @@ boosting methods follow the recipe below for building such ensembles:</p>
 <li>A central <strong>server</strong> coordinates the training process.</li>
 <li>Clients do not share their data with the other clients or the server.</li>
 </ul>
-<p>Federated learning is a young and vibrant research field with only few established algorithms. A popular approach, called <strong>Federated Averaging (FedAvg)</strong>, applies the idea of regularization to federated learning. The pseudocode of the algorithm is as follows:</p>
+<p>Federated learning is a young and vibrant research field with only few established algorithms. A popular approach, called <strong>Federated Averaging (FedAvg)</strong>, applies the idea of stochastic gradient descent to federated learning. The pseudocode of the algorithm is as follows:</p>
 <ul>
 <li>Initialize the global parameters $\theta_g$ and regularization constant $\lambda &gt; 0$</li>
 <li>Repeat until communicated budget exhausted:<ul>
@@ -7734,7 +7734,7 @@ where $m = \sum_{k=1}^K m_k$.</li>
 </ul>
 </li>
 </ul>
-<p>The model would still work for other types of regularizers as long as they depend on the global parameters $\theta_g$. More details can be found at the original source:</p>
+<p>More details can be found at the original source:</p>
 <p><a href="https://arxiv.org/abs/1602.05629">McMahan, H.B. et al., (2017) Communication-Efficient Learning of Deep Networks from Decentralized Data, AISTATS, 2017</a></p>
 <p>There exist many other variants of federated learning that address different problems. For instance, <strong>personalized</strong> federated learning approaches assume that the clients have different data distributions and the goal of their communication is to transfer common knowledge between each other.</p>
 </div>
