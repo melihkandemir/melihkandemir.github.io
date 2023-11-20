@@ -55,6 +55,7 @@ lectures:
         topic: "Basic Concepts"
         file: "assets/teaching/ml_2023/01_Basic_Concepts.html"
         url: "teaching/ml_2023/basic_concepts"
+        slides: "assets/teaching/ml_2023/01_Basic_Concepts.ipynb"
       - week: 2
         topic: "Linear Predictors"
         file: "assets/teaching/ml_2023/02_Linear_Predictors.html"
