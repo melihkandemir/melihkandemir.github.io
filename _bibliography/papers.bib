@@ -15,6 +15,31 @@
 @string{mdpi = {MDPI Applied Sciences}}
 @string{acml = {Asian Conference on Machine Learning}}
 
+@inproceedings{akgul2022cddp,
+  abbr={L4DC},
+  title={Continual Learning of Multi-modal Dynamics with External Memory},
+  author = {Akgül, A. and Unal, G. and Kandemir, M.},
+  booktitle={Learning for Dynamics and Control Conference (L4DC)},
+  year={2024},
+  url={https://arxiv.org/abs/2203.00936},
+  html={https://arxiv.org/abs/2203.00936},
+  abstract={We study the problem of fitting a model to a dynamical environment when new modes of behavior emerge sequentially. The learning model is aware when a new mode appears, but it does not have access to the true modes of individual training sequences. We devise a novel continual learning method that maintains a descriptor of the mode of an encountered sequence in a neural episodic memory. We employ a Dirichlet Process prior on the attention weights of the memory to foster efficient storage of the mode descriptors. Our method performs continual learning by transferring knowledge across tasks by retrieving the descriptors of similar modes of past tasks to the mode of a current sequence and feeding this descriptor into its transition kernel as control input. We observe the continual learning performance of our method to compare favorably to the mainstream parameter transfer approach.},
+  bibtex_show={true}
+}
+
+@article{tasdighi2024probabilistic,
+  abbr={arXiv},
+  title = {Probabilistic Actor-Critic: Learning to Explore with PAC-Bayes Uncertainty},
+  author = {Tasdighi, B. and Werge, N. and Wu, Y. and Kandemir, M.},
+  booktitle=arxiv,
+  year = {2024},
+  url = {http://arxiv.org/abs/2402.03055v1},
+  html = {http://arxiv.org/abs/2402.03055v1},
+  selected = {false},
+  abstract = {We introduce Probabilistic Actor-Critic (PAC), a novel reinforcement learning algorithm with improved continuous control performance thanks to its ability to mitigate the exploration-exploitation trade-off. PAC achieves this by seamlessly integrating stochastic policies and critics, creating a dynamic synergy between the estimation of critic uncertainty and actor training. The key contribution of our PAC algorithm is that it explicitly models and infers epistemic uncertainty in the critic through Probably Approximately Correct-Bayesian (PAC-Bayes) analysis. This incorporation of critic uncertainty enables PAC to adapt its exploration strategy as it learns, guiding the actor's decision-making process. PAC compares favorably against fixed or pre-scheduled exploration schemes of the prior art. The synergy between stochastic policies and critics, guided by PAC-Bayes analysis, represents a fundamental step towards a more adaptive and effective exploration strategy in deep reinforcement learning. We report empirical evaluations demonstrating PAC's enhanced stability and improved performance over the state of the art in diverse continuous control problems.},
+  bibtex_show={true},
+  code={https://github.com/adinlab/ProbabilisticActorCritic}
+}
 
 @inproceedings{baykal2023edvae,
   abbr={arXiv},
@@ -142,19 +167,6 @@
   abstract={A probabilistic classifier with reliable predictive uncertainties i) fits successfully to the target domain data, ii) provides calibrated class probabilities in difficult regions of the target domain (e.g. class overlap), and iii) accurately identifies queries coming out of the target domain and reject them. We introduce an original combination of Evidential Deep Learning, Neural Processes, and Neural Turing Machines capable of providing all three essential properties mentioned above for total uncertainty quantification. We observe our method on three image classification benchmarks to consistently improve the in-domain uncertainty quantification, out-of-domain detection, and robustness against input perturbations with one single model. Our unified solution delivers an implementation-friendly and computationally efficient recipe for safety clearance and provides intellectual economy to an investigation of algorithmic roots of epistemic awareness in deep neural nets.},
   bibtex_show={true}
 }
-
-@inproceedings{akgul2022cddp,
-  abbr={arXiv},
-  title={Continual Learning of Multi-modal Dynamics with External Memory},
-  author = {Akgül, A. and Unal, G. and Kandemir, M.},
-  booktitle=arxiv,
-  year={2022},
-  url={https://arxiv.org/abs/2203.00936},
-  html={https://arxiv.org/abs/2203.00936},
-  abstract={We study the problem of fitting a model to a dynamical environment when new modes of behavior emerge sequentially. The learning model is aware when a new mode appears, but it does not have access to the true modes of individual training sequences. We devise a novel continual learning method that maintains a descriptor of the mode of an encountered sequence in a neural episodic memory. We employ a Dirichlet Process prior on the attention weights of the memory to foster efficient storage of the mode descriptors. Our method performs continual learning by transferring knowledge across tasks by retrieving the descriptors of similar modes of past tasks to the mode of a current sequence and feeding this descriptor into its transition kernel as control input. We observe the continual learning performance of our method to compare favorably to the mainstream parameter transfer approach.},
-  bibtex_show={true}
-}
-
 
 @article{look2022adeterministic,
   abbr={T-PAMI},
