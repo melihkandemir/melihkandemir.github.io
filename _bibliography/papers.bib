@@ -15,6 +15,18 @@
 @string{mdpi = {MDPI Applied Sciences}}
 @string{acml = {Asian Conference on Machine Learning}}
 
+@inproceedings{bahareh2024pac4sac,
+  abbr={arXiv},
+  title={PAC-Bayesian Soft Actor-Critic Learning},
+  author = {Tasdighi, B. and Akgül, A. and Brink, K.K. and Kandemir, M.},
+  booktitle=aabi,
+  year={2024},
+  url={https://arxiv.org/abs/2301.12776},
+  html={https://arxiv.org/abs/2301.12776},
+  abstract={Actor-critic algorithms address the dual goals of reinforcement learning, policy evaluation and improvement, via two separate function approximators. The practicality of this approach comes at the expense of training instability, caused mainly by the destructive effect of the approximation errors of the critic on the actor. We tackle this bottleneck by employing an existing Probably Approximately Correct (PAC) Bayesian bound for the first time as the critic training objective of the Soft Actor-Critic (SAC) algorithm. We further demonstrate that the online learning performance improves significantly when a stochastic actor explores multiple futures by critic-guided random search. We observe our resulting algorithm to compare favorably to the state of the art on multiple classical control and locomotion tasks in both sample efficiency and asymptotic performance.},
+  bibtex_show={true}
+}
+
 @inproceedings{akgul2022cddp,
   abbr={L4DC},
   title={Continual Learning of Multi-modal Dynamics with External Memory},
@@ -128,18 +140,6 @@
   selected={false},
   bibtex_show={true},
   abstract={After the success of deep learning in point cloud segmentation and classification tasks, it has also been adopted as common practice in point cloud registration applications. State-of-the-art point cloud registration methods generally deal with this problem as a regression task to find the underlying rotation and translation between two point clouds. However, given two point clouds, the transformation between them could be calculated using only definitive point subsets from each cloud. Furthermore, training time is still a major problem among the current registration networks, whereas using a selective approach to define the informative point subsets can lead to reduced network training times. To that end, we developed ALReg, an active learning procedure to select a limited subset of point clouds to train the network. Each of the point clouds in the training set is divided into superpoints (small pieces of each cloud) and the training process is started with a small amount of them. By actively selecting new superpoints and including them in the training process, only a prescribed amount of data is used, hence the time needed to converge drastically decreases. We used DeepBBS, FMR, and DCP methods as our baselines to prove our proposed ALReg method. We trained DeepBBS and DCP on the ModelNet40 dataset and FMR on the 7Scenes dataset. Using 25% of the training data for ModelNet and 4% for the 7Scenes, better or similar accuracy scores are obtained in less than 20% of their original training times. The trained models are also tested on the 3DMatch dataset and better results are obtained than the original FMR training procedure.},
-}
-
-@inproceedings{bahareh2022pac4sac,
-  abbr={arXiv},
-  title={PAC-Bayesian Soft Actor-Critic Learning},
-  author = {Tasdighi, B. and Akgül, A. and Brink, K.K. and Kandemir, M.},
-  booktitle=arxiv,
-  year={2023},
-  url={https://arxiv.org/abs/2301.12776},
-  html={https://arxiv.org/abs/2301.12776},
-  abstract={Actor-critic algorithms address the dual goals of reinforcement learning, policy evaluation and improvement, via two separate function approximators. The practicality of this approach comes at the expense of training instability, caused mainly by the destructive effect of the approximation errors of the critic on the actor. We tackle this bottleneck by employing an existing Probably Approximately Correct (PAC) Bayesian bound for the first time as the critic training objective of the Soft Actor-Critic (SAC) algorithm. We further demonstrate that the online learning performance improves significantly when a stochastic actor explores multiple futures by critic-guided random search. We observe our resulting algorithm to compare favorably to the state of the art on multiple classical control and locomotion tasks in both sample efficiency and asymptotic performance.},
-  bibtex_show={true}
 }
 
 @article{look2023cheap,
