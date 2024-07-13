@@ -15,6 +15,19 @@
 @string{mdpi = {MDPI Applied Sciences}}
 @string{acml = {Asian Conference on Machine Learning}}
 
+
+@article{baykal2024edvae,
+  abbr={PatRec},
+  title={EdVAE: Mitigating Codebook Collapse with Evidential Discrete Variational Autoencoders},
+  author = {Baykal, G. and Kandemir, M. and Unal, G.},
+  journal={Pattern Recognition},
+  year={2024},
+  url={https://arxiv.org/abs/2310.05718},
+  html={https://arxiv.org/abs/2310.05718},
+  abstract={Codebook collapse is a common problem in training deep generative models with discrete representation spaces like Vector Quantized Variational Autoencoders (VQ-VAEs). We observe that the same problem arises for the alternatively designed discrete variational autoencoders (dVAEs) whose encoder directly learns a distribution over the codebook embeddings to represent the data. We hypothesize that using the softmax function to obtain a probability distribution causes the codebook collapse by assigning overconfident probabilities to the best matching codebook elements. In this paper, we propose a novel way to incorporate evidential deep learning (EDL) instead of softmax to combat the codebook collapse problem of dVAE. We evidentially monitor the significance of attaining the probability distribution over the codebook embeddings, in contrast to softmax usage. Our experiments using various datasets show that our model, called EdVAE, mitigates codebook collapse while improving the reconstruction performance, and enhances the codebook usage compared to dVAE and VQ-VAE based models.},
+  bibtex_show={true}
+}
+
 @inproceedings{bahareh2024pac4sac,
   abbr={AABI},
   title={PAC-Bayesian Soft Actor-Critic Learning},
@@ -66,17 +79,7 @@
   code={https://github.com/adinlab/ProbabilisticActorCritic}
 }
 
-@inproceedings{baykal2023edvae,
-  abbr={arXiv},
-  title={EdVAE: Mitigating Codebook Collapse with Evidential Discrete Variational Autoencoders},
-  author = {Baykal, G. and Kandemir, M. and Unal, G.},
-  booktitle=arxiv,
-  year={2023},
-  url={https://arxiv.org/abs/2310.05718},
-  html={https://arxiv.org/abs/2310.05718},
-  abstract={Codebook collapse is a common problem in training deep generative models with discrete representation spaces like Vector Quantized Variational Autoencoders (VQ-VAEs). We observe that the same problem arises for the alternatively designed discrete variational autoencoders (dVAEs) whose encoder directly learns a distribution over the codebook embeddings to represent the data. We hypothesize that using the softmax function to obtain a probability distribution causes the codebook collapse by assigning overconfident probabilities to the best matching codebook elements. In this paper, we propose a novel way to incorporate evidential deep learning (EDL) instead of softmax to combat the codebook collapse problem of dVAE. We evidentially monitor the significance of attaining the probability distribution over the codebook embeddings, in contrast to softmax usage. Our experiments using various datasets show that our model, called EdVAE, mitigates codebook collapse while improving the reconstruction performance, and enhances the codebook usage compared to dVAE and VQ-VAE based models.},
-  bibtex_show={true}
-}
+
 
 @inproceedings{flynn2023improved,
   abbr={NeurIPS},
