@@ -16,6 +16,19 @@
 @string{acml = {Asian Conference on Machine Learning}}
 
 
+@inproceedings{akgul2024,
+  abbr={NeurIPS},
+  author =		 {Akgul, A. and Haussmann, M. and Kandemir, M.},
+  year =		 {2024},
+  title =		 {Deterministic Uncertainty Propagation for Improved Model-Based Offline Reinforcement Learning},
+  booktitle =		 neurips,
+  url = {https://arxiv.org/abs/2406.04088},
+  html = {https://arxiv.org/abs/2406.04088},
+  abstract = {Current approaches to model-based offline Reinforcement Learning (RL) often incorporate uncertainty-based reward penalization to address the distributional shift problem. While these approaches have achieved some success, we argue that this penalization introduces excessive conservatism, potentially resulting in suboptimal policies through underestimation. We identify as an important cause of over-penalization the lack of a reliable uncertainty estimator capable of propagating uncertainties in the Bellman operator. The common approach to calculating the penalty term relies on sampling-based uncertainty estimation, resulting in high variance. To address this challenge, we propose a novel method termed Moment Matching Offline Model-Based Policy Optimization (MOMBO). MOMBO learns a Q-function using moment matching, which allows us to deterministically propagate uncertainties through the Q-function. We evaluate MOMBO's performance across various environments and demonstrate empirically that MOMBO is a more stable and sample-efficient approach.},
+  selected = {true},
+  bibtex_show={true}
+}
+
 @article{baykal2024edvae,
   abbr={PatRec},
   title={EdVAE: Mitigating Codebook Collapse with Evidential Discrete Variational Autoencoders},
@@ -38,6 +51,17 @@
   html={https://arxiv.org/abs/2301.12776},
   abstract={Actor-critic algorithms address the dual goals of reinforcement learning, policy evaluation and improvement, via two separate function approximators. The practicality of this approach comes at the expense of training instability, caused mainly by the destructive effect of the approximation errors of the critic on the actor. We tackle this bottleneck by employing an existing Probably Approximately Correct (PAC) Bayesian bound for the first time as the critic training objective of the Soft Actor-Critic (SAC) algorithm. We further demonstrate that the online learning performance improves significantly when a stochastic actor explores multiple futures by critic-guided random search. We observe our resulting algorithm to compare favorably to the state of the art on multiple classical control and locomotion tasks in both sample efficiency and asymptotic performance.},
   bibtex_show={true}
+}
+
+@article{tasdighi2024exploring,
+      abbr={arXiv},
+      title={Exploring Pessimism and Optimism Dynamics in Deep Reinforcement Learning}, 
+      author={Tasdighi, B. and Werge, N. and Wu, Y.-s. and Kandemir, M.},
+      booktitle=arxiv,
+      year={2024},
+      url={https://arxiv.org/abs/2406.03890}, 
+      html={https://arxiv.org/abs/2406.03890},
+      abstract={Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent's ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between pessimism and optimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters. },
 }
 
 @inproceedings{akgul2022cddp,
