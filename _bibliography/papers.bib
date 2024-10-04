@@ -53,15 +53,18 @@
   bibtex_show={true}
 }
 
-@article{tasdighi2024exploring,
-      abbr={arXiv},
-      title={Exploring Pessimism and Optimism Dynamics in Deep Reinforcement Learning}, 
-      author={Tasdighi, B. and Werge, N. and Wu, Y.-s. and Kandemir, M.},
-      booktitle=arxiv,
-      year={2024},
-      url={https://arxiv.org/abs/2406.03890}, 
-      html={https://arxiv.org/abs/2406.03890},
-      abstract={Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent's ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between pessimism and optimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters. }
+@article{tasdighi2024pbac,
+  abbr={arXiv},
+  title = {Deep Exploration with PAC Bayes},
+  author = {Tasdighi, B. and Werge, N. and Wu, Y. and Kandemir, M.},
+  booktitle=arxiv,
+  year = {2024},
+  url = {https://arxiv.org/abs/2402.03055},
+  html = {https://arxiv.org/abs/2402.03055},
+  selected = {false},
+  abstract = {Reinforcement learning for continuous control under sparse rewards is an under-explored problem despite its significance in real life. Many complex skills build on intermediate ones as prerequisites. For instance, a humanoid locomotor has to learn how to stand before it can learn to walk. To cope with reward sparsity, a reinforcement learning agent has to perform deep exploration. However, existing deep exploration methods are designed for small discrete action spaces, and their successful generalization to state-of-the-art continuous control remains unproven. We address the deep exploration problem for the first time from a PAC-Bayesian perspective in the context of actor-critic learning. To do this, we quantify the error of the Bellman operator through a PAC-Bayes bound, where a bootstrapped ensemble of critic networks represents the posterior distribution, and their targets serve as a data-informed function-space prior. We derive an objective function from this bound and use it to train the critic ensemble. Each critic trains an individual actor network, implemented as a shared trunk and critic-specific heads. The agent performs deep exploration by acting deterministically on a randomly chosen actor head. Our proposed algorithm, named PAC-Bayesian Actor-Critic (PBAC), is the only algorithm to successfully discover sparse rewards on a diverse set of continuous control tasks with varying difficulty.},
+  bibtex_show={true},
+  code={https://github.com/adinlab/ProbabilisticActorCritic}
 }
 
 @inproceedings{akgul2022cddp,
@@ -89,20 +92,17 @@
   bibtex_show={true}
 }
 
-@article{tasdighi2024probabilistic,
-  abbr={arXiv},
-  title = {Probabilistic Actor-Critic: Learning to Explore with PAC-Bayes Uncertainty},
-  author = {Tasdighi, B. and Werge, N. and Wu, Y. and Kandemir, M.},
-  booktitle=arxiv,
-  year = {2024},
-  url = {http://arxiv.org/abs/2402.03055v1},
-  html = {http://arxiv.org/abs/2402.03055v1},
-  selected = {false},
-  abstract = {We introduce Probabilistic Actor-Critic (PAC), a novel reinforcement learning algorithm with improved continuous control performance thanks to its ability to mitigate the exploration-exploitation trade-off. PAC achieves this by seamlessly integrating stochastic policies and critics, creating a dynamic synergy between the estimation of critic uncertainty and actor training. The key contribution of our PAC algorithm is that it explicitly models and infers epistemic uncertainty in the critic through Probably Approximately Correct-Bayesian (PAC-Bayes) analysis. This incorporation of critic uncertainty enables PAC to adapt its exploration strategy as it learns, guiding the actor's decision-making process. PAC compares favorably against fixed or pre-scheduled exploration schemes of the prior art. The synergy between stochastic policies and critics, guided by PAC-Bayes analysis, represents a fundamental step towards a more adaptive and effective exploration strategy in deep reinforcement learning. We report empirical evaluations demonstrating PAC's enhanced stability and improved performance over the state of the art in diverse continuous control problems.},
-  bibtex_show={true},
-  code={https://github.com/adinlab/ProbabilisticActorCritic}
-}
 
+@article{tasdighi2024exploring,
+      abbr={arXiv},
+      title={Exploring Pessimism and Optimism Dynamics in Deep Reinforcement Learning}, 
+      author={Tasdighi, B. and Werge, N. and Wu, Y.-s. and Kandemir, M.},
+      booktitle=arxiv,
+      year={2024},
+      url={https://arxiv.org/abs/2406.03890}, 
+      html={https://arxiv.org/abs/2406.03890},
+      abstract={Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent's ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between pessimism and optimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters. }
+}
 
 
 @inproceedings{flynn2023improved,
