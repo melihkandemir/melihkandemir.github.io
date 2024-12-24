@@ -42,6 +42,16 @@
       institution: Hacettepe University, Ankara, Turkiye
       year: 2005
 
+- title: Grants
+  type: nested_list
+  contents:
+    - title: <b>Independent Research Fund Denmark (Single PI) </b>
+      items: 425032 EUR (2025-2029)
+    - title: <b>Carlsberg Foundation Semper Ardens Accelerate (Single PI)</b>
+      items: 671908 EUR (2022-2026)
+    - title: <b>Novo Nordisk Foundation Start Package (Single PI)</b>
+      items: 600000 EUR (2021-2026)
+      
 - title: Teaching experience as main lecturer
   type: nested_list
   contents:
@@ -90,7 +100,7 @@
   type: nested_list
   contents:
     - title: <b>Senior Program Committee:</b>
-      items: ECAI
+      items: AISTATS 2025, ECAI 2024, ECAI 2025
     - title: <b>Program Committee:</b>
       items: NeurIPS, ICML, AISTATS, ICLR, CVPR, ECCV, MICCAI, BMVC, ICRA
     - title: <b>Reviewer:</b>
