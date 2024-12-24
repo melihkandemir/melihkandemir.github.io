@@ -99,7 +99,7 @@
 - title: Academic Service
   type: nested_list
   contents:
-    - title: <b>Senior Program Committee:</b>
+    - title: <b>Area Chair /  SPC:</b>
       items: AISTATS 2025, ECAI 2024, ECAI 2025
     - title: <b>Poster Chair:</b>
       items: D3A 2024
