@@ -52,7 +52,6 @@
     - title: <b>Novo Nordisk Foundation Start Package (Single PI)</b>
       items: 600000 EUR (2021-2026)
   
-
 - title: Academic Service
   type: nested_list
   contents:
@@ -108,4 +107,3 @@
     - title: Bayesian Inference
       items: 
         - Heidelberg University (Spring 2015)
-
