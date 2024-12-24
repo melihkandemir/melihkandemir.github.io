@@ -109,3 +109,38 @@
     - title: <b>Reviewer:</b>
       items: IEEE PAMI, IEEE TNNLS, JMLR, TMLR, Nature Scientific Reports, Medical Image Analysis 
 
+ - title: Teaching experience as main lecturer
+  type: nested_list
+  contents:
+    - title: <a href="https://melihkandemir.github.io/teaching/reinforcement-learning-course">Reinforcement Learning</a>
+      items:
+        - SDU (since Fall 2021)
+        - Ozyegin University (Fall 2017), 
+    - title: Machine Learning
+      items: 
+        - SDU (Fall 2023)
+    - title: Data Mining and Machine Learning
+      items: 
+        - SDU (Spring 2022, Spring 2023)
+    - title: Causal Inference
+      items: 
+        - Istanbul Technical University (Fall 2020)
+    - title: Modern Bayesian Inference for Machine Learning
+      items: 
+        - Heidelberg University (Fall 2019)
+    - title: Statistical Machine Learning
+      items: 
+        - Ozyegin University (Spring 2017, Spring 2018)
+    - title: Introduction to Programming
+      items: 
+        - Ozyegin University (Spring 2017)
+    - title: Computer Graphics
+      items: 
+        - Ozyegin University (Spring 2017)
+    - title: Gaussian Processes
+      items: 
+        - Heidelberg University (Spring 2016)
+    - title: Bayesian Inference
+      items: 
+        - Heidelberg University (Spring 2015)
+
