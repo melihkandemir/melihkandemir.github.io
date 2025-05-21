@@ -1,34 +1,39 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: melih_kandemir.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Campusvej 55, 5230,</p>
+    <p> Odense, Denmark</p>
+    <p>Ø13-511b-2</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Melih is an Associate Professor of Machine Learning at the <a href="https://www.sdu.dk/">University of Southern Denmark</a>, <a href="https://www.sdu.dk/en/om_sdu/institutter_centre/imada_matematik_og_datalogi">Department of Mathematics and Computer Science (IMADA)</a>.
+Melih earned his PhD degree from <a href="https://www.sdu.dk/">Aalto University</a> in 2013 under the supervision of Prof. Samuel Kaski. He worked as a postdoctoral researcher at Heidelberg University with Prof. Fred Hamprecht and as an assistant professor at Ozyegin University in Istanbul, Turkey. Prior to joining SDU, Melih was leading a research group at <a href="https://bosch-ai.com">Bosch Center for Artificial Intelligence</a>.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Melih is the founder and PI of the <a href="https://adinlab.github.io">SDU Adaptive Intelligence (ADIN) Lab<a/>, which pursues basic research on Bayesian inference and stochastic process modeling with deep neural nets with application to reinforcement learning and continual learning. Melih is proud to be an <a href="https://ellis.eu/members">ELLIS Member</a>, the society of the top artificial intelligence researchers in the Europe.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Melih is fascinated by both popular and technical aspects of natural sciences, especially physics and biology. His leisure time goes to thinking wishfully about their applications to the development of environment-friendly technologies.
+
+Melih is in love with his wife Fatos and his daughter Sehnaz.
+
+Follow the link <a href="https://outlook.office.com/bookwithme/user/899c66e2eda841f49436292aeef99592@imada.sdu.dk/meetingtype/sTAyvVKU7keRSDx3EcrH2Q2?anonymous&ep=mlink">[here]</a> to book an appointment.
