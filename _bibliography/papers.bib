@@ -1,115 +1,717 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{neurips = {Neural Information Processing Systems}}
+@string{iclr = {International Conference on Learning Representations}}
+@string{icml = {International Conference on Machine Learning}}
+@string{arxiv = {arXiv Preprint}}
+@string{pami = {IEEE Transactions on Pattern Analysis and Machine Intelligence}}
+@string{aistats = {International Conference on Artificial Intelligence and Statistics}}
+@string{uai = {International Conference on Uncertainty in Artificial Intelligence}}
+@string{miccai = {International Conference on Medical Image Computing and Computer Assisted Interventions}}
+@string{ecml = {European Conference on Machine Learning}}
+@string{aabi = {Advances in Approximate Bayesian Inference Symposium}}
+@string{tmlr = {Transactions on Machine Learning Research}}
+@string{mdpi = {MDPI Applied Sciences}}
+@string{acml = {Asian Conference on Machine Learning}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+
+
+@article{akgul2025improving,
+  abbr={arXiv},
+  title = {Improving Plasticity in Non-stationary Reinforcement Learning with Evidential Proximal Policy Optimization},
+  author = {Akgul, B. and Baykal, G. and Haussmann, M. and Kandemir, M.},
+  booktitle=arxiv,
+  year = {2025},
+  url = {https://arxiv.org/abs/2503.01468},
+  html = {https://arxiv.org/abs/2503.01468},
+  selected = {false},
+  abstract = {Reinforcement learning for continuous control under sparse rewards is an under-explored problem despite its significance in real life. Many complex skills build on intermediate ones as prerequisites. For instance, a humanoid locomotor has to learn how to stand before it can learn to walk. To cope with reward sparsity, a reinforcement learning agent has to perform deep exploration. However, existing deep exploration methods are designed for small discrete action spaces, and their successful generalization to state-of-the-art continuous control remains unproven. We address the deep exploration problem for the first time from a PAC-Bayesian perspective in the context of actor-critic learning. To do this, we quantify the error of the Bellman operator through a PAC-Bayes bound, where a bootstrapped ensemble of critic networks represents the posterior distribution, and their targets serve as a data-informed function-space prior. We derive an objective function from this bound and use it to train the critic ensemble. Each critic trains an individual actor network, implemented as a shared trunk and critic-specific heads. The agent performs deep exploration by acting deterministically on a randomly chosen actor head. Our proposed algorithm, named PAC-Bayesian Actor-Critic (PBAC), is the only algorithm to successfully discover sparse rewards on a diverse set of continuous control tasks with varying difficulty.},
+  bibtex_show={true}
 }
 
-@book{einstein1956investigations,
+@inproceedings{akgul2024,
+  abbr={NeurIPS},
+  author =		 {Akgul, A. and Haussmann, M. and Kandemir, M.},
+  year =		 {2024},
+  title =		 {Deterministic Uncertainty Propagation for Improved Model-Based Offline Reinforcement Learning},
+  booktitle =		 neurips,
+  url = {https://arxiv.org/abs/2406.04088},
+  html = {https://arxiv.org/abs/2406.04088},
+  abstract = {Current approaches to model-based offline Reinforcement Learning (RL) often incorporate uncertainty-based reward penalization to address the distributional shift problem. While these approaches have achieved some success, we argue that this penalization introduces excessive conservatism, potentially resulting in suboptimal policies through underestimation. We identify as an important cause of over-penalization the lack of a reliable uncertainty estimator capable of propagating uncertainties in the Bellman operator. The common approach to calculating the penalty term relies on sampling-based uncertainty estimation, resulting in high variance. To address this challenge, we propose a novel method termed Moment Matching Offline Model-Based Policy Optimization (MOMBO). MOMBO learns a Q-function using moment matching, which allows us to deterministically propagate uncertainties through the Q-function. We evaluate MOMBO's performance across various environments and demonstrate empirically that MOMBO is a more stable and sample-efficient approach.},
+  selected = {true},
+  bibtex_show={true}
+}
+
+@article{baykal2024edvae,
+  abbr={PatRec},
+  title={EdVAE: Mitigating Codebook Collapse with Evidential Discrete Variational Autoencoders},
+  author = {Baykal, G. and Kandemir, M. and Unal, G.},
+  journal={Pattern Recognition},
+  year={2024},
+  url={https://arxiv.org/abs/2310.05718},
+  html={https://arxiv.org/abs/2310.05718},
+  abstract={Codebook collapse is a common problem in training deep generative models with discrete representation spaces like Vector Quantized Variational Autoencoders (VQ-VAEs). We observe that the same problem arises for the alternatively designed discrete variational autoencoders (dVAEs) whose encoder directly learns a distribution over the codebook embeddings to represent the data. We hypothesize that using the softmax function to obtain a probability distribution causes the codebook collapse by assigning overconfident probabilities to the best matching codebook elements. In this paper, we propose a novel way to incorporate evidential deep learning (EDL) instead of softmax to combat the codebook collapse problem of dVAE. We evidentially monitor the significance of attaining the probability distribution over the codebook embeddings, in contrast to softmax usage. Our experiments using various datasets show that our model, called EdVAE, mitigates codebook collapse while improving the reconstruction performance, and enhances the codebook usage compared to dVAE and VQ-VAE based models.},
+  bibtex_show={true}
+}
+
+@inproceedings{bahareh2024pac4sac,
+  abbr={AABI},
+  title={PAC-Bayesian Soft Actor-Critic Learning},
+  author = {Tasdighi, B. and Akgül, A. and Brink, K.K. and Kandemir, M.},
+  booktitle=aabi,
+  year={2024},
+  url={https://arxiv.org/abs/2301.12776},
+  html={https://arxiv.org/abs/2301.12776},
+  abstract={Actor-critic algorithms address the dual goals of reinforcement learning, policy evaluation and improvement, via two separate function approximators. The practicality of this approach comes at the expense of training instability, caused mainly by the destructive effect of the approximation errors of the critic on the actor. We tackle this bottleneck by employing an existing Probably Approximately Correct (PAC) Bayesian bound for the first time as the critic training objective of the Soft Actor-Critic (SAC) algorithm. We further demonstrate that the online learning performance improves significantly when a stochastic actor explores multiple futures by critic-guided random search. We observe our resulting algorithm to compare favorably to the state of the art on multiple classical control and locomotion tasks in both sample efficiency and asymptotic performance.},
+  bibtex_show={true}
+}
+
+@article{tasdighi2024pbac,
+  abbr={arXiv},
+  title = {Deep Exploration with PAC Bayes},
+  author = {Tasdighi, B. and Werge, N. and Wu, Y. and Kandemir, M.},
+  booktitle=arxiv,
+  year = {2024},
+  url = {https://arxiv.org/abs/2402.03055},
+  html = {https://arxiv.org/abs/2402.03055},
+  selected = {false},
+  abstract = {Reinforcement learning for continuous control under sparse rewards is an under-explored problem despite its significance in real life. Many complex skills build on intermediate ones as prerequisites. For instance, a humanoid locomotor has to learn how to stand before it can learn to walk. To cope with reward sparsity, a reinforcement learning agent has to perform deep exploration. However, existing deep exploration methods are designed for small discrete action spaces, and their successful generalization to state-of-the-art continuous control remains unproven. We address the deep exploration problem for the first time from a PAC-Bayesian perspective in the context of actor-critic learning. To do this, we quantify the error of the Bellman operator through a PAC-Bayes bound, where a bootstrapped ensemble of critic networks represents the posterior distribution, and their targets serve as a data-informed function-space prior. We derive an objective function from this bound and use it to train the critic ensemble. Each critic trains an individual actor network, implemented as a shared trunk and critic-specific heads. The agent performs deep exploration by acting deterministically on a randomly chosen actor head. Our proposed algorithm, named PAC-Bayesian Actor-Critic (PBAC), is the only algorithm to successfully discover sparse rewards on a diverse set of continuous control tasks with varying difficulty.},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  code={https://github.com/adinlab/ProbabilisticActorCritic}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@inproceedings{akgul2022cddp,
+  abbr={L4DC},
+  title={Continual Learning of Multi-modal Dynamics with External Memory},
+  author = {Akgül, A. and Unal, G. and Kandemir, M.},
+  booktitle={Learning for Dynamics and Control Conference (L4DC)},
+  year={2024},
+  url={https://arxiv.org/abs/2203.00936},
+  html={https://arxiv.org/abs/2203.00936},
+  abstract={We study the problem of fitting a model to a dynamical environment when new modes of behavior emerge sequentially. The learning model is aware when a new mode appears, but it does not have access to the true modes of individual training sequences. We devise a novel continual learning method that maintains a descriptor of the mode of an encountered sequence in a neural episodic memory. We employ a Dirichlet Process prior on the attention weights of the memory to foster efficient storage of the mode descriptors. Our method performs continual learning by transferring knowledge across tasks by retrieving the descriptors of similar modes of past tasks to the mode of a current sequence and feeding this descriptor into its transition kernel as control input. We observe the continual learning performance of our method to compare favorably to the mainstream parameter transfer approach.},
+  bibtex_show={true}
+}
+
+@inproceedings{asan2024calibrating,
+  abbr={ICLR},
+  title={Calibrating Bayesian UNet++ for Sub-Seasonal Forecasting},
+  author={Asan, B. and Akgül, A. and Unal, A. and Kandemir, M. and Unal, G.},
+  booktitle={Workshop on Tackling Climate Change with Machine Learning},
+  year={2024},
+  url={https://arxiv.org/abs/2403.16612},
+  html={https://arxiv.org/abs/2403.16612},
+  selected={false},
+  abstract={Seasonal forecasting is a crucial task when it comes to detecting the extreme heat and colds that occur due to climate change. Confidence in the predictions should be reliable since a small increase in the temperatures in a year has a big impact on the world. Calibration of the neural networks provides a way to ensure our confidence in the predictions. However, calibrating regression models is an under-researched topic, especially in forecasters. We calibrate a UNet++ based architecture, which was shown to outperform physics-based models in temperature anomalies. We show that with a slight trade-off between prediction error and calibration error, it is possible to get more reliable and sharper forecasts. We believe that calibration should be an important part of safety-critical machine learning applications such as weather forecasters.},
+  bibtex_show={true}
+}
+
+
+@article{tasdighi2024exploring,
+      abbr={arXiv},
+      title={Exploring Pessimism and Optimism Dynamics in Deep Reinforcement Learning}, 
+      author={Tasdighi, B. and Werge, N. and Wu, Y.-s. and Kandemir, M.},
+      booktitle=arxiv,
+      year={2024},
+      url={https://arxiv.org/abs/2406.03890}, 
+      html={https://arxiv.org/abs/2406.03890},
+      abstract={Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent's ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between pessimism and optimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters. }
+}
+
+
+@inproceedings{flynn2023improved,
+  abbr={NeurIPS},
+  author =		 {Flynn, H. and  Reeb, D. and  Kandemir, M. and  Peters, J.},
+  year =		 {2023},
+  title =		 {Improved Algorithms for Stochastic Linear Bandits Using Tail Bounds for Martingale Mixtures},
+  booktitle =		 neurips,
+  url = {https://arxiv.org/abs/2309.14298},
+  html = {https://arxiv.org/abs/2309.14298},
+  abstract = {We present improved algorithms with worst-case regret guarantees for the stochastic linear bandit problem. The widely used "optimism in the face of uncertainty" principle reduces a stochastic bandit problem to the construction of a confidence sequence for the unknown reward function. The performance of the resulting bandit algorithm depends on the size of the confidence sequence, with smaller confidence sets yielding better empirical performance and stronger regret guarantees. In this work, we use a novel tail bound for adaptive martingale mixtures to construct confidence sequences which are suitable for stochastic bandits. These confidence sequences allow for efficient action selection via convex programming. We prove that a linear bandit algorithm based on our confidence sequences is guaranteed to achieve competitive worst-case regret. We show that our confidence sequences are tighter than competitors, both empirically and theoretically. Finally, we demonstrate that our tighter confidence sequences give improved performance in several hyperparameter tuning tasks.},
+  selected = {true},
+  bibtex_show={true}
+}
+
+@article{unal2023meta,
+  abbr={TMLR},
+  title={Meta Continual Learning on Graphs with Experience Replay},
+  author={Unal, A. and Akg{\"u}l, A. and Kandemir, M. and Unal, G.},
+  journal=tmlr,
+  year={2023},
+  url={https://openreview.net/forum?id=8tnrh56P5W},
+  html={https://openreview.net/forum?id=8tnrh56P5W},
+  selected={false},
+  abstract={Continual learning is a machine learning approach where the challenge is that a constructed learning model executes incoming tasks while maintaining its performance over the earlier tasks. In order to address this issue, we devise a technique that combines two uniquely important concepts in machine learning, namely "replay buffer" and "meta learning", aiming to exploit the best of two worlds. In this method, the model weights are initially computed by using the current task dataset. Next, the dataset of the current task is merged with the stored samples from the earlier tasks and the model weights are updated using the combined dataset. This aids in preventing the model weights converging to the optimal parameters of the current task and enables the preservation of information from earlier tasks. We choose to adapt our technique to graph data structure and the task of node classification on graphs. We introduce MetaCLGraph, which outperforms the baseline methods over various graph datasets including Citeseer, Corafull, Arxiv, and Reddit. This method illustrates the potential of combining replay buffer and meta learning in the field of continual learning on graphs.},
+  bibtex_show={true}
+}
+
+@inproceedings{weilbach2023estimation,
+  abbr={ACML},
+  title={Estimation of Counterfactual Interventions under Uncertainties},
+  author={Weilbach, J. and Gerwinn, S. and Kandemir, M. and Fraenzle, M.},
+  booktitle=acml,
+  url={https://arxiv.org/abs/2309.08332},
+  html ={https://arxiv.org/abs/2309.08332},
+  abstract={Counterfactual analysis is intuitively performed by humans on a daily basis eg. "What should I have done differently to get the loan approved?". Such counterfactual questions also steer the formulation of scientific hypotheses. More formally it provides insights about potential improvements of a system by inferring the effects of hypothetical interventions into a past observation of the system's behaviour which plays a prominent role in a variety of industrial applications. Due to the hypothetical nature of such analysis, counterfactual distributions are inherently ambiguous. This ambiguity is particularly challenging in continuous settings in which a continuum of explanations exist for the same observation. In this paper, we address this problem by following a hierarchical Bayesian approach which explicitly models such uncertainty. In particular, we derive counterfactual distributions for a Bayesian Warped Gaussian Process thereby allowing for non-Gaussian distributions and non-additive noise. We illustrate the properties our approach on a synthetic and on a semi-synthetic example and show its performance when used within an algorithmic recourse downstream task.},
+  year={2023},
+  bibtex_show={true}
+}
+
+@article{flyn2022pacbayes,
+  abbr={T-PAMI},
+  title={PAC-Bayes Bounds for Bandit Problems: A Survey and Experimental Comparison},
+  author = {Flynn, H. and Reeb, D. and Kandemir, M. and Peters, J.},
+  journal=pami,
+  year={2023},
+  url={https://arxiv.org/abs/2211.16110},
+  html={https://arxiv.org/abs/2211.16110},
+  abstract={PAC-Bayes has recently re-emerged as an effective theory with which one can derive principled learning algorithms with tight performance guarantees. However, applications of PAC-Bayes to bandit problems are relatively rare, which is a great misfortune. Many decision-making problems in healthcare, finance and natural sciences can be modelled as bandit problems. In many of these applications, principled algorithms with strong performance guarantees would be very much appreciated. This survey provides an overview of PAC-Bayes performance bounds for bandit problems and an experimental comparison of these bounds. Our experimental comparison has revealed that available PAC-Bayes upper bounds on the cumulative regret are loose, whereas available PAC-Bayes lower bounds on the expected reward can be surprisingly tight. We found that an offline contextual bandit algorithm that learns a policy by optimising a PAC-Bayes bound was able to learn randomised neural network polices with competitive expected reward and non-vacuous performance guarantees.},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  selected={true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@article{werge2023bof,
+  abbr={arXiv},
+  title={BOF-UCB: A Bayesian-Optimistic Frequentist Algorithm for Non-Stationary Contextual Bandits},
+  author={Werge, N. and Akgül, A. and Kandemir, M.},
+  journal=arxiv,
+  year={2023},
+  selected={false},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/2307.03587},
+  url={https://arxiv.org/abs/2307.03587},
+  abstract={We propose a novel Bayesian-Optimistic Frequentist Upper Confidence Bound (BOF-UCB) algorithm for stochastic contextual linear bandits in non-stationary environments. This unique combination of Bayesian and frequentist principles enhances adaptability and performance in dynamic settings. The BOF-UCB algorithm utilizes sequential Bayesian updates to infer the posterior distribution of the unknown regression parameter, and subsequently employs a frequentist approach to compute the Upper Confidence Bound (UCB) by maximizing the expected reward over the posterior distribution. We provide theoretical guarantees of BOF-UCB's performance and demonstrate its effectiveness in balancing exploration and exploitation on synthetic datasets and classical control tasks in a reinforcement learning setting. Our results show that BOF-UCB outperforms existing methods, making it a promising solution for sequential decision-making in non-stationary environments.}
+}
+
+@article{sahin2023alreg,
+  abbr={MDPI},
+  title={ALReg: Registration of 3D Point Clouds Using Active Learning},
+  author={Sahin, Y.H. and Karabacak, O. and Kandemir, M. and Unal, G.},
+  journal=mdpi,
+  year={2023},
+  url={https://www.mdpi.com/2076-3417/13/13/7422},
+  html={https://www.mdpi.com/2076-3417/13/13/7422},
+  selected={false},
+  bibtex_show={true},
+  abstract={After the success of deep learning in point cloud segmentation and classification tasks, it has also been adopted as common practice in point cloud registration applications. State-of-the-art point cloud registration methods generally deal with this problem as a regression task to find the underlying rotation and translation between two point clouds. However, given two point clouds, the transformation between them could be calculated using only definitive point subsets from each cloud. Furthermore, training time is still a major problem among the current registration networks, whereas using a selective approach to define the informative point subsets can lead to reduced network training times. To that end, we developed ALReg, an active learning procedure to select a limited subset of point clouds to train the network. Each of the point clouds in the training set is divided into superpoints (small pieces of each cloud) and the training process is started with a small amount of them. By actively selecting new superpoints and including them in the training process, only a prescribed amount of data is used, hence the time needed to converge drastically decreases. We used DeepBBS, FMR, and DCP methods as our baselines to prove our proposed ALReg method. We trained DeepBBS and DCP on the ModelNet40 dataset and FMR on the 7Scenes dataset. Using 25% of the training data for ModelNet and 4% for the 7Scenes, better or similar accuracy scores are obtained in less than 20% of their original training times. The trained models are also tested on the 3DMatch dataset and better results are obtained than the original FMR training procedure.},
+}
+
+@article{look2023cheap,
+  abbr={TMLR},
+  title={Cheap and Deterministic Inference for Deep State-Space Models of Interacting Dynamical Systems},
+  author={Look, A. and Rakitsch, B. and Kandemir, M. and Peters, J.},
+  journal=tmlr,
+  year={2023},
+  url={https://openreview.net/forum?id=dqgdBy4Uv5&noteId=xKtcWgwdxX},
+  html={https://openreview.net/forum?id=dqgdBy4Uv5&noteId=xKtcWgwdxX},
+  selected={false},
+  bibtex_show={true},
+  abstract={Graph neural networks are often used to model interacting dynamical systems since they gracefully scale to systems with a varying and high number of agents. While there has been much progress made for deterministic interacting systems, modeling is much more challenging for stochastic systems in which one is interested in obtaining a predictive distribution over future trajectories. Existing methods are either computationally slow since they rely on Monte Carlo sampling or make simplifying assumptions such that the predictive distribution is unimodal. In this work, we present a deep state-space model which employs graph neural networks in order to model the underlying interacting dynamical system. The predictive distribution is multimodal and has the form of a Gaussian mixture model, where the moments of the Gaussian components can be computed via deterministic moment matching rules. Our moment matching scheme can be exploited for sample-free inference leading to more efficient and stable training compared to Monte Carlo alternatives. Furthermore, we propose structured approximations to the covariance matrices of the Gaussian components in order to scale up to systems with many agents. We benchmark our novel framework on two challenging autonomous driving datasets. Both confirm the benefits of our method compared to state-of-the-art methods. We further demonstrate the usefulness of our individual contributions in a carefully designed ablation study and provide a detailed empirical runtime analysis of our proposed covariance approximations.}
+}
+
+
+@inproceedings{yildiz2022learning,
+  abbr={NeurIPS},
+  title={Learning Interacting Dynamical Systems with Latent Gaussian Process ODEs},
+  author={Yildiz, C. and Kandemir, M. and Rakitsch, B.},
+  booktitle=neurips,
+  year={2022},
+  url={https://arxiv.org/abs/2205.11894},
+  html={https://arxiv.org/abs/2205.11894},
+  abstract={We study for the first time uncertainty-aware modeling of continuous-time dynamics of interacting objects. We introduce a new model that decomposes independent dynamics of single objects accurately from their interactions. By employing latent Gaussian process ordinary differential equations, our model infers both independent dynamics and their interactions with reliable uncertainty estimates. In our formulation, each object is represented as a graph node and interactions are modeled by accumulating the messages coming from neighboring objects. We show that efficient inference of such a complex network of variables is possible with modern variational sparse Gaussian process inference techniques. We empirically demonstrate that our model improves the reliability of long-term predictions over neural network based alternatives and it successfully handles missing dynamic or static information. Furthermore, we observe that only our model can successfully encapsulate independent dynamics and interaction information in distinct functions and show the benefit from this disentanglement in extrapolation scenarios.},
+  bibtex_show={true}
+}
+
+@inproceedings{kandemir2022evidential,
+  abbr={ICLR},
+  title={Evidential Turing Processes},
+  author={Kandemir, M. and Akgül, A. and Haussmann, M. and Unal, G.},
+  booktitle=iclr,
+  year={2022},
+  url={https://openreview.net/forum?id=84NMXTHYe-},
+  html={https://openreview.net/forum?id=84NMXTHYe-},
   selected={true},
-  inspirehep_id = {3255}
+  abstract={A probabilistic classifier with reliable predictive uncertainties i) fits successfully to the target domain data, ii) provides calibrated class probabilities in difficult regions of the target domain (e.g. class overlap), and iii) accurately identifies queries coming out of the target domain and reject them. We introduce an original combination of Evidential Deep Learning, Neural Processes, and Neural Turing Machines capable of providing all three essential properties mentioned above for total uncertainty quantification. We observe our method on three image classification benchmarks to consistently improve the in-domain uncertainty quantification, out-of-domain detection, and robustness against input perturbations with one single model. Our unified solution delivers an implementation-friendly and computationally efficient recipe for safety clearance and provides intellectual economy to an investigation of algorithmic roots of epistemic awareness in deep neural nets.},
+  bibtex_show={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+@article{look2022adeterministic,
+  abbr={T-PAMI},
+  title={A Deterministic Approximation to Neural SDEs},
+  author={Look, A. and Kandemir, M. and Rakitsch, B. and Peters, J.},
+  journal=pami,
+  year={2022},
+  url={https://arxiv.org/abs/2006.08973},
+  html={https://arxiv.org/abs/2006.08973},
+  publisher={IEEE},
+  selected={true},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
+  abstract={Neural Stochastic Differential Equations (NSDEs) model the drift and diffusion functions of a stochastic process as neural networks. While NSDEs are known to make accurate predictions, their uncertainty quantification properties haven been remained unexplored so far. We report the empirical finding that obtaining well-calibrated uncertainty estimations from NSDEs is computationally prohibitive. As a remedy, we develop a computationally affordable deterministic scheme which accurately approximates the transition kernel, when dynamics is governed by a NSDE. Our method introduces a bidimensional moment matching algorithm: vertical along the neural net layers and horizontal along the time direction, which benefits from an original combination of effective approximations. Our deterministic approximation of the transition kernel is applicable  to both training and prediction. We observe in multiple experiments that the uncertainty calibration quality of our method can be matched by Monte Carlo sampling only after introducing high computation cost. Thanks to the numerical stability of deterministic training, our method also provides improvement in prediction accuracy.}
+}
+
+@inproceedings{lungi2022gpssm,
+  abbr={L4DC},
+  title={Traversing Time with Multi-Resolution Gaussian Process State-Space Models},
+  author={Longi, K. and Lindinger, J. and Duennbier, O. and Kandemir, M. and Klami, A. and Rakitsch, B},
+  booktitle={Learning for Dynamics and Control Conference},
+  year={2022},
+  url={https://proceedings.mlr.press/v168/longi22a/longi22a.pdf},
+  html={https://proceedings.mlr.press/v168/longi22a.html},
+  selected={false},
+  abstract={Gaussian Process state-space models capture complex temporal dependencies in a principled manner by placing a Gaussian Process prior on the transition function. These models have a natural interpretation as discretized stochastic differential equations, but inference for long sequences with fast and slow transitions is difficult. Fast transitions need tight discretizations whereas slow transitions require backpropagating the gradients over long subtrajectories. We propose a novel Gaussian process state-space architecture composed of multiple components, each trained on a different resolution, to model effects on different timescales. The combined model allows traversing time on adaptive scales, providing efficient inference for arbitrarily long sequences with complex dynamics. We benchmark our novel method on semi-synthetic data and on an engine modeling task. In both experiments, our approach compares favorably against its state-of-the-art alternatives that operate on a single time-scale only.},
+  bibtex_show={true}
+}
+
+@article{flynn2022pac,
+  abbr={DMKD},
+  title={PAC-Bayesian lifelong learning for multi-armed bandits},
+  author={Flynn, H. and Reeb, D. and Kandemir, M. and Peters, J.},
+  journal={Data Mining and Knowledge Discovery},
+  year={2022},
+  publisher={Springer},
+  url={https://link.springer.com/article/10.1007/s10618-022-00825-4},
+  html={https://link.springer.com/article/10.1007/s10618-022-00825-4},
+  selected={false},
+  abstract={We present a PAC-Bayesian analysis of lifelong learning. In the lifelong learning problem, a sequence of learning tasks is observed one-at-a-time, and the goal is to transfer information acquired from previous tasks to new learning tasks. We consider the case when each learning task is a multi-armed bandit problem. We derive lower bounds on the expected average reward that would be obtained if a given multi-armed bandit algorithm was run in a new task with a particular prior and for a set number of steps. We propose lifelong learning algorithms that use our new bounds as learning objectives. Our proposed algorithms are evaluated in several lifelong multi-armed bandit problems and are found to perform better than a baseline method that does not use generalisation bounds.},
+  bibtex_show={true}
+}
+
+@inproceedings{weilbach2021inferring,
+  abbr={ICML},
+  title={Inferring the Structure of Ordinary Differential Equations},
+  author={Weilbach, J. and Gerwinn, S. and Weilbach, C. and Kandemir, M.},
+  booktitle={ICML Time Series Workshop},
+  year={2021},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/2107.07345}
+}
+
+@inproceedings{haussmann2021learning,
+  abbr={AISTATS},
+  title={Learning Partially Known Stochastic Dynamics with Empirical PAC Bayes},
+  author={Haussmann, M. and Gerwinn, S. and Look, A. and Rakitsch, B. and Kandemir, M.},
+  booktitle=aistats,
+  year={2021},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/2006.09914}
+}
+
+@inproceedings{look2020differentiable,
+  abbr={NeurIPS},
+  title={Differentiable Implicit Layers},
+  author={Look, A. and Doneva, S. and Kandemir, M. and Gemulla, R. and Peters, J.},
+  booktitle={NeurIPS ML for Engineering Workshop},
+  year={2020},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/2010.07078}
+}
+
+@inproceedings{haussmann2020bayesian,
+  abbr={AABI},
+  title={Bayesian Evidential Deep Learning with PAC Regularization},
+  author={Haussmann, M. and Gerwinn, S. and Kandemir, M.},
+  booktitle=aabi,
+  year={2020},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/1906.00816}
+}
+
+@inproceedings{haussmann2019deep,
+  abbr={IJCAI},
+  title={Deep Active Learning with Adaptive Acquisition},
+  author={Hau{\ss}mann, M. and Hamprecht, F.A. and Kandemir, M.},
+  booktitle={International Joint Conference on Artificial Intelligence},
+  year={2019},
+  bibtex_show={true},
+  selected={true},
+  html={https://arxiv.org/abs/1906.11471}
+}
+
+@inproceedings{look2019differential,
+  abbr={NeurIPS},
+  title={Differential Bayesian Neural Nets},
+  author={Look, A. and Kandemir, M.},
+  booktitle={NeurIPS Bayesian Deep Learning Workshop},
+  year={2019},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/1912.00796}
+}
+
+@inproceedings{haussmann2019sampling,
+  abbr={UAI},
+  title={{Sampling-Free Variational Inference of Bayesian Neural Nets with Variance Backpropagation}},
+  author={Haussmann, M. and Hamprecht, F.A. and Kandemir, M.},
+  booktitle=uai,
+  pages={arXiv--preprint},
+  year={2019},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/1805.07654}
+}
+
+
+@article{kandemir2018variational,
+  abbr={Journal},
+  title={{Variational Closed-Form Deep Neural Net Inference}},
+  author={Kandemir, M.},
+  journal={Pattern Recognition Letters},
+  volume={112},
+  pages={145--151},
+  year={2018},
+  publisher={North-Holland},
+  bibtex_show={true},
+  html={https://www.sciencedirect.com/science/article/abs/pii/S0167865518302861}
+}
+
+@inproceedings{sensoy2018evidential,
+  abbr={NeurIPS},
+  title={Evidential Deep Learning to Quantify Classification Uncertainty},
+  author={Sensoy, M. and Kaplan, L. and Kandemir, M.},
+  booktitle=neurips,
+  pages={3179--3189},
+  year={2018},
+  bibtex_show={true},
+  selected={true},
+  html={https://papers.nips.cc/paper/2018/hash/a981f2b708044d6fb4a71a1463242520-Abstract.html}
+}
+
+@inproceedings{gursun2018context,
+  abbr={icccn},
+  title={{On Context-Aware DDoS Attacks using Deep Generative Networks}},
+  author={G{\"u}rsun, G. and Sensoy, M. and Kandemir, M.},
+  booktitle={International Conference on Computer Communication and Networks (ICCCN)},
+  pages={1--9},
+  year={2018},
+  organization={IEEE},
+  bibtex_show={true},
+  html={https://ieeexplore.ieee.org/document/8487336}
+}
+
+@article{kandemir2018supervising,
+  abbr={Journal},
+  title={{Supervising Topic Models with Gaussian Processes}},
+  author={Kandemir, M. and Keke{\c{c}}, T. and Yeniterzi, R.},
+  journal={Pattern Recognition},
+  volume={77},
+  pages={226--236},
+  year={2018},
+  bibtex_show={true},
+  html={https://www.sciencedirect.com/science/article/abs/pii/S0031320317305150}
+}
+
+@inproceedings{haussmann2017variational,
+  abbr={CVPR},
+  title={Variational Bayesian Multiple Instance Learning with Gaussian Processes},
+  author={Hau{\ss}mann, M. and Hamprecht, F.A. and Kandemir, M.},
+  booktitle={Computer Vision and Pattern Recognition},
+  year={2017},
+  bibtex_show={true},
+  html={https://openaccess.thecvf.com/content_cvpr_2017/papers/Haussmann_Variational_Bayesian_Multiple_CVPR_2017_paper.pdf}
+}
+
+@inproceedings{narmanlioglu2017prediction,
+  abbr={NoF},
+  title={Prediction of Active UE Number with Bayesian Neural Networks for Self-Organizing LTE Networks},
+  author={Narmanlioglu, O. and Zeydan, E. and Kandemir, M. and Kranda, T.},
+  booktitle={International Conference on the Network of the Future (NOF)},
+  pages={73--78},
+  year={2017},
+  organization={IEEE},
+  bibtex_show={true},
+  html={https://ieeexplore.ieee.org/document/8251223?reload=true}
+}
+
+@inproceedings{borstel2016gaussian,
+  abbr={ECCV},
+  title={Gaussian Process Density Counting from Weak Supervision},
+  author={Borstel, M.v. and Kandemir, M. and Schmidt, P. and Rao, M.K. and Rajamani, K. and Hamprecht, F.A.},
+  booktitle={European Conference on Computer Vision},
+  pages={365--380},
+  year={2016},
+  organization={Springer, Cham},
+  bibtex_show={true},
+  html={https://hci.iwr.uni-heidelberg.de/sites/default/files/profiles/mkandemi/files/borstel16eccv.pdf}
+}
+
+@inproceedings{kandemir2016variational,
+  abbr={BMVC},
+  title={Variational Weakly Supervised Gaussian Processes},
+  author={Kandemir, M. and Hau{\ss}mann, M. and Diego, F. and Rajamani, K. and Van Der Laak, J. and Hamprecht, F.A.},
+  booktitle={British Machine Vision Conference},
+  pages={71--1},
+  year={2016},
+  bibtex_show={true},
+  html={http://www.bmva.org/bmvc/2016/papers/paper071/paper071.pdf}
+}
+
+@article{rani2016multiple,
+  abbr={Journal},
+  title={Multiple Instance Learning: Robust Validation on Retinopathy of Prematurity},
+  author={Rani, P. and Elagiri, R. and Rajamani, K. and Kandemir, M. and Singh, D.},
+  journal={International Journal of Control Theory and Applicatioms},
+  volume={9},
+  pages={451--459},
+  year={2016},
+  bibtex_show={true},
+  html={https://www.researchgate.net/publication/310260933_Multiple_Instance_Learning_Robust_Validation_on_Retinopathy_of_Prematurity}
+}
+
+@article{kandemir2015computer,
+  abbr={journal},
+  title={Computer-Aided Diagnosis from Weak Supervision: A Benchmarking Study},
+  author={Kandemir, M. and Hamprecht, F.A.},
+  journal={Computerized medical imaging and graphics},
+  volume={42},
+  pages={44--50},
+  year={2015},
+  bibtex_show={true},
+  html={https://www.sciencedirect.com/science/article/abs/pii/S0895611114001852}
+}
+
+@inproceedings{kandemir2015cell,
+  abbr={miccai},
+  title={Cell Event Detection in Phase-Contrast Microscopy Sequences from Few Annotations},
+  author={Kandemir, M. and Wojek, C. and Hamprecht, F.A.},
+  booktitle=miccai,
+  pages={316--323},
+  year={2015},
+  organization={Springer},
+  bibtex_show={true},
+  html={https://hci.iwr.uni-heidelberg.de/sites/default/files/publications/files/364534553/kandemir_15_cell.pdf}
+}
+
+@inproceedings{rani2015detection,
+  abbr={ICACCI},
+  title={Detection of Retinopathy of Prematurity using Multiple Instance Learning},
+  author={Rani, P. and Rajkumar, E. Ramalingam and Rajamani, K. and Kandemir, M. and Singh, D.},
+  booktitle={International Conference on Advances in Computing, Communications and Informatics (ICACCI)},
+  pages={2233--2237},
+  year={2015},
+  organization={IEEE},
+  bibtex_show={true},
+  html={https://ieeexplore.ieee.org/document/7275949}
+}
+
+@article{kauppi2015towards,
+  abbr={Journal},
+  title={Towards Brain-Activity-Controlled Information Retrieval: Decoding Image Relevance from MEG Signals},
+  author={Kauppi, J.P. and Kandemir, M. and Saarinen, V.M. and Hirvenkari, L. and Parkkonen, L. and Klami, A. and Hari, R. and Kaski, S.},
+  journal={NeuroImage},
+  volume={112},
+  pages={288--298},
+  year={2015},
+  publisher={Elsevier},
+  bibtex_show={true},
+  html={https://www.sciencedirect.com/science/article/abs/pii/S1053811915000026}
+}
+
+@inproceedings{kandemir2015asymmetric,
+  abbr={ICML},
+  title={Asymmetric Transfer Learning with Deep Gaussian Processes},
+  author={Kandemir, M.},
+  booktitle=icml,
+  pages={730--738},
+  year={2015},
+  organization={PMLR},
+  bibtex_show={true},
+  selected={false},
+  html={http://proceedings.mlr.press/v37/kandemir15.pdf}
+}
+
+@inproceedings{kandemir2015deep,
+  abbr={PMLR},
+  title={The Deep Feed-Forward Gaussian Process: An Effective Generalization to Covariance Priors},
+  author={Kandemir, M. and Hamprecht, F. A.},
+  booktitle={Feature Extraction: Modern Questions and Challenges},
+  year={2015},
+  bibtex_show={true},
+  html={https://proceedings.mlr.press/v44/kandemir15jmlr.html}
+}
+
+@inproceedings{kandemir2014empowering,
+  abbr={MICCAI},
+  title={Empowering Multiple Instance Histopathology Cancer Diagnosis by Cell Graphs},
+  author={Kandemir, M. and Zhang, C. and Hamprecht, F.A.},
+  booktitle=miccai,
+  pages={228--235},
+  year={2014},
+  organization={Springer},
+  bibtex_show={true},
+  html={https://link.springer.com/chapter/10.1007/978-3-319-10470-6_29}
+}
+
+@inproceedings{kandemir2014digital,
+  abbr={ISBI},
+  title={Digital Pathology: Multiple Instance Learning can Detect Barrett's Cancer},
+  author={Kandemir, M. and Feuchtinger, A. and Walch, A. and Hamprecht, F.A.},
+  booktitle={International Symposium on Biomedical Imaging (ISBI)},
+  pages={1348--1351},
+  year={2014},
+  organization={IEEE},
+  bibtex_show={true},
+  html={https://ieeexplore.ieee.org/document/6868127}
+}
+
+
+@inproceedings{kandemir2014instance,
+  abbr={UAI},
+  title={Instance Label Prediction by Dirichlet Process Multiple Instance Learning},
+  author={Kandemir, M. and Hamprecht, F. A.},
+  booktitle=uai,
+  year={2014},
+  bibtex_show={true},
+  html={https://auai.org/uai2014/proceedings/individuals/54.pdf}
+}
+
+
+@inproceedings{kandemir2014event,
+  abbr={MICCAI},
+  title={Event Detection by Feature Unpredictability in Phase-Contrast Videos of Cell Cultures},
+  author={Kandemir, M. and Rubio, J.C. and Schmidt, U. and Wojek, C. and Welbl, J. and Ommer, B. and Hamprecht, F.A.},
+  booktitle=miccai,
+  pages={154--161},
+  year={2014},
+  organization={Springer},
+  bibtex_show={true},
+  html={https://link.springer.com/chapter/10.1007/978-3-319-10470-6_20}
+}
+
+@inproceedings{straehle2014multiple,
+  title={Multiple Instance Learning with Response-Optimized Random Forests},
+  author={Straehle, C. and Kandemir, M. and Koethe, U. and Hamprecht, F.A.},
+  booktitle={International Conference on Pattern Recognition},
+  pages={3768--3773},
+  year={2014},
+  organization={IEEE},
+  bibtex_show={true},
+  html={https://ieeexplore.ieee.org/document/6977359}
+}
+
+@article{kandemir2014multi,
+  abbr={Journal},
+  title={Multi-Task and Multi-View Learning of User State},
+  author={Kandemir, M. and Vetek, A. and G{\"o}nen, M. and Klami, A. and Kaski, S.},
+  journal={Neurocomputing},
+  volume={139},
+  pages={97--106},
+  year={2014},
+  publisher={Elsevier},
+  bibtex_show={true},
+  html={https://www.sciencedirect.com/science/article/abs/pii/S0925231214005025}
+}
+
+@article{kandemir2013learning,
+  abbr={Thesis},
+  title={Learning mental states from biosignals},
+  author={Kandemir, M.},
+  year={2013},
+  publisher={Aalto University},
+  bibtex_show={true}
+}
+
+@inproceedings{kandemir2012learning,
+  abbr={ICMI},
+  title={Learning Relevance from Natural Eye Movements in Pervasive Interfaces},
+  author={Kandemir, M. and Kaski, S.},
+  booktitle={International Conference on Multimodal Interaction},
+  year={2012},
+  bibtex_show={true}
+}
+
+@inproceedings{kandemir2012unsupervised,
+  abbr={ECML},
+  title={Unsupervised Inference of Auditory Attention from Biosensors},
+  author={Kandemir, M. and Klami, A. and Vetek, A. and Kaski, S.},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={403--418},
+  year={2012},
+  organization={Springer},
+  bibtex_show={true}
+}
+
+@inproceedings{gonen2011multitask,
+  abbr={ICONIP},
+  title={Multitask learning using regularized multiple kernel learning},
+  author={G{\"o}nen, M. and Kandemir, M. and Kaski, S.},
+  booktitle={International Conference on Neural Information Processing},
+  pages={500--509},
+  year={2011},
+  organization={Springer},
+  bibtex_show={true}
+}
+
+@inproceedings{ajanki2010contextual,
+  abbr={MLSP},
+  title={Contextual information access with augmented reality},
+  author={Ajanki, A. and Billinghurst, M. and J{\"a}rvenp{\"a}{\"a}, T. and Kandemir, M. and Kaski, S. and Koskela, M. and Kurimo, M. and Laaksonen, J. and Puolam{\"a}ki, K. and Ruokolainen, T. and others},
+  booktitle={International Workshop on Machine Learning for Signal Processing},
+  pages={95--100},
+  year={2010},
+  bibtex_show={true}
+}
+
+@article{gunduz2010automatic,
+  abbr={Journal},
+  title={Automatic segmentation of colon glands using object-graphs},
+  author={Gunduz-Demir, C. and Kandemir, M. and Tosun, A.B. and Sokmensuer, C.},
+  journal={Medical image analysis},
+  volume={14},
+  number={1},
+  pages={1--12},
+  year={2010},
+  publisher={Elsevier},
+  bibtex_show={true}
+}
+
+@phdthesis{kandemir2008segmentation,
+  abbr={Thesis},
+  title={Segmentation of Colon Glands by Object Graphs},
+  author={Kandemir, M.},
+  year={2008},
+  school={Bilkent University},
+  bibtex_show={true}
+}
+
+@article{ajanki2011augmented,
+  abbr={journal},
+  title={An Augmented Reality Interface to Contextual Information},
+  author={Ajanki, A. and Billinghurst, M. and Gamper, H. and J{\"a}rvenp{\"a}{\"a}, T. and Kandemir, M. and Kaski, S. and Koskela, M. and Kurimo, M. and Laaksonen, J. and Puolam{\"a}ki, K. and others},
+  journal={Virtual reality},
+  volume={15},
+  number={2},
+  pages={161--173},
+  year={2011},
+  publisher={Springer-Verlag},
+  bibtex_show={true}
+}
+
+@inproceedings{kandemir2010inferring,
+  abbr={ETRA},
+  title={Inferring Object Relevance from Gaze in Dynamic Scenes},
+  author={Kandemir, M. and Saarinen, V.M. and Kaski, S.},
+  booktitle={Symposium on Eye-Tracking Research \& Applications},
+  pages={105--108},
+  year={2010},
+  bibtex_show={true}
+}
+
+@article{tosun2009object,
+  abbr={Journal},
+  title={Object-oriented texture analysis for the unsupervised segmentation of biopsy images for cancer detection},
+  author={Tosun, A.B. and Kandemir, M. and Sokmensuer, C. and Gunduz-Demir, C.},
+  journal={Pattern Recognition},
+  volume={42},
   number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  pages={1104--1112},
+  year={2009},
+  publisher={Elsevier},
+  bibtex_show={true}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{kandemir2007framework,
+  abbr={CGI},
+  title={A Framework for Real-Time Animation of Liquid-Rigid Body Interaction},
+  author={Kandemi̇r, M. and {\c{C}}apin, T. and {\"O}zg{\"u}{\c{c}}, B.},
+  booktitle={Computer Graphics International (CGI)},
+  year={2007},
+  bibtex_show={true}
 }
