@@ -21,7 +21,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/_pages/adin_lab/";
+            window.location.href = "/adin_lab/";
           },
         },{id: "nav-publications",
           title: "Publications",
