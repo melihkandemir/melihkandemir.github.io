@@ -1,0 +1,92 @@
+lectures:
+  - title: Reinforcement Learning
+    type: Main Lecturer
+    institution: University of Southern Denmark
+    department: IMADA
+    year: 2025
+    term: Fall
+    source_type: pdf
+    schedule:
+      - week: 1
+        topic: "Basic Concepts"
+        slides: "assets/teaching/rl_2025/1_Basic_Concepts.pdf"
+      - week: 2
+        topic: "Markov Decision Processes"
+        slides: "assets/teaching/rl_2025/2_Markov_Decision_Processes.pdf"
+      - week: 3
+        topic: "Model-Based Reinforcement Learning"
+        slides: "assets/teaching/rl_2025/3_Model_Based_RL.pdf"
+      - week: 4
+        topic: "Model-Free Reinforcement Learning"
+        slides: "assets/teaching/rl_2025/4_Model_Free_RL.pdf"
+      - week: 5
+        topic: "Policy Gradient Methods"
+        slides: "assets/teaching/rl_2025/5_Policy_Gradient_Methods.pdf"
+      - week: 6
+        topic: "Conservative Policy Iteration"
+        slides: "assets/teaching/rl_2025/6_Conservative_Policy_Iteration.pdf"
+  
+  - title: Introduction to Machine Learning
+    type: Main Lecturer
+    institution: University of Southern Denmark
+    department: IMADA
+    year: 2024
+    term: Fall
+    source_type: notebook-html
+    schedule:
+      - week: 1
+        topic: "Basic Concepts"
+        file: "assets/teaching/ai_2024/01_Basic_Concepts.html"
+        url: "teaching/ai_2024/basic_concepts"
+        slides: "assets/teaching/ai_2024/01_Basic_Concepts.ipynb"
+      - week: 2
+        topic: "Linear Predictors"
+        file: "assets/teaching/ai_2024/02_Linear_Predictors.html"
+        url: "teaching/ai_2024/linear_predictors"
+        slides: "assets/teaching/ai_2024/02_Linear_Predictors.ipynb"
+      - week: 3
+        topic: "Classification"
+        file: "assets/teaching/ai_2024/03_Classification.html"
+        url: "teaching/ai_2024/classification"
+        slides: "assets/teaching/ai_2024/03_Classification.ipynb"
+      - week: 4
+        topic: "Probability Theory"
+        file: "assets/teaching/ai_2024/04 Probability Theory.html"
+        url: "teaching/ai_2024/probability_theory"
+        slides: "assets/teaching/ai_2024/04 Probability Theory.ipynb"
+      - week: 5
+        topic: "Statistical Learning Theory"
+        file: "assets/teaching/ai_2024/05 Statistical Learning Theory.html"
+        url: "teaching/ai_2024/statistical_learning_theory"
+        slides: "assets/teaching/ai_2024/05 Statistical Learning Theory.ipynb"
+      - week: 6
+        topic: "Bayesian Learning"
+        file: "assets/teaching/ai_2024/06 Bayesian Learning.html"
+        url: "teaching/ai_2024/bayesian_learning"
+        slides: "assets/teaching/ai_2024/06 Bayesian Learning.ipynb"
+      - week: 7
+        topic: "Unsupervised Learning"
+        file: "assets/teaching/ai_2024/07 Unsupervised Learning.html"
+        url: "teaching/ai_2024/unsupervised_learning"
+        slides: "assets/teaching/ai_2024/07 Unsupervised Learning.ipynb"
+      - week: 8
+        topic: "Deep Learning"
+        file: "assets/teaching/ai_2024/08 Deep Learning.html"
+        url: "teaching/ai_2024/deep_learning"
+        slides: "assets/teaching/ai_2024/08 Deep Learning.ipynb"
+      - week: 9
+        topic: "Learning and Controlling Dynamical Systems"
+        file: "assets/teaching/ai_2024/09 Learning and Controlling Dynamical Systems.html"
+        url: "teaching/ai_2024/learning_and_controlling_dynamical_systems"
+        slides: "assets/teaching/ai_2024/09 Learning and Controlling Dynamical Systems.ipynb"
+      - week: 10
+        topic: "Kernel Methods"
+        file: "assets/teaching/ai_2024/10 Kernel Methods.html"
+        url: "teaching/ai_2024/kernel_methods"
+        slides: "assets/teaching/ai_2024/10 Kernel Methods.ipynb"
+      - week: 11
+        topic: "Ensemble Methods"
+        file: "assets/teaching/ai_2024/11 Ensemble Methods.html"
+        url: "teaching/ai_2024/ensemble_methods"
+        slides: "assets/teaching/ai_2024/11 Ensemble Methods.ipynb"
+        

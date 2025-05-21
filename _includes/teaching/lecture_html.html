@@ -1,0 +1,41 @@
+<h3> {{ include.lecture.title }}</h3>
+<div class="card mt-3">
+    <div class="p-3">
+      <div class="row">
+        <div class="col-sm-10">
+          <!--<h5 class="card-title"> {{include.lecture.type }}, {{include.lecture.institution }}, {{include.lecture.department }}</h5> -->
+          <h6 class="card-subtitle font-italic"> {{include.lecture.year }} - {{include.lecture.term }} </h6>
+        </div>
+      </div>
+    
+    {% if include.lecture.schedule %}
+        <ul class="card-text font-weight list-group list-group-flush">
+        {% assign sorted = include.lecture.schedule | sort: "week" %}
+        {% for item in sorted %}
+          <li class="list-group">
+            <div class="row">
+              <div class="col-sm-9">
+                  {{ item.week }}: {{ item.topic }}
+              </div>
+              <div class="col-sm-3">
+                <a href="{{ item.url | absolute_url  }}" rel="noopener noreferrer">
+                  www
+                </a> |
+                <a href="{{ item.slides | absolute_url  }}" rel="noopener noreferrer">
+                  ipynb
+                </a>&nbsp;
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+        
+        </ul>
+    
+    {% endif %}
+
+      
+    </div>
+  </div>
+
+  <p></p>
+  <p></p>
