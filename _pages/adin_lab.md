@@ -1,7 +1,7 @@
 ---
 title: Team
 redirect:   https://adinlab.github.io
-layout:     page
+layout:     post
 nav: true
 nav_order: 4
 ---
