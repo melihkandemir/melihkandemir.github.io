@@ -621,19 +621,3 @@ third_party_libraries:
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
 
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-
-jsonresume:
-  - General Information
-  - Experience
-  - Education
-  - Grants
-  - Teaching experience as main lecturer
-  - Invited Talks
-  - Academic Service
