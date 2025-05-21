@@ -18,16 +18,16 @@
 
 
 @article{akgul2025improving,
-  abbr={arXiv},
-  title = {Improving Plasticity in Non-stationary Reinforcement Learning with Evidential Proximal Policy Optimization},
-  author = {Akgul, B. and Baykal, G. and Haussmann, M. and Kandemir, M.},
-  booktitle=arxiv,
-  year = {2025},
-  url = {https://arxiv.org/abs/2503.01468},
-  html = {https://arxiv.org/abs/2503.01468},
-  selected = {false},
-  abstract = {Reinforcement learning for continuous control under sparse rewards is an under-explored problem despite its significance in real life. Many complex skills build on intermediate ones as prerequisites. For instance, a humanoid locomotor has to learn how to stand before it can learn to walk. To cope with reward sparsity, a reinforcement learning agent has to perform deep exploration. However, existing deep exploration methods are designed for small discrete action spaces, and their successful generalization to state-of-the-art continuous control remains unproven. We address the deep exploration problem for the first time from a PAC-Bayesian perspective in the context of actor-critic learning. To do this, we quantify the error of the Bellman operator through a PAC-Bayes bound, where a bootstrapped ensemble of critic networks represents the posterior distribution, and their targets serve as a data-informed function-space prior. We derive an objective function from this bound and use it to train the critic ensemble. Each critic trains an individual actor network, implemented as a shared trunk and critic-specific heads. The agent performs deep exploration by acting deterministically on a randomly chosen actor head. Our proposed algorithm, named PAC-Bayesian Actor-Critic (PBAC), is the only algorithm to successfully discover sparse rewards on a diverse set of continuous control tasks with varying difficulty.},
-  bibtex_show={true}
+	abbr         = {arXiv},
+	title        = {Improving Plasticity in Non-stationary Reinforcement Learning with Evidential Proximal Policy Optimization},
+	author       = {Akg{\"u}l, A. and Baykal, G. and Hau{\ss}mann, M. and Kandemir, M.},
+	year         = {2025},
+	journal      = arxiv,
+	url          = {https://arxiv.org/abs/2503.01468},
+	html         = {https://arxiv.org/abs/2503.01468},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {On-policy reinforcement learning algorithms use the most recently learned policy to interact with the environment and update it using the latest gathered trajectories, making them well-suited for adapting to non-stationary environments where dynamics change over time. However, previous studies show that they struggle to maintain plasticity---the ability of neural networks to adjust their synaptic connections---with overfitting identified as the primary cause. To address this, we present the first application of evidential learning in an on-policy reinforcement learning setting: \textit{Evidential Proximal Policy Optimization (EPPO)}. EPPO incorporates all sources of error in the critic network's approximation---i.e., the baseline function in advantage calculation---by modeling the epistemic and aleatoric uncertainty contributions to the approximation's total variance. We achieve this by using an evidential neural network, which serves as a regularizer to prevent overfitting. The resulting probabilistic interpretation of the advantage function enables optimistic exploration, thus maintaining the plasticity. Through experiments on non-stationary continuous control tasks, where the environment dynamics change at regular intervals, we demonstrate that EPPO outperforms state-of-the-art on-policy reinforcement learning variants in both task-specific and overall return.},
 }
 
 @inproceedings{akgul2024,

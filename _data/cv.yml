@@ -1,97 +1,109 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - name: Name
+      value: Melih Kandemir
+    - name: Address
+      value: >
+        Campusvej 55, 5230,
+        Odense, Denmark
+    - name: Office 
+      value: Ø13-511b-2
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Associate Professor
+      institution: University of Southern Denmark, Department of Mathematics and Computer Science (IMADA)
+      year: 2021 - Present
+    - title: Research Group Leader
+      institution: Bosch Center for Artificial Intelligence
+      year: 2019 - 2021
+    - title: Research Scientist
+      institution: Bosch Center for Artificial Intelligence
+      year: 2018 - 2019
+    - title: Assistant Professor of Machine Learning
+      institution: Ozyegin University, Department of Computer Science
+      year: 2017 - 2018
+    - title: Postdoctoral Researcher
+      institution: Heidelberg University, Heidelberg Collaboratory for Image Processing
+      year: 2013 - 2016
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: PhD in Computer Science
+      institution: Aalto University, Espoo, Finland
+      year: 2013
+    - title: MSc in Computer Science
+      institution: Bilkent University, Ankara, Turkiye
+      year: 2008
+    - title: BSc in Computer Science
+      institution: Hacettepe University, Ankara, Turkiye
+      year: 2005
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Grants
   type: nested_list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
+    - title: <b>Independent Research Fund Denmark (Single PI) </b>
+      items: 425032 EUR (2025-2029)
+    - title: <b>Carlsberg Foundation Semper Ardens Accelerate (Single PI)</b>
+      items: 671908 EUR (2022-2026)
+    - title: <b>Novo Nordisk Foundation Start Package (Single PI)</b>
+      items: 600000 EUR (2021-2026)
+      
+- title: Teaching experience as main lecturer
+  type: nested_list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Reinforcement Learning
+      items:
+        - SDU (since Fall 2021)
+        - Ozyegin University (Fall 2017), 
+    - title: Machine Learning
+      items: 
+        - SDU (Fall 2023)
+    - title: Data Mining and Machine Learning
+      items: 
+        - SDU (Spring 2022, Spring 2023)
+    - title: Causal Inference
+      items: 
+        - Istanbul Technical University (Fall 2020)
+    - title: Modern Bayesian Inference for Machine Learning
+      items: 
+        - Heidelberg University (Fall 2019)
+    - title: Statistical Machine Learning
+      items: 
+        - Ozyegin University (Spring 2017, Spring 2018)
+    - title: Introduction to Programming
+      items: 
+        - Ozyegin University (Spring 2017)
+    - title: Computer Graphics
+      items: 
+        - Ozyegin University (Spring 2017)
+    - title: Gaussian Processes
+      items: 
+        - Heidelberg University (Spring 2016)
+    - title: Bayesian Inference
+      items: 
+        - Heidelberg University (Spring 2015)
+  
+- title: Invited talks
+  type: list
+  contents: 
+    - '<a href="https://ellis.eu/events/ellis-phd-and-postdoc-summit-c01d2544-0168-4a05-b7a0-87898e405312">ELLIS PhD and Postdoc Summit</a>, ELLIS Society, 13th July 2021'
+    - '<a href="https://www.dpg-physik.de/veranstaltungen/2021/copy_of_ig_mh">Follow Up Session Self-aware AI</a>, German Physical Society, 26th Feb 2021'
+    - '<a href="https://www.dpg-physik.de/veranstaltungen/2020/self-aware-ai">Self-aware AI: How can a neural network learn to say „I do not know“?</a>, German Physical Society, 23rd Nov 2021'
+    - '<a href="https://www.youtube.com/watch?v=_ufMfn_s04c">Towards self-aware AI (in Turkish)</a>, Turkish AI Hub, 6th Aug 2020'
+    - '<a href="https://gsfp.physi.uni-heidelberg.de/graddays_oktober_2019/">Modern Bayesian Inference for Machine Learning</a>, 43rd Heidelberg Physics Graduate Days, Oct 2019'
+
+- title: Academic Service
+  type: nested_list
+  contents:
+    - title: <b>Area Chair /  SPC:</b>
+      items: AISTATS 2025, ECAI 2024, ECAI 2025
+    - title: <b>Poster Chair:</b>
+      items: D3A 2024
+    - title: <b>Program Committee:</b>
+      items: NeurIPS, ICML, AISTATS, ICLR, CVPR, ECCV, MICCAI, BMVC, ICRA
+    - title: <b>Reviewer:</b>
+      items: IEEE PAMI, IEEE TNNLS, JMLR, TMLR, IEEE Cybernetics, Nature Scientific Reports, Medical Image Analysis, Neural Networks, Neurocomputing 
