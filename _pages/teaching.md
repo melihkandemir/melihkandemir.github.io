@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: The reinforcement learning lecture notes took some proofs from Mannor et al., Reinforcement Learning Foundations, and some others from Berstekas & Tsitsiklis, Neuro-Dynamic Programming. The related credit should be given to these authors instead of myself.
+description: The reinforcement learning lecture notes took some proofs from Mannor et al., Reinforcement Learning Foundations, and some others from Bertsekas & Tsitsiklis, Neuro-Dynamic Programming. The related credit should be given to these authors instead of myself.
 nav: true
 nav_order: 6
 ---
