@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "The reinforcement learning lecture notes took some proofs from Mannor et al., Reinforcement Learning Foundations, and some others from Berstekas &amp; Tsitsiklis, Neuro-Dynamic Programming. The related credit should be given to these authors instead of myself.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
