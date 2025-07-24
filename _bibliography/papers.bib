@@ -14,7 +14,20 @@
 @string{tmlr = {Transactions on Machine Learning Research}}
 @string{mdpi = {MDPI Applied Sciences}}
 @string{acml = {Asian Conference on Machine Learning}}
+@string{ecai = {European Conference on Artificial Intelligence}}
 
+@article{baykal2025objectrl,
+	abbr         = {arXiv},
+	title 		 = {ObjectRL: An Object-Oriented Reinforcement Learning Codebase},
+	author 		 = {Baykal, G. and  Akg{\"u}l, A. and Haussmann, M. and Tasdighi, B. and Werge, N. and Wu, Y.S. and Kandemir, M.},
+	year 		 = {2025},
+	journal 	 = arxiv,
+	url 		 = {https://arxiv.org/abs/2507.03487},
+	html  		 = {arXiv preprint arXiv:2507.03487},
+	selected 	 = {false},
+	bibtex_show  = {true},
+	abstract 	 = {ObjectRL is an open-source Python codebase for deep reinforcement learning (RL), designed for research-oriented prototyping with minimal programming effort. Unlike existing codebases, ObjectRL is built on Object-Oriented Programming (OOP) principles, providing a clear structure that simplifies the implementation, modification, and evaluation of new algorithms. ObjectRL lowers the entry barrier for deep RL research by organizing best practices into explicit, clearly separated components, making them easier to understand and adapt. Each algorithmic component is a class with attributes that describe key RL concepts and methods that intuitively reflect their interactions. The class hierarchy closely follows common ontological relationships, enabling data encapsulation, inheritance, and polymorphism, which are core features of OOP. We demonstrate the efficiency of ObjectRL’s design through representative use cases that highlight its flexibility and suitability for rapid prototyping. The documentation and source code are available at https://objectrl.readthedocs.io and https://github.com/adinlab/objectrl .}
+}
 @article{tasdighi2025deepactorcriticstightrisk,
 	abbr         = {arXiv},
 	title        = {Deep Actor-Critics with Tight Risk Certificates},
@@ -78,18 +91,18 @@
   bibtex_show={true}
 }
 
-@article{tasdighi2024pbac,
-  abbr={arXiv},
-  title = {Deep Exploration with PAC Bayes},
-  author = {Tasdighi, B. and Werge, N. and Wu, Y. and Kandemir, M.},
-  booktitle=arxiv,
-  year = {2024},
-  url = {https://arxiv.org/abs/2402.03055},
-  html = {https://arxiv.org/abs/2402.03055},
-  selected = {false},
-  abstract = {Reinforcement learning for continuous control under sparse rewards is an under-explored problem despite its significance in real life. Many complex skills build on intermediate ones as prerequisites. For instance, a humanoid locomotor has to learn how to stand before it can learn to walk. To cope with reward sparsity, a reinforcement learning agent has to perform deep exploration. However, existing deep exploration methods are designed for small discrete action spaces, and their successful generalization to state-of-the-art continuous control remains unproven. We address the deep exploration problem for the first time from a PAC-Bayesian perspective in the context of actor-critic learning. To do this, we quantify the error of the Bellman operator through a PAC-Bayes bound, where a bootstrapped ensemble of critic networks represents the posterior distribution, and their targets serve as a data-informed function-space prior. We derive an objective function from this bound and use it to train the critic ensemble. Each critic trains an individual actor network, implemented as a shared trunk and critic-specific heads. The agent performs deep exploration by acting deterministically on a randomly chosen actor head. Our proposed algorithm, named PAC-Bayesian Actor-Critic (PBAC), is the only algorithm to successfully discover sparse rewards on a diverse set of continuous control tasks with varying difficulty.},
-  bibtex_show={true},
-  code={https://github.com/adinlab/ProbabilisticActorCritic}
+@inproceedings{tasdighi2025pbac,
+	abbr         = {ECAI},
+	title        = {Deep Exploration with PAC-Bayes},
+	author       = {Tasdighi, B. and Haussmann, M. and Werge, N. and Wu, Y. and Kandemir, M.},
+	year         = {2025},
+	journal      = ecai,
+	url          = {https://arxiv.org/abs/2402.03055},
+	html         = {https://arxiv.org/abs/2402.03055},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {Reinforcement learning (RL) for continuous control under delayed rewards is an under-explored problem despite its significance in real life. Many complex skills build on intermediate ones as prerequisites. For instance, a humanoid locomotor has to learn how to stand before it can learn to walk. To cope with delayed reward, a reinforcement learning agent has to perform deep exploration. However, existing deep exploration methods are designed for small discrete action spaces, and their successful generalization to state-of-the-art continuous control remains unproven. We address the deep exploration problem for the first time from a PAC-Bayesian perspective in the context of actor-critic learning. To do this, we quantify the error of the Bellman operator through a PAC-Bayes bound, where a bootstrapped ensemble of critic networks represents the posterior distribution, and their targets serve as a data-informed function-space prior. We derive an objective function from this bound and use it to train the critic ensemble. Each critic trains an individual soft actor network, implemented as a shared trunk and critic-specific heads. The agent performs deep exploration by acting epsilon-softly on a randomly chosen actor head. Our proposed algorithm, named PAC-Bayesian Actor-Critic (PBAC), is the only algorithm to consistently discover delayed rewards on a diverse set of continuous control tasks with varying difficulty.},
+	code         = {https://github.com/adinlab/ProbabilisticActorCritic}
 }
 
 @inproceedings{akgul2022cddp,
@@ -117,16 +130,17 @@
   bibtex_show={true}
 }
 
-
-@article{tasdighi2024exploring,
-      abbr={arXiv},
-      title={Exploring Pessimism and Optimism Dynamics in Deep Reinforcement Learning}, 
-      author={Tasdighi, B. and Werge, N. and Wu, Y.-s. and Kandemir, M.},
-      booktitle=arxiv,
-      year={2024},
-      url={https://arxiv.org/abs/2406.03890}, 
-      html={https://arxiv.org/abs/2406.03890},
-      abstract={Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent's ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between pessimism and optimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters. }
+@inproceedings{tasdighi2025improving,
+	abbr         = {ECAI},
+	title        = {Improving Actor-Critic Training with Steerable Action-Value Approximation Errors},
+	author       = {Tasdighi, B. and Werge, N. and Wu, Y.S. and Kandemir, M.},
+	year         = {2025},
+	booktitle    = ecai,
+	url          = {https://arxiv.org/abs/2406.03890},
+	html         = {https://arxiv.org/abs/2406.03890},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent’s ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between optimism and pessimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters.}
 }
 
 
