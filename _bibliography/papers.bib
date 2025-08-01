@@ -16,6 +16,19 @@
 @string{acml = {Asian Conference on Machine Learning}}
 @string{ecai = {European Conference on Artificial Intelligence}}
 
+@article{werge2025directionalensemble,
+	abbr         = {arXiv},
+	title        = {Directional Ensemble Aggregation for Actor-Critics},
+	author       = {Werge, N. and Wu, Y.S. and Tasdighi, B. and Kandemir, M.},
+	year         = {2025},
+	journal      = arxiv,
+	url          = {https://arxiv.org/abs/2507.23501},
+	html         = {https://arxiv.org/abs/2507.23501},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {Off-policy reinforcement learning in continuous control tasks depends critically on accurate Q-value estimates. Conservative aggregation over ensembles, such as taking the minimum, is commonly used to mitigate overestimation bias. However, these static rules are coarse, discard valuable information from the ensemble, and cannot adapt to task-specific needs or different learning regimes. We propose Directional Ensemble Aggregation (DEA), an aggregation method that adaptively combines Q-value estimates in actor-critic frameworks. DEA introduces two fully learnable directional parameters: one that modulates critic-side conservatism and another that guides actor-side policy exploration. Both parameters are learned using ensemble disagreement-weighted Bellman errors, which weight each sample solely by the direction of its Bellman error. This directional learning mechanism allows DEA to adjust conservatism and exploration in a data-driven way, adapting aggregation to both uncertainty levels and the phase of training. We evaluate DEA across continuous control benchmarks and learning regimes - from interactive to sample-efficient - and demonstrate its effectiveness over static ensemble strategies.},
+}
+
 @article{baykal2025objectrl,
 	abbr         = {arXiv},
 	title 		 = {ObjectRL: An Object-Oriented Reinforcement Learning Codebase},
