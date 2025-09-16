@@ -67,6 +67,7 @@
 	abstract     = {On-policy reinforcement learning algorithms use the most recently learned policy to interact with the environment and update it using the latest gathered trajectories, making them well-suited for adapting to non-stationary environments where dynamics change over time. However, previous studies show that they struggle to maintain plasticity---the ability of neural networks to adjust their synaptic connections---with overfitting identified as the primary cause. To address this, we present the first application of evidential learning in an on-policy reinforcement learning setting: \textit{Evidential Proximal Policy Optimization (EPPO)}. EPPO incorporates all sources of error in the critic network's approximation---i.e., the baseline function in advantage calculation---by modeling the epistemic and aleatoric uncertainty contributions to the approximation's total variance. We achieve this by using an evidential neural network, which serves as a regularizer to prevent overfitting. The resulting probabilistic interpretation of the advantage function enables optimistic exploration, thus maintaining the plasticity. Through experiments on non-stationary continuous control tasks, where the environment dynamics change at regular intervals, we demonstrate that EPPO outperforms state-of-the-art on-policy reinforcement learning variants in both task-specific and overall return.},
 }
 
+
 @inproceedings{akgul2024,
   abbr={NeurIPS},
   author =		 {Akgul, A. and Haussmann, M. and Kandemir, M.},
@@ -80,28 +81,17 @@
   bibtex_show={true}
 }
 
-@article{baykal2024edvae,
-  abbr={PatRec},
-  title={EdVAE: Mitigating Codebook Collapse with Evidential Discrete Variational Autoencoders},
-  author = {Baykal, G. and Kandemir, M. and Unal, G.},
-  journal={Pattern Recognition},
-  year={2024},
-  url={https://arxiv.org/abs/2310.05718},
-  html={https://arxiv.org/abs/2310.05718},
-  abstract={Codebook collapse is a common problem in training deep generative models with discrete representation spaces like Vector Quantized Variational Autoencoders (VQ-VAEs). We observe that the same problem arises for the alternatively designed discrete variational autoencoders (dVAEs) whose encoder directly learns a distribution over the codebook embeddings to represent the data. We hypothesize that using the softmax function to obtain a probability distribution causes the codebook collapse by assigning overconfident probabilities to the best matching codebook elements. In this paper, we propose a novel way to incorporate evidential deep learning (EDL) instead of softmax to combat the codebook collapse problem of dVAE. We evidentially monitor the significance of attaining the probability distribution over the codebook embeddings, in contrast to softmax usage. Our experiments using various datasets show that our model, called EdVAE, mitigates codebook collapse while improving the reconstruction performance, and enhances the codebook usage compared to dVAE and VQ-VAE based models.},
-  bibtex_show={true}
-}
-
-@inproceedings{bahareh2024pac4sac,
-  abbr={AABI},
-  title={PAC-Bayesian Soft Actor-Critic Learning},
-  author = {Tasdighi, B. and Akgül, A. and Brink, K.K. and Kandemir, M.},
-  booktitle=aabi,
-  year={2024},
-  url={https://arxiv.org/abs/2301.12776},
-  html={https://arxiv.org/abs/2301.12776},
-  abstract={Actor-critic algorithms address the dual goals of reinforcement learning, policy evaluation and improvement, via two separate function approximators. The practicality of this approach comes at the expense of training instability, caused mainly by the destructive effect of the approximation errors of the critic on the actor. We tackle this bottleneck by employing an existing Probably Approximately Correct (PAC) Bayesian bound for the first time as the critic training objective of the Soft Actor-Critic (SAC) algorithm. We further demonstrate that the online learning performance improves significantly when a stochastic actor explores multiple futures by critic-guided random search. We observe our resulting algorithm to compare favorably to the state of the art on multiple classical control and locomotion tasks in both sample efficiency and asymptotic performance.},
-  bibtex_show={true}
+@inproceedings{tasdighi2025improving,
+	abbr         = {ECAI},
+	title        = {Improving Actor-Critic Training with Steerable Action-Value Approximation Errors},
+	author       = {Tasdighi, B. and Werge, N. and Wu, Y.S. and Kandemir, M.},
+	year         = {2025},
+	booktitle    = ecai,
+	url          = {https://arxiv.org/abs/2406.03890},
+	html         = {https://arxiv.org/abs/2406.03890},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent’s ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between optimism and pessimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters.}
 }
 
 @inproceedings{tasdighi2025pbac,
@@ -116,6 +106,20 @@
 	bibtex_show  = {true},
 	abstract     = {Reinforcement learning (RL) for continuous control under delayed rewards is an under-explored problem despite its significance in real life. Many complex skills build on intermediate ones as prerequisites. For instance, a humanoid locomotor has to learn how to stand before it can learn to walk. To cope with delayed reward, a reinforcement learning agent has to perform deep exploration. However, existing deep exploration methods are designed for small discrete action spaces, and their successful generalization to state-of-the-art continuous control remains unproven. We address the deep exploration problem for the first time from a PAC-Bayesian perspective in the context of actor-critic learning. To do this, we quantify the error of the Bellman operator through a PAC-Bayes bound, where a bootstrapped ensemble of critic networks represents the posterior distribution, and their targets serve as a data-informed function-space prior. We derive an objective function from this bound and use it to train the critic ensemble. Each critic trains an individual soft actor network, implemented as a shared trunk and critic-specific heads. The agent performs deep exploration by acting epsilon-softly on a randomly chosen actor head. Our proposed algorithm, named PAC-Bayesian Actor-Critic (PBAC), is the only algorithm to consistently discover delayed rewards on a diverse set of continuous control tasks with varying difficulty.},
 	code         = {https://github.com/adinlab/ProbabilisticActorCritic}
+}
+
+
+@article{baykal2025disentanglement,
+	abbr         = {NeuCom},
+	title        = {Disentanglement with Factor Quantized Variational Autoencoders},
+	author       = {Baykal, G. and Kandemir, M. and Unal, G.},
+	year         = {2025},
+	journal      = [Neurocomputing},
+	url          = {https://arxiv.org/abs/2409.14851},
+	html         = {https://arxiv.org/abs/2409.14851},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {Disentangled representation learning aims to represent the underlying generative factors of a dataset in a latent representation independently of one another. In our work, we propose a discrete variational autoencoder (VAE) based model where the ground truth information about the generative factors are not provided to the model. We demonstrate the advantages of learning discrete representations over learning continuous representations in facilitating disentanglement. Furthermore, we propose incorporating an inductive bias into the model to further enhance disentanglement. Precisely, we propose scalar quantization of the latent variables in a latent representation with scalar values from a global codebook, and we add a total correlation term to the optimization as an inductive bias. Our method called FactorQVAE is the first method that combines optimization based disentanglement approaches with discrete representation learning, and it outperforms the former disentanglement methods in terms of two disentanglement metrics (DCI and InfoMEC) while improving the reconstruction performance. Our code can be found at https://github.com/ituvisionlab/FactorQVAE.}
 }
 
 @inproceedings{akgul2022cddp,
@@ -143,17 +147,29 @@
   bibtex_show={true}
 }
 
-@inproceedings{tasdighi2025improving,
-	abbr         = {ECAI},
-	title        = {Improving Actor-Critic Training with Steerable Action-Value Approximation Errors},
-	author       = {Tasdighi, B. and Werge, N. and Wu, Y.S. and Kandemir, M.},
-	year         = {2025},
-	booktitle    = ecai,
-	url          = {https://arxiv.org/abs/2406.03890},
-	html         = {https://arxiv.org/abs/2406.03890},
-	selected     = {false},
-	bibtex_show  = {true},
-	abstract     = {Off-policy actor-critic algorithms have shown promise in deep reinforcement learning for continuous control tasks. Their success largely stems from leveraging pessimistic state-action value function updates, which effectively address function approximation errors and improve performance. However, such pessimism can lead to under-exploration, constraining the agent’s ability to explore/refine its policies. Conversely, optimism can counteract under-exploration, but it also carries the risk of excessive risk-taking and poor convergence if not properly balanced. Based on these insights, we introduce Utility Soft Actor-Critic (USAC), a novel framework within the actor-critic paradigm that enables independent control over the degree of pessimism/optimism for both the actor and the critic via interpretable parameters. USAC adapts its exploration strategy based on the uncertainty of critics through a utility function that allows us to balance between optimism and pessimism separately. By going beyond binary choices of optimism and pessimism, USAC represents a significant step towards achieving balance within off-policy actor-critic algorithms. Our experiments across various continuous control problems show that the degree of pessimism or optimism depends on the nature of the task. Furthermore, we demonstrate that USAC can outperform state-of-the-art algorithms for appropriately configured pessimism/optimism parameters.}
+
+@article{baykal2024edvae,
+  abbr={PatRec},
+  title={EdVAE: Mitigating Codebook Collapse with Evidential Discrete Variational Autoencoders},
+  author = {Baykal, G. and Kandemir, M. and Unal, G.},
+  journal={Pattern Recognition},
+  year={2024},
+  url={https://arxiv.org/abs/2310.05718},
+  html={https://arxiv.org/abs/2310.05718},
+  abstract={Codebook collapse is a common problem in training deep generative models with discrete representation spaces like Vector Quantized Variational Autoencoders (VQ-VAEs). We observe that the same problem arises for the alternatively designed discrete variational autoencoders (dVAEs) whose encoder directly learns a distribution over the codebook embeddings to represent the data. We hypothesize that using the softmax function to obtain a probability distribution causes the codebook collapse by assigning overconfident probabilities to the best matching codebook elements. In this paper, we propose a novel way to incorporate evidential deep learning (EDL) instead of softmax to combat the codebook collapse problem of dVAE. We evidentially monitor the significance of attaining the probability distribution over the codebook embeddings, in contrast to softmax usage. Our experiments using various datasets show that our model, called EdVAE, mitigates codebook collapse while improving the reconstruction performance, and enhances the codebook usage compared to dVAE and VQ-VAE based models.},
+  bibtex_show={true}
+}
+
+@inproceedings{bahareh2024pac4sac,
+  abbr={AABI},
+  title={PAC-Bayesian Soft Actor-Critic Learning},
+  author = {Tasdighi, B. and Akgül, A. and Brink, K.K. and Kandemir, M.},
+  booktitle=aabi,
+  year={2024},
+  url={https://arxiv.org/abs/2301.12776},
+  html={https://arxiv.org/abs/2301.12776},
+  abstract={Actor-critic algorithms address the dual goals of reinforcement learning, policy evaluation and improvement, via two separate function approximators. The practicality of this approach comes at the expense of training instability, caused mainly by the destructive effect of the approximation errors of the critic on the actor. We tackle this bottleneck by employing an existing Probably Approximately Correct (PAC) Bayesian bound for the first time as the critic training objective of the Soft Actor-Critic (SAC) algorithm. We further demonstrate that the online learning performance improves significantly when a stochastic actor explores multiple futures by critic-guided random search. We observe our resulting algorithm to compare favorably to the state of the art on multiple classical control and locomotion tasks in both sample efficiency and asymptotic performance.},
+  bibtex_show={true}
 }
 
 
