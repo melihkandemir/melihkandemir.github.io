@@ -8,7 +8,7 @@ nav_order: 1
 profile:
   align: right
   image: melih_kandemir.png
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Campusvej 55, 5230,</p>
     <p> Odense, Denmark</p>
