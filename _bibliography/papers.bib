@@ -16,6 +16,19 @@
 @string{acml = {Asian Conference on Machine Learning}}
 @string{ecai = {European Conference on Artificial Intelligence}}
 
+@article{werge2025wsb,
+  abbr={arXiv},
+  title={Weighted Sequential Bayesian Inference for Non-Stationary Linear Contextual Bandits},
+  author={Werge, N. and Wu, Y.S. and Akgül, A. and Kandemir, M.},
+  journal=arxiv,
+  year={2025},
+  selected={false},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/2307.03587},
+  url={https://arxiv.org/abs/2307.03587},
+  abstract={We study non-stationary linear contextual bandits through the lens of sequential Bayesian inference. Whereas existing algorithms typically rely on the Weighted Regularized Least-Squares (WRLS) objective, we study Weighted Sequential Bayesian (WSB), which maintains a posterior distribution over the time-varying reward parameters. Our main contribution is a novel concentration inequality for WSB posteriors, which introduces a prior-dependent term that quantifies the influence of initial beliefs. We show that this influence decays over time and derive tractable upper bounds that make the result useful for both analysis and algorithm design. Building on WSB, we introduce three algorithms: WSB-LinUCB, WSB-RandLinUCB, and WSB-LinTS. We establish frequentist regret guarantees: WSB-LinUCB matches the best-known WRLS-based guarantees, while WSB-RandLinUCB and WSB-LinTS improve upon them, all while preserving the computational efficiency of WRLS-based algorithms.}
+}
+
 @article{werge2025directionalensemble,
 	abbr         = {arXiv},
 	title        = {Directional Ensemble Aggregation for Actor-Critics},
@@ -224,18 +237,7 @@
   selected={true}
 }
 
-@article{werge2023bof,
-  abbr={arXiv},
-  title={BOF-UCB: A Bayesian-Optimistic Frequentist Algorithm for Non-Stationary Contextual Bandits},
-  author={Werge, N. and Akgül, A. and Kandemir, M.},
-  journal=arxiv,
-  year={2023},
-  selected={false},
-  bibtex_show={true},
-  html={https://arxiv.org/abs/2307.03587},
-  url={https://arxiv.org/abs/2307.03587},
-  abstract={We propose a novel Bayesian-Optimistic Frequentist Upper Confidence Bound (BOF-UCB) algorithm for stochastic contextual linear bandits in non-stationary environments. This unique combination of Bayesian and frequentist principles enhances adaptability and performance in dynamic settings. The BOF-UCB algorithm utilizes sequential Bayesian updates to infer the posterior distribution of the unknown regression parameter, and subsequently employs a frequentist approach to compute the Upper Confidence Bound (UCB) by maximizing the expected reward over the posterior distribution. We provide theoretical guarantees of BOF-UCB's performance and demonstrate its effectiveness in balancing exploration and exploitation on synthetic datasets and classical control tasks in a reinforcement learning setting. Our results show that BOF-UCB outperforms existing methods, making it a promising solution for sequential decision-making in non-stationary environments.}
-}
+
 
 @article{sahin2023alreg,
   abbr={MDPI},
