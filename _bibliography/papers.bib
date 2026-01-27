@@ -16,6 +16,17 @@
 @string{acml = {Asian Conference on Machine Learning}}
 @string{ecai = {European Conference on Artificial Intelligence}}
 
+@inproceedings{vincent2026,
+  abbr={ICLR},
+  author =		 {Vincent, T. and Tripathi, Y. and Faust, T. and Akg{\"u}l, A. and Oren, Y. and Kandemir, M. and Peters, J. and d'Eramo, C.},
+  year =		 {2026},
+  title =		 {Bridging the Performance-gap between Target-free and Target-based Reinforcement Learning},
+  booktitle =		 iclr,
+  abstract = {The use of target networks in deep reinforcement learning is a widely popular solution to mitigate the brittleness of semi-gradient approaches and stabilize learning. However, target networks notoriously require additional memory and delay the propagation of Bellman updates compared to an ideal target-free approach. In this work, we step out of the binary choice between target-free and target-based algorithms. We introduce a new method that uses a copy of the last linear layer of the online network as a target network, while sharing the remaining parameters with the up-to-date online network. This simple modification enables us to keep the target-free's low-memory footprint while leveraging the target-based literature. We find that combining our approach with the concept of iterated -learning, which consists of learning consecutive Bellman updates in parallel, helps improve the sample-efficiency of target-free approaches. Our proposed method, iterated Shared -Learning (iS-QL), bridges the performance gap between target-free and target-based approaches across various problems while using a single -network, thus stepping towards resource-efficient reinforcement learning algorithms.},
+  selected = {false},
+  bibtex_show={true}
+}
+
 @article{werge2025wsb,
   abbr={arXiv},
   title={Weighted Sequential Bayesian Inference for Non-Stationary Linear Contextual Bandits},
