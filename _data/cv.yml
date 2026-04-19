@@ -38,15 +38,12 @@
     - title: MSc in Computer Science
       institution: Bilkent University, Ankara, Turkiye
       year: 2008
-    - title: BSc in Computer Science
-      institution: Hacettepe University, Ankara, Turkiye
-      year: 2005
 
 - title: Grants
   type: nested_list
   contents:
     - title: <b>Novo Nordisk Foundation New Exploratory Research and Discovery (NERD) (Single PI) </b>
-      items: 2226075 EUR (2026-2030)
+      items: 2226075 EUR (2026-2032)
     - title: <b>Independent Research Fund Denmark (Single PI) </b>
       items: 425032 EUR (2026-2030)
     - title: <b>Independent Research Fund Denmark (Single PI) </b>
