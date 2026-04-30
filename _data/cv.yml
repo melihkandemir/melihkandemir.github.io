@@ -13,9 +13,12 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Professor
+      institution: University of Southern Denmark, Department of Mathematics and Computer Science (IMADA)
+      year: 2026 - Present  
     - title: Associate Professor
       institution: University of Southern Denmark, Department of Mathematics and Computer Science (IMADA)
-      year: 2021 - Present
+      year: 2021 - 2026
     - title: Research Group Leader
       institution: Bosch Center for Artificial Intelligence
       year: 2019 - 2021
