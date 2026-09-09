@@ -36,6 +36,8 @@ $black-color: #000000 !default;
 $mondrian-red: #d6001c !default;
 $mondrian-blue: #0032a0 !default;
 $mondrian-blue-light: color.adjust($mondrian-blue, $lightness: 25%);
+$mondrian-blue-pale: color.mix($mondrian-blue, #ffffff, 10%);
+$mondrian-blue-pale-dark: color.mix($mondrian-blue, #212529, 22%);
 $mondrian-yellow: #ffd100 !default;
 
 // Theme colors

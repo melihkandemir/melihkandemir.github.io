@@ -104,12 +104,10 @@
   type: nested_list
   contents:
     - title: <b>Area Chair /  SPC:</b>
-      items: ICML, NeurIPS, AISTATS, ECAI, AAAI, ICLR
+      items: NeurIPS, ICML, ICLR, AAAI, AISTATS, ECAI
     - title: <b>Poster Chair:</b>
       items: D3A 2024-25
-    - title: <b>Reviewer:</b>
-      items: IEEE PAMI, IEEE TNNLS, JMLR, TMLR, IEEE Cybernetics, Nature Scientific Reports, Medical Image Analysis, Neural Networks, Neurocomputing
-    - title: <b>Grant Panels:</b>
+    - title: <b>Grant Panel Memberships:</b>
       items:
         - '<a href="https://dff.dk/en/about-the-fund/independent-research-fund-denmark/organisation/thematic-research-expert-committees/thematic-research-committees-2026/dff-ad-hoc-committee-for-research-on-artificial-intelligence/">DFF Ad Hoc Committee, AI Thematic Research</a> (2025-26)'
         - '<a href="https://ddsa.dk/fec/">DDSA Fellowship Evaluation Committee</a> (2024-26)'
