@@ -728,6 +728,9 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
+      background-color: var(--global-card-bg-color);
+      border-radius: 0.5rem;
+      padding: 1.25rem;
 
       .preview {
       }
