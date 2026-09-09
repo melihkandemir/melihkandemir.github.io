@@ -51,46 +51,13 @@
       items: 425032 EUR (2026-2030)
     - title: <b>Independent Research Fund Denmark (Single PI) </b>
       items: 425032 EUR (2025-2029)
+    - title: <b>Independent Research Fund Denmark (Co-PI w/ Silvia Tolu) </b>
+      items: 6,336,000 DKK (2026-2030)
     - title: <b>Carlsberg Foundation Semper Ardens Accelerate (Single PI)</b>
       items: 671908 EUR (2022-2026)
     - title: <b>Novo Nordisk Foundation Start Package (Single PI)</b>
       items: 600000 EUR (2021-2026)
       
-- title: Teaching experience as main lecturer
-  type: nested_list
-  contents:
-    - title: Reinforcement Learning
-      items:
-        - SDU (since Fall 2021)
-        - Ozyegin University (Fall 2017), 
-    - title: Machine Learning
-      items: 
-        - SDU (since Fall 2023)
-    - title: Data Mining and Machine Learning
-      items: 
-        - SDU (Spring 2022, Spring 2023)
-    - title: Causal Inference
-      items: 
-        - Istanbul Technical University (Fall 2020)
-    - title: Modern Bayesian Inference for Machine Learning
-      items: 
-        - Heidelberg University (Fall 2019)
-    - title: Statistical Machine Learning
-      items: 
-        - Ozyegin University (Spring 2017, Spring 2018)
-    - title: Introduction to Programming
-      items: 
-        - Ozyegin University (Spring 2017)
-    - title: Computer Graphics
-      items: 
-        - Ozyegin University (Spring 2017)
-    - title: Gaussian Processes
-      items: 
-        - Heidelberg University (Spring 2016)
-    - title: Bayesian Inference
-      items: 
-        - Heidelberg University (Spring 2015)
-  
 - title: Invited talks
   type: list
   contents: 
@@ -103,11 +70,13 @@
 - title: Academic Service
   type: nested_list
   contents:
-    - title: <b>Area Chair /  SPC:</b>
-      items: NeurIPS, ICML, ICLR, AAAI, AISTATS, ECAI
-    - title: <b>Poster Chair:</b>
-      items: D3A 2024-25
     - title: <b>Grant Panel Memberships:</b>
       items:
         - '<a href="https://dff.dk/en/about-the-fund/independent-research-fund-denmark/organisation/thematic-research-expert-committees/thematic-research-committees-2026/dff-ad-hoc-committee-for-research-on-artificial-intelligence/">DFF Ad Hoc Committee, AI Thematic Research</a> (2025-26)'
         - '<a href="https://ddsa.dk/fec/">DDSA Fellowship Evaluation Committee</a> (2024-26)'
+    - title: <b>Area Chair /  SPC:</b>
+      items: NeurIPS, ICML, ICLR, AAAI, AISTATS, ECAI
+    - title: <b>Venue Organization:</b>
+      items:
+        - "EWRL & RLC Europe 2027: General Chair"
+        - "D3A 25-26: Poster Chair"
