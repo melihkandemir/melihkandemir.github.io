@@ -104,10 +104,10 @@
   type: nested_list
   contents:
     - title: <b>Area Chair /  SPC:</b>
-      items: ICML, NeurIPS, AISTATS, ECAI
+      items: ICML, NeurIPS, AISTATS, ECAI, AAAI, ICLR
     - title: <b>Poster Chair:</b>
       items: D3A 2024-25
-    - title: <b>Program Committee:</b>
-      items: ICLR, CVPR, ECCV, MICCAI, BMVC, ICRA
     - title: <b>Reviewer:</b>
-      items: IEEE PAMI, IEEE TNNLS, JMLR, TMLR, IEEE Cybernetics, Nature Scientific Reports, Medical Image Analysis, Neural Networks, Neurocomputing 
+      items: IEEE PAMI, IEEE TNNLS, JMLR, TMLR, IEEE Cybernetics, Nature Scientific Reports, Medical Image Analysis, Neural Networks, Neurocomputing
+    - title: <b>Grant Panels:</b>
+      items: DFF Ad Hoc Committee, AI Thematic Research (2025-26), DDSA Fellowship Evaluation Committee (2024-26) 
