@@ -19,7 +19,7 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.85);
   --global-card-bg-color: #{$mondrian-blue-pale};
-  --global-pub-card-border-color: #{$black-color};
+  --global-card-border-color: #{$black-color};
   --global-highlight-color: #{$mondrian-yellow};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
@@ -92,7 +92,7 @@ html[data-theme="dark"] {
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: rgba(255, 255, 255, 0.75);
   --global-card-bg-color: #{$mondrian-blue-pale-dark};
-  --global-pub-card-border-color: #{$mondrian-red};
+  --global-card-border-color: #{$mondrian-red};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},

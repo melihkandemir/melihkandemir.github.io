@@ -176,6 +176,7 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-card-border-color);
 
   .card-img {
     width: 100%;
@@ -519,11 +520,11 @@ footer.sticky-bottom {
 
   .card {
     background-color: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    border: 1px solid var(--global-card-border-color);
 
     .list-group-item {
       background-color: inherit;
-      border-color: var(--global-divider-color);
+      border-color: var(--global-card-border-color);
 
       .badge {
         color: var(--global-card-bg-color) !important;
@@ -737,7 +738,7 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
       background-color: var(--global-card-bg-color);
-      border: 1px solid var(--global-pub-card-border-color);
+      border: 1px solid var(--global-card-border-color);
       border-radius: 0.5rem;
       padding: 1.25rem;
 
