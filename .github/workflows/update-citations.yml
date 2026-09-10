@@ -85,6 +85,13 @@ jobs:
             echo "ℹ️ _data/citations.yml was not changed." >> $GITHUB_STEP_SUMMARY
           fi
 
+      - name: Check bibliography entries for missing abs/url or html links
+        run: |
+          echo "🔗 Checking _bibliography/papers.bib for missing links..."
+          echo "## Bibliography link check" >> $GITHUB_STEP_SUMMARY
+          python bin/check_bib_links.py >> $GITHUB_STEP_SUMMARY 2>&1 || true
+          cat $GITHUB_STEP_SUMMARY
+
       - name: Configure Git
         run: |
           git config --local user.email "actions@github.com"
