@@ -22,6 +22,28 @@ BIB_FILE = "_bibliography/papers.bib"
 FUZZY_MATCH_THRESHOLD = 0.85
 
 
+# Scholar profiles sometimes carry pseudo-entries that are not real
+# publications: whole-proceedings records (title is a mash-up of the venue,
+# page numbers and the actual paper title), award stubs, and "supplementary
+# material for the paper ..." stubs. Auto-adding these pollutes the bib, and
+# because the fuzzy matcher never matches them against anything, a manual
+# deletion is undone by the next daemon run. Filter them at the source.
+JUNK_TITLE_PATTERNS = (
+    r"^proceedings\b",                       # "Proceedings of Machine Learning Research vol 168: ..."
+    r"^proceedings\s+autotestcon",           # award-stub published in proceedings
+    r"^best paper award",                    # award stubs
+    r"^supplementary material for the paper",# supplementary stubs
+    r"@helSINKI",                            # email addresses leaked into titles
+    r"proactive interfaces$",                # stubs with no venue/year anywhere
+)
+
+
+def is_junk_title(title: str) -> bool:
+    """True if a Scholar title is a pseudo-entry that must never be auto-added."""
+    lowered = (title or "").lower().strip()
+    return any(re.search(p, lowered) for p in JUNK_TITLE_PATTERNS)
+
+
 def split_entries(text: str) -> list[tuple[int, int, str]]:
     """Return (start, end, entry_text) for every top-level @entry{...} block."""
     entries = []
@@ -127,16 +149,27 @@ def venue_from_citation(citation: str) -> str | None:
     return venue or None
 
 
+NAME_PARTICLES = {"de", "den", "der", "van", "von", "della", "del", "da", "di", "dos", "el"}
+
+
 def format_authors(scholar_author_str: str) -> str:
-    """Convert Scholar's "First Last and First2 Last2" into "Last, F. and Last2, F2."."""
+    """Convert Scholar's "First Last and First2 Last2" into "Last, F. and Last2, F2.".
+
+    Surname particles ("Floris den Hengst" -> "den Hengst, F.") are kept with
+    the surname, matching how the person is alphabetized.
+    """
     formatted = []
     for person in scholar_author_str.split(" and "):
         tokens = person.strip().split()
         if len(tokens) < 2:
             formatted.append(person.strip())
             continue
-        last = tokens[-1]
-        initials = "".join(f"{t[0]}." for t in tokens[:-1] if t)
+        # walk back over lowercase particles so they stay with the surname
+        split = len(tokens) - 1
+        while split > 1 and tokens[split - 1].lower() in NAME_PARTICLES:
+            split -= 1
+        last = " ".join(tokens[split:])
+        initials = "".join(f"{t[0]}." for t in tokens[:split] if t)
         formatted.append(f"{last}, {initials}")
     return " and ".join(formatted)
 
