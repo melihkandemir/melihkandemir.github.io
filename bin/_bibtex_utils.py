@@ -44,6 +44,21 @@ def is_junk_title(title: str) -> bool:
     return any(re.search(p, lowered) for p in JUNK_TITLE_PATTERNS)
 
 
+def is_patent(pub: dict) -> bool:
+    """True if a Scholar publication record is a patent, not a scientific paper.
+
+    Scholar mixes patents into publication lists; the lab bibliography tracks
+    papers only. Detected via the venue citation string ("US Patent App. ...")
+    or a patents.google.com link.
+    """
+    bib = pub.get("bib", {}) if isinstance(pub, dict) else {}
+    citation = (bib.get("citation") or "").lower()
+    if "patent" in citation:
+        return True
+    url = (pub.get("pub_url") or "") if isinstance(pub, dict) else ""
+    return "patents.google" in url
+
+
 def split_entries(text: str) -> list[tuple[int, int, str]]:
     """Return (start, end, entry_text) for every top-level @entry{...} block."""
     entries = []
