@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-10'
+  last_updated: '2026-09-22'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 10
@@ -42,7 +42,7 @@ papers:
     title: Predicting a state of a computer-controlled entity
     year: '2021'
   Jxm1UeYAAAAJ:4OULZ7Gr8RgC:
-    citations: 34
+    citations: 37
     title: 'In the picture: Medical imaging datasets, artifacts, and their living review'
     year: '2025'
   Jxm1UeYAAAAJ:4TOpqqG69KYC:
@@ -62,7 +62,7 @@ papers:
     title: Cell event detection in phase-contrast microscopy sequences from few annotations
     year: '2015'
   Jxm1UeYAAAAJ:9ZlFYXVOiuMC:
-    citations: 62
+    citations: 63
     title: Deep Active Learning with Adaptive Acquisition
     year: '2019'
   Jxm1UeYAAAAJ:9yKSN-GCB0IC:
@@ -137,6 +137,10 @@ papers:
     citations: 0
     title: Device, computer program and computer-implemented method for machine learning
     year: '2023'
+  Jxm1UeYAAAAJ:P5F9QuxV20EC:
+    citations: 0
+    title: "Proceedings of Machine Learning Research vol 168: 1\u201312, 2022 4th Annual Conference on Learning for Dynamics and Control Traversing Time with Multi-Resolution Gaussian Process \u2026"
+    year: '2022'
   Jxm1UeYAAAAJ:R3hNpaxXUhUC:
     citations: 13
     title: Evidential Turing Processes
@@ -146,7 +150,7 @@ papers:
     title: Inferring the Structure of Ordinary Differential Equations
     year: '2021'
   Jxm1UeYAAAAJ:Se3iqnhoufwC:
-    citations: 164
+    citations: 165
     title: 'Computer-aided diagnosis from weak supervision: A benchmarking study'
     year: '2015'
   Jxm1UeYAAAAJ:SeFeTyx0c_EC:
@@ -210,7 +214,7 @@ papers:
     title: Differential Bayesian Neural Nets
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2392
+    citations: 2444
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     year: '2018'
   Jxm1UeYAAAAJ:_FxGoFyzp5QC:
@@ -222,7 +226,7 @@ papers:
     title: Object-oriented texture analysis for the unsupervised segmentation of biopsy images for cancer detection
     year: '2009'
   Jxm1UeYAAAAJ:_xSYboBqXhAC:
-    citations: 7
+    citations: 8
     title: Bridging the Performance Gap Between Target-Free and Target-Based Reinforcement Learning
     year: '2026'
   Jxm1UeYAAAAJ:a0OBvERweLwC:
@@ -313,6 +317,10 @@ papers:
     citations: 21
     title: Bayesian Evidential Deep Learning with PAC Regularization
     year: '2020'
+  Jxm1UeYAAAAJ:nb7KW1ujOQ8C:
+    citations: 0
+    title: "A physics-constrained framework for fatigue data augmentation of post-weld treated joints: censored S\u2013N estimation with an exploratory generative component"
+    year: '2026'
   Jxm1UeYAAAAJ:ns9cj8rnVeAC:
     citations: 13
     title: Cheap and Deterministic Inference for Deep State-Space Models of Interacting Dynamical Systems
@@ -342,7 +350,7 @@ papers:
     title: Instance Label Prediction by Dirichlet Process Multiple Instance Learning.
     year: '2014'
   Jxm1UeYAAAAJ:u_35RYKgDlwC:
-    citations: 5
+    citations: 6
     title: Disentanglement with Factor Quantized Variational Autoencoders
     year: '2024'
   Jxm1UeYAAAAJ:ufrVoPGSRksC:
