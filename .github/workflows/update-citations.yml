@@ -44,7 +44,7 @@ jobs:
         id: run_citation_update
         shell: bash
         run: |
-          echo "🚀 Running citation update script (with retries)..."
+          echo "🚀 Running citation update script (citations refresh + auto-add missing publications, with retries)..."
           start_time=$(date)
           status=1
           for attempt in 1 2 3 4 5; do
@@ -106,10 +106,10 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add _data/citations.yml
+          git add _data/citations.yml _bibliography/papers.bib
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
-            git commit -m "Update Google Scholar citations"
+            git commit -m "Update Google Scholar citations and publications"
             git pull --rebase
             git push
           )
