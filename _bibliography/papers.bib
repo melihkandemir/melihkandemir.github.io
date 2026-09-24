@@ -83,15 +83,15 @@
 	abstract     = {Stochastic gradient descent (SGD) and its variants are the main workhorses for solving large-scale optimization problems with nonconvex objective functions. Although the convergence of SGDs in the (strongly) convex case is well-understood, their convergence for nonconvex functions stands on weak mathematical foundations. Most existing studies on the nonconvex convergence of SGD show the complexity results based on either the minimum of the expected gradient norm or the functional sub-optimality gap (for functions with extra structural property) by searching the entire range of iterates. Hence the last iterations of SGDs do not necessarily maintain the same complexity guarantee. This paper shows that an -stationary point exists in the final iterates of SGDs, given a large enough total iteration budget, , not just anywhere in the entire range of iterates -- a much stronger result than the existing one. Additionally, our analyses allow us to measure the density of the -stationary points in the final iterates of SGD, and we recover the classical  asymptotic rate under various existing assumptions on the objective function and the bounds on the stochastic gradient. As a result of our analyses, we addressed certain myths and legends related to the nonconvex convergence of SGD and posed some thought-provoking questions that could set new directions for research.},
 }
 
-@article{boock2026hitting,
-	abbr         = {arXiv},
+@inproceedings{boock2026hitting,
+	abbr         = {NeurIPS},
 	title        = {Hitting Time Isomorphism for Multi-Stage Planning with Foundation Policies},
 	author       = {Boock, M.V. and Akgül, A. and Çelikok, M.M. and Kandemir, M.},
 	year         = {2026},
-	journal      = arxiv,
+	booktitle    = neurips,
 	url          = {https://arxiv.org/abs/2605.06470},
 	html         = {https://arxiv.org/abs/2605.06470},
-	selected     = {false},
+	selected     = {true},
 	bibtex_show  = {true},
 	abstract     = {We present a new operator-theoretic representation learning framework for offline reinforcement learning that recovers the directed temporal geometry of a controlled Markov process from hitting time observations. While prior art often produces symmetric distances or fails to satisfy the triangle inequality, our framework learns a Hilbert-space displacement geometry where expected hitting times are realized as linear functionals of latent displacements. We prove that this representation exists under latent linear closure and is uniquely identifiable up to a bounded linear isomorphism. For finite-dimensional implementations, we show that global hitting-time error is bounded by one-step transition error amplified by the environment's transient spectral radius. Furthermore, we provide finite-sample guarantees accounting for approximation, statistical complexity, and trajectory-label mismatch. Derived from this theory, we curate Isomorphic Embedding Learning (IEL) as a new goal-agnostic foundation policy learning algorithm that anchors a HILP-style consistency objective with explicit hitting-time regression to ensure that the learned geometry reflects actual decision-time progress. This asymmetric and compositional structure enables robust graph-based multi-stage planning for long-horizon navigation. Our experiments demonstrate that IEL improves the state of the art of learning foundation policy policies from offline maze locomotion data. Our code can be found on https://github.com/MagnusBoock/IEL},
 }
