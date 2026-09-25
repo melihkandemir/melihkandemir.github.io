@@ -1552,7 +1552,7 @@ html[data-theme='dark'] .teaching-list a.teaching-item {
     }
 
     .cv-item-detail {
-      color: var(--global-text-color-light);
+      color: var(--global-theme-color);
     }
 
     a {
@@ -1573,4 +1573,8 @@ html[data-theme='dark'] .cv .cv-list a {
   &:hover {
     color: #{$mondrian-red};
   }
+}
+
+html[data-theme='dark'] .cv .cv-list .cv-item-detail {
+  color: #d66470;
 }
