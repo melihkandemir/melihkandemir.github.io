@@ -385,7 +385,7 @@ ul.task-list input[type="checkbox"] {
 
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-color);
         }
       }
     }
@@ -479,7 +479,7 @@ ul.task-list input[type="checkbox"] {
         text-decoration: none;
 
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-color);
         }
       }
     }
@@ -1491,7 +1491,7 @@ figure.cover {
 
 html[data-theme='dark'] .publications ol.bibliography li .periodical,
 html[data-theme='dark'] .publications ol.bibliography li .periodical em {
-  color: #{$mondrian-blue-light};
+  color: #d66470;
 }
 
 // Dark theme: paper titles Mondrian yellow
