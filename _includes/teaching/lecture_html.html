@@ -1,18 +1,17 @@
 <div class="teaching-material">
     <li class="teaching-course">
-        {{ include.lecture.title }} <small class="text-muted">{{ include.lecture.year }}, {{ include.lecture.term }}</small>
-        <a class="teaching-item" href="{{ include.lecture.schedule[0].slides | absolute_url }}" target="_blank" rel="noopener noreferrer">[html]</a>
-
         {% if include.lecture.schedule.size > 1 %}
+            {{ include.lecture.title }}, {{ include.lecture.term }} {{ include.lecture.year }}
             <ul class="teaching-schedule">
             {% assign sorted = include.lecture.schedule | sort: "week" %}
             {% for item in sorted %}
               <li>
-                {{ item.week }}:
                 <a class="teaching-item" href="{{ item.slides | absolute_url }}" rel="noopener noreferrer">{{ item.topic }}</a>
               </li>
             {% endfor %}
             </ul>
+        {% else %}
+            <a class="teaching-item" href="{{ include.lecture.schedule[0].slides | absolute_url }}" rel="noopener noreferrer">{{ include.lecture.title }}</a>, {{ include.lecture.term }} {{ include.lecture.year }}
         {% endif %}
     </li>
 </div>

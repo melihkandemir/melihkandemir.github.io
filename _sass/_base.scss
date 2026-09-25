@@ -812,7 +812,7 @@ footer.sticky-bottom {
           text-decoration: none;
 
           &:hover {
-            color: var(--global-hover-color);
+            color: var(--global-theme-color);
             text-decoration: none;
           }
         }
@@ -1480,4 +1480,8 @@ figure.cover {
 // Dark theme: paper titles Mondrian yellow
 html[data-theme='dark'] .publications ol.bibliography li .title a.paper-title {
   color: #{$mondrian-yellow};
+
+  &:hover {
+    color: #{$mondrian-red};
+  }
 }
