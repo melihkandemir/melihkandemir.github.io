@@ -224,15 +224,24 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
-// Teaching material (cards removed: lecture title + linked topic names)
+// Teaching material: course bullet with enumerated weekly subbullets
 
-.teaching-material {
-  margin-bottom: 2rem;
+.teaching-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+
+  .teaching-course {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
 
   .teaching-schedule {
     list-style: decimal;
     padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: normal;
 
     li {
       margin-bottom: 0.25rem;
@@ -799,11 +808,11 @@ footer.sticky-bottom {
         font-weight: 700;
 
         a.paper-title {
-          color: var(--global-text-color);
+          color: var(--global-hover-color);
           text-decoration: none;
 
           &:hover {
-            color: var(--global-theme-color);
+            color: var(--global-hover-color);
             text-decoration: none;
           }
         }
@@ -1465,4 +1474,10 @@ figure.cover {
   a.cover-link:hover {
     color: #23212d !important;
   }
+}
+
+
+// Dark theme: paper titles Mondrian yellow
+html[data-theme='dark'] .publications ol.bibliography li .title a.paper-title {
+  color: #{$mondrian-yellow};
 }

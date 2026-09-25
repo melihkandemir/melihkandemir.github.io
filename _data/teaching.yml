@@ -25,13 +25,13 @@ lectures:
       - week: 6
         topic: "Conservative Policy Iteration"
         slides: "assets/teaching/rl_2025/6_Conservative_Policy_Iteration.pdf"
-  
-  - title: Machine Learning
+
+  - title: Machine Learning Textbook
     type: Main Lecturer
     institution: University of Southern Denmark
     department: IMADA
     year: 2026
-    term: Fall
+    term: September
     source_type: pdf
     schedule:
       - week: 1
