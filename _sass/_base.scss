@@ -1578,3 +1578,11 @@ html[data-theme='dark'] .cv .cv-list a {
 html[data-theme='dark'] .cv .cv-list .cv-item-detail {
   color: #d66470;
 }
+
+html[data-theme='dark'] .cv .cv-list .cv-item-title {
+  color: #{$mondrian-yellow};
+
+  em {
+    color: #d66470;
+  }
+}
