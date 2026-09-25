@@ -1,13 +1,11 @@
-<ul class="card-text font-weight-light list-group list-group-flush">
+<ul class="cv-list">
   {% for content in entry.contents %}
-    <li class="list-group-item">
-      <h5 class="font-italic">{{ content.title }}</h5>
+    <li class="cv-item">
+      <span class="cv-item-title">{{ content.title }}</span>
       {% if content.items %}
-        <ul class="subitems">
+        <ul class="cv-sublist">
           {% for subitem in content.items %}
-            <li>
-              <span class="subitem">{{ subitem }}</span>
-            </li>
+            <li>{{ subitem }}</li>
           {% endfor %}
         </ul>
       {% endif %}
