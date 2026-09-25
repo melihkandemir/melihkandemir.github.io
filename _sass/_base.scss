@@ -731,16 +731,15 @@ footer.sticky-bottom {
   }
 
   ol.bibliography {
-    list-style: none;
-    padding: 0;
+    list-style: decimal;
+    padding-left: 1.5rem;
     margin-top: 0;
 
     li {
       margin-bottom: 1rem;
-      background-color: var(--global-card-bg-color);
-      border: 1px solid var(--global-card-border-color);
-      border-radius: 0.5rem;
-      padding: 1.25rem;
+      background-color: transparent;
+      border: none;
+      padding: 0;
 
       .preview {
       }
