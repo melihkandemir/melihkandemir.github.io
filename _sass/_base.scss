@@ -234,6 +234,10 @@ ul.task-list input[type="checkbox"] {
   .teaching-course {
     margin-bottom: 0.75rem;
     font-weight: 600;
+
+    em {
+      font-weight: normal;
+    }
   }
 
   .teaching-schedule {
@@ -1477,12 +1481,16 @@ figure.cover {
 }
 
 
-// Publication venue line: Mondrian red in light theme, Mondrian blue in dark
-.publications ol.bibliography li .periodical {
+// Publication venue line: Mondrian red in light theme, Mondrian blue in dark.
+// Covers the <em> venue name too - the global element rule (p, em, div, ...)
+// otherwise overrides inheritance and leaves only the year colored.
+.publications ol.bibliography li .periodical,
+.publications ol.bibliography li .periodical em {
   color: var(--global-theme-color);
 }
 
-html[data-theme='dark'] .publications ol.bibliography li .periodical {
+html[data-theme='dark'] .publications ol.bibliography li .periodical,
+html[data-theme='dark'] .publications ol.bibliography li .periodical em {
   color: #{$mondrian-blue-light};
 }
 
