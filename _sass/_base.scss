@@ -769,7 +769,17 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 700;
+
+        a.paper-title {
+          color: var(--global-text-color);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--global-theme-color);
+            text-decoration: none;
+          }
+        }
       }
 
       .author {
