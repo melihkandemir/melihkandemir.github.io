@@ -58,13 +58,13 @@
 - title: Academic Service
   type: nested_list
   contents:
-    - title: Grant Panel Memberships:
+    - title: 'Grant Panel Memberships:'
       items:
         - '<a href="https://dff.dk/en/about-the-fund/independent-research-fund-denmark/organisation/thematic-research-expert-committees/thematic-research-committees-2026/dff-ad-hoc-committee-for-research-on-artificial-intelligence/">DFF Ad Hoc Committee, AI Thematic Research</a> (2025-26)'
         - '<a href="https://ddsa.dk/fec/">DDSA Fellowship Evaluation Committee</a> (2024-26)'
-    - title: Area Chair / SPC:
+    - title: 'Area Chair / SPC:'
       items: NeurIPS, ICML, ICLR, AAAI, AISTATS, ECAI
-    - title: Venue Organization:
+    - title: 'Venue Organization:'
       items:
         - "EWRL & RLC Europe 2027: General Chair"
         - "D3A 25-26: Poster Chair"
