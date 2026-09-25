@@ -1,35 +1,15 @@
-<div class="card mt-3">
-    <div class="p-3">
-      <div class="row">
-        <div class="col-sm-10">
-          <!--<h5 class="card-title"> {{include.lecture.type }}, {{include.lecture.institution }}, {{include.lecture.department }}</h5> -->
-          <h5 class="card-title"> {{ include.lecture.title }} </h5>
-        </div>
-      </div>
-    
+<div class="teaching-material">
+    <h3>{{ include.lecture.title }} <small class="text-muted">{{ include.lecture.year }} - {{ include.lecture.term }}</small></h3>
+
     {% if include.lecture.schedule %}
-        <ul class="card-text font-weight list-group list-group-flush">
+        <ul class="teaching-schedule">
         {% assign sorted = include.lecture.schedule | sort: "week" %}
         {% for item in sorted %}
-          <li class="list-group">
-            <div class="row">
-              <div class="col-sm-10">
-                 {{ item.week }}: {{ item.topic }}
-              </div>
-                <div class="col-sm-2">
-                <a href="{{ item.slides | absolute_url  }}" target="_blank" rel="noopener noreferrer">PDF</a>&nbsp;
-                </div>
-            </div>
+          <li>
+            {{ item.week }}:
+            <a class="teaching-item" href="{{ item.slides | absolute_url }}" target="_blank" rel="noopener noreferrer">{{ item.topic }}</a>
           </li>
         {% endfor %}
-        
         </ul>
-    
     {% endif %}
-
-      
-    </div>
-  </div>
-
-  <p></p>
-  <p></p>
+</div>

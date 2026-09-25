@@ -224,6 +224,33 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+// Teaching material (cards removed: lecture title + linked topic names)
+
+.teaching-material {
+  margin-bottom: 2rem;
+
+  .teaching-schedule {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  a.teaching-item {
+    color: var(--global-text-color);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: none;
+    }
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
