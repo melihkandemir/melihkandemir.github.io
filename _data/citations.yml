@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-22'
+  last_updated: '2026-09-26'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 10
@@ -207,7 +207,7 @@ papers:
     venue_citation: US Patent App. 16/983,802, 2021
     year: '2021'
   Jxm1UeYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 50
+    citations: 51
     title: Variational Bayesian Multiple Instance Learning with Gaussian Processes
     venue_citation: "Proceedings of the IEEE Conference on Computer Vision and Pattern \u2026, 2017"
     year: '2017'
@@ -267,7 +267,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2444
+    citations: 2454
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
