@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-26'
+  last_updated: '2026-09-27'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 10
@@ -22,7 +22,7 @@ papers:
     venue_citation: Advances in Neural Information Processing Systems, 2023
     year: '2023'
   Jxm1UeYAAAAJ:2osOgNQ5qMEC:
-    citations: 201
+    citations: 202
     title: Automatic segmentation of colon glands using object-graphs
     venue_citation: Medical image analysis 14 (1), 1-12, 2010
     year: '2010'
@@ -267,7 +267,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2454
+    citations: 2462
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
