@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-27'
+  last_updated: '2026-10-04'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 10
@@ -52,7 +52,7 @@ papers:
     venue_citation: US Patent App. 17/231,757, 2021
     year: '2021'
   Jxm1UeYAAAAJ:4OULZ7Gr8RgC:
-    citations: 37
+    citations: 38
     title: 'In the picture: Medical imaging datasets, artifacts, and their living review'
     venue_citation: "Proceedings of the 2025 ACM conference on fairness, accountability, and \u2026, 2025"
     year: '2025'
@@ -77,7 +77,7 @@ papers:
     venue_citation: "International Conference on Medical Image Computing and Computer-Assisted \u2026, 2015"
     year: '2015'
   Jxm1UeYAAAAJ:9ZlFYXVOiuMC:
-    citations: 63
+    citations: 64
     title: Deep Active Learning with Adaptive Acquisition
     venue_citation: "International Joint Conference on Artificial Intelligence (IJCAI), arXiv \u2026, 2019"
     year: '2019'
@@ -267,7 +267,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2462
+    citations: 2495
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
@@ -292,7 +292,7 @@ papers:
     venue_citation: arXiv preprint arXiv:2507.03487, 2025
     year: '2025'
   Jxm1UeYAAAAJ:abG-DnoFyZgC:
-    citations: 0
+    citations: 1
     title: Hitting Time Isomorphism for Multi-Stage Planning with Foundation Policies
     venue_citation: arXiv preprint arXiv:2605.06470, 2026
     year: '2026'
@@ -326,6 +326,11 @@ papers:
     title: Deep Actor-Critics with Tight Risk Certificates
     venue_citation: arXiv preprint arXiv:2505.19682, 2025
     year: '2025'
+  Jxm1UeYAAAAJ:dshw04ExmUIC:
+    citations: 0
+    title: 'Let CSP Be Your ANCHOR: Adaptive Crystal Search over Frozen Structure Priors'
+    venue_citation: arXiv preprint arXiv:2609.33407, 2026
+    year: '2026'
   Jxm1UeYAAAAJ:e5wmG9Sq2KIC:
     citations: 0
     title: Method and device for processing sensor data
@@ -337,7 +342,7 @@ papers:
     venue_citation: Bilkent University, 2008
     year: '2008'
   Jxm1UeYAAAAJ:fPk4N6BV_jEC:
-    citations: 5
+    citations: 6
     title: Overcoming Non-stationary Dynamics with Evidential Proximal Policy Optimization
     venue_citation: 'Transactions on Machine Learning Research, arXiv: 2503.01468, 2025'
     year: '2025'
@@ -412,7 +417,7 @@ papers:
     venue_citation: European Conference on Artificial Intelligence (ECAI), 2025
     year: '2025'
   Jxm1UeYAAAAJ:qjMakFHDy7sC:
-    citations: 3
+    citations: 4
     title: Learning mental states from biosignals
     venue_citation: Aalto University, 2013
     year: '2013'

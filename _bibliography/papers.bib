@@ -18,6 +18,19 @@
 @string{eccv = {European Conference on Computer Vision}}
 @string{ewrl = {European Workshop on Reinforcement Learning}}
 
+@article{hovmand2026let,
+	abbr         = {arXiv},
+	title        = {Let CSP Be Your ANCHOR: Adaptive Crystal Search over Frozen Structure Priors},
+	author       = {Hovmand, E.L. and Elsborg, J. and Kandemir, M. and Bhowmik, A.},
+	year         = {2026},
+	journal      = arxiv,
+	url          = {https://arxiv.org/abs/2609.33407},
+	html         = {https://arxiv.org/abs/2609.33407},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {De novo crystal generation (DNG) models decide where to search in composition space and how to generate structures with one set of weights. We argue that discovery is better served by separating the two. A crystal structure prediction (CSP) model is a physical prior that should be improved by likelihood training, while rewards, including novelty measured against the search's own history, should act on a search over compositions. We introduce ANCHOR, a GRPO composition policy trained with multi-objective rewards around a frozen CSP model, and continuous adaptive novelty (CAN), a graded novelty score against known structures and a growing discovery history. Using the frozen CSP model as a fixed ruler under one evaluator, we test where adaptation should act. Replacing DNG compositions with ANCHOR's policy on the same CSP backbone raises MSUN from 11.4% to 47.6% and SUN from 1.1% to 22.1% at 99.9% formula uniqueness. Fine-tuning DNG models directly on the same rewards instead moves their composition marginal without raising their on-hull fraction. We show that KL-regularized fine-tuning of a DNG model can only reweight chemistry the pretrained model already supports by a bounded factor, while unregularized DNG fine-tunes move toward known or less stable chemistry. Even a stability-only reward routed into ANCHOR's CSP backbone roughly halves SUN relative to the frozen backbone, whereas likelihood training on structures found during search can improve a CSP backbone. Under MatterGen's evaluation pipeline, ANCHOR raises state-of-the-art MSUN from 29.2% to 41.3%, transfers without retraining to …},
+}
+
 @inproceedings{jimnezsnchez2025picture,
 	abbr         = {FAccT},
 	title        = {In the picture: Medical imaging datasets, artifacts, and their living review},
