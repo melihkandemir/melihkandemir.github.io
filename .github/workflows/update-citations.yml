@@ -2,7 +2,9 @@ name: Update Google Scholar Citations
 
 on:
   schedule:
-    - cron: "0 2 * * *" # Daily (02:00 UTC)
+    # Mon/Wed/Fri 02:00 UTC, like upstream al-folio: fewer runs means fewer
+    # chances to hit a day where Google Scholar blocks the runner.
+    - cron: "0 2 * * 1,3,5"
   workflow_dispatch:
 
 jobs:
@@ -53,9 +55,9 @@ jobs:
           for attempt in 1 2 3 4 5; do
             echo "▶️ Attempt $attempt..."
             # -u: unbuffered stdout so progress survives a timeout kill;
-            # `|| true` is NOT used: we capture the exit code with `status=$?`
-            # before `set -e` can abort the step (timeout kills scholarly
-            # whenever Google Scholar stops answering the runner).
+            # `set +e` around the call lets us capture the exit code before
+            # the step's errexit aborts the retry loop (timeout kills
+            # scholarly whenever Google Scholar stops answering the runner).
             set +e
             timeout 300 python -u bin/update_scholar_citations.py
             status=$?
@@ -70,9 +72,16 @@ jobs:
           if [ $status -eq 0 ]; then
             echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
             echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
+          elif [ $status -eq 124 ]; then
+            # Google Scholar not answering is an expected condition, not an
+            # error (same semantics as upstream al-folio): skip quietly, the
+            # next scheduled run picks it up.
+            echo "ℹ️ Google Scholar did not answer within the timeout (started at $start_time, ended at $end_time). Skipping this update; no data was changed."
+            echo "ℹ️ Scholar unreachable this run; citations not refreshed." >> $GITHUB_STEP_SUMMARY
+            echo "skip=true" >> $GITHUB_OUTPUT
           else
-            echo "❌ Citation update script failed after 5 attempts (exit code $status)."
-            echo "❌ Citation update script failed after 5 attempts (exit code $status)." >> $GITHUB_STEP_SUMMARY
+            echo "❌ Citation update script failed with exit code $status (a real error, not a Scholar timeout)."
+            echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY
             exit 1
           fi
 
@@ -101,6 +110,7 @@ jobs:
           fi
 
       - name: Check bibliography entries for missing abs/url or html links
+        if: steps.run_citation_update.outputs.skip != 'true'
         run: |
           echo "🔗 Checking _bibliography/papers.bib for missing links..."
           echo "## Bibliography link check" >> $GITHUB_STEP_SUMMARY
@@ -108,12 +118,14 @@ jobs:
           cat $GITHUB_STEP_SUMMARY
 
       - name: Configure Git
+        if: steps.run_citation_update.outputs.skip != 'true'
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           echo "🔧 Git configured."
 
       - name: Commit and push if changed
+        if: steps.run_citation_update.outputs.skip != 'true'
         run: |
           git add _data/citations.yml _bibliography/papers.bib
           git diff --staged --quiet || (
