@@ -12,9 +12,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      # See docs/CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
-      #        with:
-      #          token: ${{ secrets.PAT }}
+        # A PAT (repo secret "PAT") is required so that the commit pushed
+        # at the end of this workflow triggers the Deploy site workflow --
+        # pushes made with the default GITHUB_TOKEN never trigger other
+        # workflows (GitHub's loop prevention).
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -49,8 +52,14 @@ jobs:
           status=1
           for attempt in 1 2 3 4 5; do
             echo "▶️ Attempt $attempt..."
-            timeout 120 python bin/update_scholar_citations.py
+            # -u: unbuffered stdout so progress survives a timeout kill;
+            # `|| true` is NOT used: we capture the exit code with `status=$?`
+            # before `set -e` can abort the step (timeout kills scholarly
+            # whenever Google Scholar stops answering the runner).
+            set +e
+            timeout 300 python -u bin/update_scholar_citations.py
             status=$?
+            set -e
             if [ $status -eq 0 ]; then
               break
             fi
