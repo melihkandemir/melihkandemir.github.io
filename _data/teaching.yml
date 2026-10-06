@@ -36,4 +36,4 @@ lectures:
     schedule:
       - week: 1
         topic: "Full Textbook"
-        slides: "assets/teaching/Machine_Learning.pdf"
+        slides: "https://github.com/melihkandemir/adinml/raw/main/Machine_Learning.pdf"
