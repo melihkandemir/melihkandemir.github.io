@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-10-04'
+  last_updated: '2026-10-07'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
-    citations: 10
+    citations: 11
     title: A Deterministic Approximation to Neural SDEs
     venue_citation: IEEE Trans. Pattern Analysis and Machine Intelligence, 2022
     year: '2022'
@@ -77,7 +77,7 @@ papers:
     venue_citation: "International Conference on Medical Image Computing and Computer-Assisted \u2026, 2015"
     year: '2015'
   Jxm1UeYAAAAJ:9ZlFYXVOiuMC:
-    citations: 64
+    citations: 65
     title: Deep Active Learning with Adaptive Acquisition
     venue_citation: "International Joint Conference on Artificial Intelligence (IJCAI), arXiv \u2026, 2019"
     year: '2019'
@@ -137,7 +137,7 @@ papers:
     venue_citation: "International Conference on Medical Image Computing and Computer-Assisted \u2026, 2014"
     year: '2014'
   Jxm1UeYAAAAJ:M05iB0D1s5AC:
-    citations: 1
+    citations: 2
     title: Demystifying the Myths and Legends of Nonconvex Convergence of SGD
     venue_citation: arXiv preprint arXiv:2310.12969, 2023
     year: '2023'
@@ -242,7 +242,7 @@ papers:
     venue_citation: International Conference on Neural Information Processing, 500-509, 2011
     year: '2011'
   Jxm1UeYAAAAJ:YFjsv_pBGBYC:
-    citations: 20
+    citations: 21
     title: Learning interacting dynamical systems with latent gaussian process odes
     venue_citation: Advances in Neural Information Processing Systems 35, 9188-9200, 2022
     year: '2022'
@@ -267,7 +267,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2495
+    citations: 2512
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
@@ -442,7 +442,7 @@ papers:
     venue_citation: UAI, 380-389, 2014
     year: '2014'
   Jxm1UeYAAAAJ:u_35RYKgDlwC:
-    citations: 6
+    citations: 7
     title: Disentanglement with Factor Quantized Variational Autoencoders
     venue_citation: Neurocomputing, 2024
     year: '2024'
