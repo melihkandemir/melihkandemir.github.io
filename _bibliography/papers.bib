@@ -45,13 +45,13 @@
 }
 
 @article{akgl2025overcoming,
-	abbr         = {arXiv},
+	abbr         = {TMLR},
 	title        = {Overcoming Non-stationary Dynamics with Evidential Proximal Policy Optimization},
-	author       = {Akgül, A. and Baykal, G. and Haußmann, M. and Kandemir, M.},
+	author       = {Akg{\"u}l, A. and Baykal, G. and Hau{\ss}mann, M. and Kandemir, M.},
 	year         = {2025},
-	journal      = arxiv,
-	url          = {https://arxiv.org/abs/2503.01468},
-	html         = {https://arxiv.org/abs/2503.01468},
+	journal      = tmlr,
+	url          = {https://openreview.net/forum?id=KTfTwxsVNE},
+	html         = {https://openreview.net/forum?id=KTfTwxsVNE},
 	selected     = {false},
 	bibtex_show  = {true},
 	abstract     = {Continuous control of non-stationary environments is a major challenge for deep reinforcement learning algorithms. The time-dependency of the state transition dynamics aggravates the notorious stability problems of model-free deep actor-critic architectures. We posit that two properties will play a key role in overcoming non-stationarity in transition dynamics: (i)~preserving the plasticity of the critic network and (ii) directed exploration for rapid adaptation to changing dynamics. We show that performing on-policy reinforcement learning with an evidential critic provides both. The evidential design ensures a fast and accurate approximation of the uncertainty around the state value, which maintains the plasticity of the critic network by detecting the distributional shifts caused by changes in dynamics. The probabilistic critic also makes the actor training objective a random variable, enabling the use of directed exploration approaches as a by-product. We name the resulting algorithm \emph{Evidential Proximal Policy Optimization (EPPO)} due to the integral role of evidential uncertainty quantification in both policy evaluation and policy improvement stages. Through experiments on non-stationary continuous control tasks, where the environment dynamics change at regular intervals, we demonstrate that our algorithm outperforms state-of-the-art on-policy reinforcement learning variants in both task-specific and overall return.},
@@ -225,20 +225,6 @@
 	bibtex_show  = {true},
 	abstract     = {After a period of research, deep actor-critic algorithms have reached a level where they influence our everyday lives. They serve as the driving force behind the continual improvement of large language models through user-collected feedback. However, their deployment in physical systems is not yet widely adopted, mainly because no validation scheme that quantifies their risk of malfunction. We demonstrate that it is possible to develop tight risk certificates for deep actor-critic algorithms that predict generalization performance from validation-time observations. Our key insight centers on the effectiveness of minimal evaluation data. Surprisingly, a small feasible of evaluation roll-outs collected from a pretrained policy suffices to produce accurate risk certificates when combined with a simple adaptation of PAC-Bayes theory. Specifically, we adopt a recently introduced recursive PAC-Bayes approach, which splits validation data into portions and recursively builds PAC-Bayes bounds on the excess loss of each portion's predictor, using the predictor from the previous portion as a data-informed prior. Our empirical results across multiple locomotion tasks and policy expertise levels demonstrate risk certificates that are tight enough to be considered for practical use.},
 }
-
-@article{akgul2025improving,
-	abbr         = {TMLR},
-	title        = {Improving Plasticity in Non-stationary Reinforcement Learning with Evidential Proximal Policy Optimization},
-	author       = {Akg{\"u}l, A. and Baykal, G. and Hau{\ss}mann, M. and Kandemir, M.},
-	year         = {2025},
-	journal      = tmlr,
-	url          = {https://arxiv.org/abs/2503.01468},
-	html         = {https://arxiv.org/abs/2503.01468},
-	selected     = {false},
-	bibtex_show  = {true},
-	abstract     = {On-policy reinforcement learning algorithms use the most recently learned policy to interact with the environment and update it using the latest gathered trajectories, making them well-suited for adapting to non-stationary environments where dynamics change over time. However, previous studies show that they struggle to maintain plasticity---the ability of neural networks to adjust their synaptic connections---with overfitting identified as the primary cause. To address this, we present the first application of evidential learning in an on-policy reinforcement learning setting: \textit{Evidential Proximal Policy Optimization (EPPO)}. EPPO incorporates all sources of error in the critic network's approximation---i.e., the baseline function in advantage calculation---by modeling the epistemic and aleatoric uncertainty contributions to the approximation's total variance. We achieve this by using an evidential neural network, which serves as a regularizer to prevent overfitting. The resulting probabilistic interpretation of the advantage function enables optimistic exploration, thus maintaining the plasticity. Through experiments on non-stationary continuous control tasks, where the environment dynamics change at regular intervals, we demonstrate that EPPO outperforms state-of-the-art on-policy reinforcement learning variants in both task-specific and overall return.},
-}
-
 
 @inproceedings{akgul2024,
   abbr={NeurIPS},
