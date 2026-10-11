@@ -33,6 +33,6 @@ Melih earned his PhD degree from <a href="https://www.sdu.dk/">Aalto University<
 
 Melih is the founding head of the <a href="https://adinlab.github.io">SDU Adaptive Intelligence (ADIN) Lab<a/>, which pursues basic research on learning-theoretic approaches to adaptive control with reinforcement learning in sparse-reward and nonstationary settings. Melih is proud to be an <a href="https://ellis.eu/members">ELLIS Member</a>, the society of the top artificial intelligence researchers in the Europe, and serves on the board of ELLIS Unit Denmark.
 
-Melih is fascinated by both popular and technical aspects of natural sciences, especially physics and biology. His leisure time goes to thinking wishfully about their applications to the development of environment-friendly technologies.
+Melih is fascinated by the mysteries of nature, especially the emergent features of neurobiological systems and superposition of quantum states. Melih is an AI optimist. He accepts all the challenge caused by its disruptions. He strives to stand on the shoulders of frontier AI capabilities in both his research and teaching practices, in fact with great joy and enthusiasm thus far.
 
 Melih is in love with his wife Fatos and his daughter Sehnaz.
