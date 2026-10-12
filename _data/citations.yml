@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-07'
+  last_updated: '2026-10-12'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 11
@@ -132,7 +132,7 @@ papers:
     venue_citation: US Patent 10,896,351, 2021
     year: '2021'
   Jxm1UeYAAAAJ:LkGwnXOMwfcC:
-    citations: 91
+    citations: 92
     title: Empowering multiple instance histopathology cancer diagnosis by cell graphs
     venue_citation: "International Conference on Medical Image Computing and Computer-Assisted \u2026, 2014"
     year: '2014'
@@ -147,7 +147,7 @@ papers:
     venue_citation: US Patent App. 17/445,428, 2022
     year: '2022'
   Jxm1UeYAAAAJ:M3ejUd6NZC8C:
-    citations: 51
+    citations: 52
     title: Gaussian process density counting from weak supervision
     venue_citation: European Conference on Computer Vision, 365-380, 2016
     year: '2016'
@@ -207,7 +207,7 @@ papers:
     venue_citation: US Patent App. 16/983,802, 2021
     year: '2021'
   Jxm1UeYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 51
+    citations: 53
     title: Variational Bayesian Multiple Instance Learning with Gaussian Processes
     venue_citation: "Proceedings of the IEEE Conference on Computer Vision and Pattern \u2026, 2017"
     year: '2017'
@@ -267,7 +267,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2512
+    citations: 2544
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
@@ -392,7 +392,7 @@ papers:
     venue_citation: International Conference on Uncertainty in Artificial Intelligence (UAI), 2026
     year: '2026'
   Jxm1UeYAAAAJ:ldfaerwXgEUC:
-    citations: 29
+    citations: 30
     title: 'EdVAE: Mitigating codebook collapse with evidential discrete variational autoencoders'
     venue_citation: Pattern Recognition 156, 110792, 2024
     year: '2024'
