@@ -74,7 +74,11 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          # Minor-version range: resolves to the newest 3.3.x preinstalled on
+          # the runner (3.3.8 on ubuntu-24.04, 3.3.12 on ubuntu-26.04). A
+          # hard 3.3.5 pin breaks on ubuntu-26.04, where 3.3.5 is not
+          # published and the deploy dies at "Setup Ruby".
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
