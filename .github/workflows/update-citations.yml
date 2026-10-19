@@ -59,7 +59,7 @@ jobs:
             # the step's errexit aborts the retry loop (timeout kills
             # scholarly whenever Google Scholar stops answering the runner).
             set +e
-            timeout 300 python -u bin/update_scholar_citations.py
+            timeout 900 python -u bin/update_scholar_citations.py
             status=$?
             set -e
             if [ $status -eq 0 ]; then

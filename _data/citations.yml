@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-12'
+  last_updated: '2026-10-19'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 11
@@ -17,7 +17,7 @@ papers:
     venue_citation: ''
     year: Unknown Year
   Jxm1UeYAAAAJ:2P1L_qKh6hAC:
-    citations: 16
+    citations: 17
     title: Improved Algorithms for Stochastic Linear Bandits Using Tail Bounds for Martingale Mixtures
     venue_citation: Advances in Neural Information Processing Systems, 2023
     year: '2023'
@@ -52,7 +52,7 @@ papers:
     venue_citation: US Patent App. 17/231,757, 2021
     year: '2021'
   Jxm1UeYAAAAJ:4OULZ7Gr8RgC:
-    citations: 38
+    citations: 39
     title: 'In the picture: Medical imaging datasets, artifacts, and their living review'
     venue_citation: "Proceedings of the 2025 ACM conference on fairness, accountability, and \u2026, 2025"
     year: '2025'
@@ -77,7 +77,7 @@ papers:
     venue_citation: "International Conference on Medical Image Computing and Computer-Assisted \u2026, 2015"
     year: '2015'
   Jxm1UeYAAAAJ:9ZlFYXVOiuMC:
-    citations: 65
+    citations: 66
     title: Deep Active Learning with Adaptive Acquisition
     venue_citation: "International Joint Conference on Artificial Intelligence (IJCAI), arXiv \u2026, 2019"
     year: '2019'
@@ -112,7 +112,7 @@ papers:
     venue_citation: US Patent App. 18/259,906, 2024
     year: '2024'
   Jxm1UeYAAAAJ:IWHjjKOFINEC:
-    citations: 26
+    citations: 27
     title: Learning Partially Known Stochastic Dynamics with Empirical PAC Bayes
     venue_citation: International Conference on Artificial Intelligence and Statistics (AISTATS), 2021
     year: '2021'
@@ -186,8 +186,13 @@ papers:
     title: Inferring the Structure of Ordinary Differential Equations
     venue_citation: ICML Time Series Workshop, 2021
     year: '2021'
+  Jxm1UeYAAAAJ:SP6oXDckpogC:
+    citations: 0
+    title: What Information Buys in Active Inference
+    venue_citation: arXiv preprint arXiv:2610.19046, 2026
+    year: '2026'
   Jxm1UeYAAAAJ:Se3iqnhoufwC:
-    citations: 165
+    citations: 166
     title: 'Computer-aided diagnosis from weak supervision: A benchmarking study'
     venue_citation: Computerized medical imaging and graphics 42, 44-50, 2015
     year: '2015'
@@ -207,7 +212,7 @@ papers:
     venue_citation: US Patent App. 16/983,802, 2021
     year: '2021'
   Jxm1UeYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 53
+    citations: 54
     title: Variational Bayesian Multiple Instance Learning with Gaussian Processes
     venue_citation: "Proceedings of the IEEE Conference on Computer Vision and Pattern \u2026, 2017"
     year: '2017'
@@ -226,6 +231,11 @@ papers:
     title: 'Digital pathology: Multiple instance learning can detect Barrett''s cancer'
     venue_citation: 2014 IEEE 11th International Symposium on Biomedical Imaging (ISBI), 1348-1351, 2014
     year: '2014'
+  Jxm1UeYAAAAJ:UxriW0iASnsC:
+    citations: 0
+    title: 'Stein Variational Distributional Reinforcement Learning: Score-Guided Particles for Multivariate Return Distributions'
+    venue_citation: arXiv preprint arXiv:2610.17925, 2026
+    year: '2026'
   Jxm1UeYAAAAJ:W7OEmFMy1HYC:
     citations: 22
     title: 'Multiple instance learning: Robust validation on retinopathy of prematurity'
@@ -267,7 +277,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2544
+    citations: 2564
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
@@ -332,7 +342,7 @@ papers:
     venue_citation: arXiv preprint arXiv:2609.33407, 2026
     year: '2026'
   Jxm1UeYAAAAJ:e5wmG9Sq2KIC:
-    citations: 0
+    citations: 1
     title: Method and device for processing sensor data
     venue_citation: US Patent App. 17/086,057, 2021
     year: '2021'

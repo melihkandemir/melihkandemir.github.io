@@ -119,11 +119,20 @@ def best_title_match(title: str, candidate_titles: list[str]) -> str | None:
 
 
 def load_bib_titles(text: str) -> list[str]:
+    """Titles (plus alt_title aliases) of every entry, normalized.
+
+    alt_title records a paper's former title after a rename (e.g. an arXiv
+    v2 retitle with a completely new name). Scholar's cached title can lag
+    behind such a rename for weeks, and a full retitle is too dissimilar
+    for the fuzzy matcher to bridge, so without the alias the daemon would
+    re-add the paper under its old title as a duplicate.
+    """
     titles = []
     for _start, _end, entry in split_entries(text):
-        title = extract_field(entry, "title")
-        if title:
-            titles.append(normalize_title(title))
+        for field in ("title", "alt_title"):
+            title = extract_field(entry, field)
+            if title:
+                titles.append(normalize_title(title))
     return titles
 
 

@@ -18,6 +18,32 @@
 @string{eccv = {European Conference on Computer Vision}}
 @string{ewrl = {European Workshop on Reinforcement Learning}}
 
+@article{kandemir2026what,
+	abbr         = {arXiv},
+	title        = {What Information Buys in Active Inference},
+	author       = {Kandemir, M. and Çelikok, M.M.},
+	year         = {2026},
+	journal      = arxiv,
+	url          = {https://arxiv.org/abs/2610.19046},
+	html         = {https://arxiv.org/abs/2610.19046},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {Information-theoretic exploration is of primary interest in methodological studies of reinforcement learning (RL) and computational cognitive neuroscience, while the established RL theory builds regret guarantees on confidence sets. This situation leaves open the conditions under which the information-driven exploration found in nature is more advantageous than the exploration of the established RL theory. We put the state-of-the-art methods of these two paradigms, Active Inference (AIF) and Bayes-UCBVI, on an equal footing: both act through the same state abstraction of a tabular MDP with  states, and their greedy forms differ only in the exploration term. We find that AIF's information gain decays too fast to serve as a confidence width, locking greedy agents that explore by it out of the optimal action. Calibrating the information gain by a square root yields calibrated AIF, which attains regret of order  for an exact abstraction, but no better guarantee than Bayes-UCBVI for a fixed reward. When an adversary chooses rewards from the agent's data, Bayes-UCBVI's value-specific widths lock out, whereas calibrated AIF pays a factor , which no goal-memoryless agent avoids on some MDP whose start states the adversary also chooses. Calibrated information gain thus acts as a reward-agnostic  confidence set, preferable to value-specific widths when rewards are chosen from the agent's data, not when they are fixed.},
+}
+
+@article{haumann2026stein,
+	abbr         = {arXiv},
+	title        = {Stein Variational Distributional Reinforcement Learning: Score-Guided Particles for Multivariate Return Distributions},
+	author       = {Haußmann, M. and Kandemir, M.},
+	year         = {2026},
+	journal      = arxiv,
+	url          = {https://arxiv.org/abs/2610.17925},
+	html         = {https://arxiv.org/abs/2610.17925},
+	selected     = {false},
+	bibtex_show  = {true},
+	abstract     = {Decisions that weigh several reward signals against each other require the joint distribution of the return vector. Categorical critics scale exponentially in the reward dimension, and quantiles have no canonical multivariate analogue. Multivariate distributional critics therefore represent each return distribution by M equal-weight particles trained with a discrepancy loss. Beyond their atoms, the particles provide no sampler and cannot resolve events rarer than 1/M. We propose Stein variational distributional RL (SVDRL). Its critic outputs Stein particles, which Stein variational gradient descent transports along a learned score field of the distributional Bellman target. We learn this field by bootstrapped denoising score matching across noise levels and tie it across the Bellman recursion by a consistency loss, which we prove is a non-expansive temporal-difference scheme in score space. The same field certifies the particles. Its reverse-diffusion sampler satisfies a supremal Wasserstein policy-evaluation bound that holds for bounded, possibly multimodal returns. The Stein particles inherit this bound up to a gap that we measure without ground truth, and the sampler answers tail-risk queries below the particle resolution at any sample size. Empirically, SVDRL is more accurate on rare events than particle critics with the same number of particles, and on par on MuJoCo continuous control.},
+}
+
 @article{hovmand2026let,
 	abbr         = {arXiv},
 	title        = {Let CSP Be Your ANCHOR: Adaptive Crystal Search over Frozen Structure Priors},
@@ -111,7 +137,8 @@
 
 @article{haussmann2026measure,
 	abbr         = {arXiv},
-	title        = {A Measure-Theoretic Finite-Sample Theory for Adaptive-Data Fitted Q-Iteration},
+	title        = {Fitted Q-Iteration with Continuous Actions and Adaptive Data: Smoothed Coverage and Minimax Rates},
+	alt_title    = {A Measure-Theoretic Finite-Sample Theory for Adaptive-Data Fitted Q-Iteration},
 	author       = {Haussmann, M. and Çelikok, M.M. and Kandemir, M.},
 	year         = {2026},
 	journal      = arxiv,
@@ -137,7 +164,7 @@
 
 @article{mulkoglu2026physics,
   abbr={JIM},
-  author =		 {M\"ulko\v{g}lu, O. and Kandemir, M. and Y{\i}ld{\i}r{\im}m, H.C.},
+  author =		 {M\"ulko\v{g}lu, O. and Kandemir, M. and Y{\i}ld{\i}r{\i}m, H.C.},
   year =		 {2026},
   title =		 {A physics-constrained framework for fatigue data augmentation of post-weld treated joints: censored S--N estimation with an exploratory generative component},
   journal =		 {Journal of Intelligent Manufacturing},

@@ -227,11 +227,13 @@ def get_scholar_citations() -> None:
         author_data = scholarly.fill(author, sections=["publications"])
     except Exception as e:
         print(f"Error fetching author data from Google Scholar for user ID '{SCHOLAR_USER_ID}': {e}.")
-        sys.exit(1)
+        print("Google Scholar did not answer this run. Skipping the update; existing data was left unchanged.")
+        return
 
     if not author_data or "publications" not in author_data:
         print(f"No publications found for user ID '{SCHOLAR_USER_ID}'.")
-        sys.exit(1)
+        print("Google Scholar did not answer this run. Skipping the update; existing data was left unchanged.")
+        return
 
     for pub in author_data.get("publications", []):
         try:
