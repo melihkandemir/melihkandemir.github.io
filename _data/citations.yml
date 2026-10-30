@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-19'
+  last_updated: '2026-10-30'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 11
@@ -77,7 +77,7 @@ papers:
     venue_citation: "International Conference on Medical Image Computing and Computer-Assisted \u2026, 2015"
     year: '2015'
   Jxm1UeYAAAAJ:9ZlFYXVOiuMC:
-    citations: 66
+    citations: 67
     title: Deep Active Learning with Adaptive Acquisition
     venue_citation: "International Joint Conference on Artificial Intelligence (IJCAI), arXiv \u2026, 2019"
     year: '2019'
@@ -132,7 +132,7 @@ papers:
     venue_citation: US Patent 10,896,351, 2021
     year: '2021'
   Jxm1UeYAAAAJ:LkGwnXOMwfcC:
-    citations: 92
+    citations: 93
     title: Empowering multiple instance histopathology cancer diagnosis by cell graphs
     venue_citation: "International Conference on Medical Image Computing and Computer-Assisted \u2026, 2014"
     year: '2014'
@@ -192,7 +192,7 @@ papers:
     venue_citation: arXiv preprint arXiv:2610.19046, 2026
     year: '2026'
   Jxm1UeYAAAAJ:Se3iqnhoufwC:
-    citations: 166
+    citations: 165
     title: 'Computer-aided diagnosis from weak supervision: A benchmarking study'
     venue_citation: Computerized medical imaging and graphics 42, 44-50, 2015
     year: '2015'
@@ -212,7 +212,7 @@ papers:
     venue_citation: US Patent App. 16/983,802, 2021
     year: '2021'
   Jxm1UeYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 54
+    citations: 55
     title: Variational Bayesian Multiple Instance Learning with Gaussian Processes
     venue_citation: "Proceedings of the IEEE Conference on Computer Vision and Pattern \u2026, 2017"
     year: '2017'
@@ -277,7 +277,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2564
+    citations: 2610
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
@@ -467,7 +467,7 @@ papers:
     venue_citation: US Patent App. 18/164,419, 2023
     year: '2023'
   Jxm1UeYAAAAJ:zYLM7Y9cAGgC:
-    citations: 42
+    citations: 43
     title: Sampling-Free Variational Inference of Bayesian Neural Nets with Variance Backpropagation
     venue_citation: Uncertainty in Artificial Intelligence (UAI), arXiv preprint arXiv:1805.07654, 2019
     year: '2019'
