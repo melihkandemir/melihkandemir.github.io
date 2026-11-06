@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-10-30'
+  last_updated: '2026-11-06'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 11
@@ -22,7 +22,7 @@ papers:
     venue_citation: Advances in Neural Information Processing Systems, 2023
     year: '2023'
   Jxm1UeYAAAAJ:2osOgNQ5qMEC:
-    citations: 202
+    citations: 203
     title: Automatic segmentation of colon glands using object-graphs
     venue_citation: Medical image analysis 14 (1), 1-12, 2010
     year: '2010'
@@ -52,7 +52,7 @@ papers:
     venue_citation: US Patent App. 17/231,757, 2021
     year: '2021'
   Jxm1UeYAAAAJ:4OULZ7Gr8RgC:
-    citations: 39
+    citations: 41
     title: 'In the picture: Medical imaging datasets, artifacts, and their living review'
     venue_citation: "Proceedings of the 2025 ACM conference on fairness, accountability, and \u2026, 2025"
     year: '2025'
@@ -277,7 +277,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2610
+    citations: 2660
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
@@ -287,7 +287,7 @@ papers:
     venue_citation: International Conference on Machine Learning, 730-738, 2015
     year: '2015'
   Jxm1UeYAAAAJ:_kc_bZDykSQC:
-    citations: 116
+    citations: 117
     title: Object-oriented texture analysis for the unsupervised segmentation of biopsy images for cancer detection
     venue_citation: Pattern Recognition 42 (6), 1104-1112, 2009
     year: '2009'
@@ -352,7 +352,7 @@ papers:
     venue_citation: Bilkent University, 2008
     year: '2008'
   Jxm1UeYAAAAJ:fPk4N6BV_jEC:
-    citations: 6
+    citations: 7
     title: Overcoming Non-stationary Dynamics with Evidential Proximal Policy Optimization
     venue_citation: 'Transactions on Machine Learning Research, arXiv: 2503.01468, 2025'
     year: '2025'
@@ -407,7 +407,7 @@ papers:
     venue_citation: Pattern Recognition 156, 110792, 2024
     year: '2024'
   Jxm1UeYAAAAJ:mB3voiENLucC:
-    citations: 21
+    citations: 22
     title: Bayesian Evidential Deep Learning with PAC Regularization
     venue_citation: 3rd Advances in Approximate Bayesian Inference (AABI) Symposium, 2020
     year: '2020'
