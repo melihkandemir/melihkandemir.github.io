@@ -8,23 +8,8 @@ lectures:
     source_type: pdf
     schedule:
       - week: 1
-        topic: "Basic Concepts"
-        slides: "assets/teaching/rl_2025/1_Basic_Concepts.pdf"
-      - week: 2
-        topic: "Markov Decision Processes"
-        slides: "assets/teaching/rl_2025/2_Markov_Decision_Processes.pdf"
-      - week: 3
-        topic: "Model-Based Reinforcement Learning"
-        slides: "assets/teaching/rl_2025/3_Model_Based_RL.pdf"
-      - week: 4
-        topic: "Model-Free Reinforcement Learning"
-        slides: "assets/teaching/rl_2025/4_Model_Free_RL.pdf"
-      - week: 5
-        topic: "Policy Gradient Methods"
-        slides: "assets/teaching/rl_2025/5_Policy_Gradient_Methods.pdf"
-      - week: 6
-        topic: "Conservative Policy Iteration"
-        slides: "assets/teaching/rl_2025/6_Conservative_Policy_Iteration.pdf"
+        topic: "Full Textbook"
+        slides: "assets/teaching/rl_2026/Reinforcement_Learning.pdf"
 
   - title: Machine Learning Textbook
     type: Main Lecturer
