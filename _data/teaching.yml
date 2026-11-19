@@ -1,10 +1,10 @@
 lectures:
-  - title: Reinforcement Learning
+  - title: Reinforcement Learning Textbook
     type: Main Lecturer
     institution: University of Southern Denmark
     department: IMADA
     year: 2026
-    term: April
+    term: November
     source_type: pdf
     schedule:
       - week: 1
