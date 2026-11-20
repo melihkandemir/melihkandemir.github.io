@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-06'
+  last_updated: '2026-11-20'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 11
@@ -17,12 +17,12 @@ papers:
     venue_citation: ''
     year: Unknown Year
   Jxm1UeYAAAAJ:2P1L_qKh6hAC:
-    citations: 17
+    citations: 18
     title: Improved Algorithms for Stochastic Linear Bandits Using Tail Bounds for Martingale Mixtures
     venue_citation: Advances in Neural Information Processing Systems, 2023
     year: '2023'
   Jxm1UeYAAAAJ:2osOgNQ5qMEC:
-    citations: 203
+    citations: 202
     title: Automatic segmentation of colon glands using object-graphs
     venue_citation: Medical image analysis 14 (1), 1-12, 2010
     year: '2010'
@@ -52,7 +52,7 @@ papers:
     venue_citation: US Patent App. 17/231,757, 2021
     year: '2021'
   Jxm1UeYAAAAJ:4OULZ7Gr8RgC:
-    citations: 41
+    citations: 43
     title: 'In the picture: Medical imaging datasets, artifacts, and their living review'
     venue_citation: "Proceedings of the 2025 ACM conference on fairness, accountability, and \u2026, 2025"
     year: '2025'
@@ -87,7 +87,7 @@ papers:
     venue_citation: "2010 IEEE International Workshop on Machine Learning for Signal Processing \u2026, 2010"
     year: '2010'
   Jxm1UeYAAAAJ:BqipwSGYUEgC:
-    citations: 13
+    citations: 14
     title: 'PAC-Bayes bounds for bandit problems: A survey and experimental comparison'
     venue_citation: "IEEE Transactions on Pattern Analysis and Machine Intelligence 45 (12 \u2026, 2023"
     year: '2023'
@@ -217,7 +217,7 @@ papers:
     venue_citation: "Proceedings of the IEEE Conference on Computer Vision and Pattern \u2026, 2017"
     year: '2017'
   Jxm1UeYAAAAJ:ULOm3_A8WrAC:
-    citations: 59
+    citations: 60
     title: Multi-task and multi-view learning of user state
     venue_citation: Neurocomputing 139, 97-106, 2014
     year: '2014'
@@ -277,12 +277,12 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2660
+    citations: 2730
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
   Jxm1UeYAAAAJ:_FxGoFyzp5QC:
-    citations: 67
+    citations: 68
     title: Asymmetric Transfer Learning with Deep Gaussian Processes
     venue_citation: International Conference on Machine Learning, 730-738, 2015
     year: '2015'
@@ -387,7 +387,7 @@ papers:
     venue_citation: Data Mining and Knowledge Discovery 36 (2), 841-876, 2022
     year: '2022'
   Jxm1UeYAAAAJ:j3f4tGmQtD8C:
-    citations: 3
+    citations: 4
     title: Traversing time with multi-resolution Gaussian process state-space models
     venue_citation: Learning for Dynamics and Control Conference, 366-377, 2022
     year: '2022'
@@ -467,7 +467,7 @@ papers:
     venue_citation: US Patent App. 18/164,419, 2023
     year: '2023'
   Jxm1UeYAAAAJ:zYLM7Y9cAGgC:
-    citations: 43
+    citations: 44
     title: Sampling-Free Variational Inference of Bayesian Neural Nets with Variance Backpropagation
     venue_citation: Uncertainty in Artificial Intelligence (UAI), arXiv preprint arXiv:1805.07654, 2019
     year: '2019'
