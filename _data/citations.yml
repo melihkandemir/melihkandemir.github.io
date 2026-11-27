@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-11-25'
+  last_updated: '2026-11-27'
 papers:
   Jxm1UeYAAAAJ:-f6ydRqryjwC:
     citations: 11
@@ -52,7 +52,7 @@ papers:
     venue_citation: US Patent App. 17/231,757, 2021
     year: '2021'
   Jxm1UeYAAAAJ:4OULZ7Gr8RgC:
-    citations: 43
+    citations: 44
     title: 'In the picture: Medical imaging datasets, artifacts, and their living review'
     venue_citation: "Proceedings of the 2025 ACM conference on fairness, accountability, and \u2026, 2025"
     year: '2025'
@@ -112,7 +112,7 @@ papers:
     venue_citation: US Patent App. 18/259,906, 2024
     year: '2024'
   Jxm1UeYAAAAJ:IWHjjKOFINEC:
-    citations: 27
+    citations: 28
     title: Learning Partially Known Stochastic Dynamics with Empirical PAC Bayes
     venue_citation: International Conference on Artificial Intelligence and Statistics (AISTATS), 2021
     year: '2021'
@@ -277,7 +277,7 @@ papers:
     venue_citation: 'NeurIPS Bayesian Deep Learning Workshop, arXiv: 1912.00796, 2019'
     year: '2019'
   Jxm1UeYAAAAJ:Zph67rFs4hoC:
-    citations: 2739
+    citations: 2746
     title: Evidential Deep Learning to Quantify Classification Uncertainty
     venue_citation: Advances in Neural Information Processing Systems (NeurIPS), 3179-3189, 2018
     year: '2018'
